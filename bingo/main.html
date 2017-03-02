@@ -1,0 +1,391 @@
+<html>
+
+<title>
+Jonathan's Bingo Generator
+</title>
+
+<!--
+
+Jonathan Baker made this. Feel free to change the sayings to fit any occacion.
+Yes, this is all the Javascript I know, thank you very much.
+
+-->
+
+<h1>Sacrament Meeting BINGO!</h1>
+
+<input id="theButton" type="button" value="Generate Bingo" onclick="bingo();" />
+
+<table border="1" width="600"> <!-- style="width500px">-->
+    <tr>
+        <td><input type="checkbox" onchange="checkwin()" id="a1box">
+            <p id="a1text">A1</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="b1box">
+            <p id="b1text">B1</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="c1box">
+            <p id="c1text">C1</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="d1box">
+            <p id="d1text">D1</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="e1box">
+            <p id="e1text">E1</p></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" onchange="checkwin()" id="a2box">
+            <p id="a2text">A2</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="b2box">
+            <p id="b2text">B2</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="c2box">
+            <p id="c2text">C2</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="d2box">
+            <p id="d2text">D2</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="e2box">
+            <p id="e2text">E2</p></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" onchange="checkwin()" id="a3box">
+            <p id="a3text">A3</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="b3box">
+            <p id="b3text">B3</p></td>
+        <td><input type="checkbox" id="c3box" checked="yes" disabled="disabled"><p id="c3text">FREE</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="d3box">
+            <p id="d3text">D3</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="e3box">
+            <p id="e3text">E3</p></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" onchange="checkwin()" id="a4box">
+            <p id="a4text">A4</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="b4box">
+            <p id="b4text">B4</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="c4box">
+            <p id="c4text">C4</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="d4box">
+            <p id="d4text">D4</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="e4box">
+            <p id="e4text">E4</p></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" onchange="checkwin()" id="a5box">
+            <p id="a5text">A5</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="b5box">
+            <p id="b5text">B5</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="c5box">
+            <p id="c5text">C5</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="d5box">
+            <p id="d5text">D5</p></td>
+        <td><input type="checkbox" onchange="checkwin()" id="e5box">
+            <p id="e5text">E5</p></td>
+    </tr>
+</table>
+
+No, this isn't a bit sacrilegious.
+
+<script>
+
+var textnames = ["a1text","b1text","c1text","d1text","e1text","a2text","b2text","c2text","d2text","e2text","a3text","b3text","c3text","d3text","e3text","a4text","b4text","c4text","d4text","e4text","a5text","b5text","c5text","d5text","e5text"];
+
+var texts = new Array(25);
+
+for(var i=0 ; i<25 ; i++){
+    texts[i] = document.getElementById(textnames[i]);
+}
+
+var boxlinenames = [
+    ["a1box","b1box","c1box","d1box","e1box"],
+    ["a2box","b2box","c2box","d2box","e2box"],
+    ["a3box","b3box","c3box","d3box","e3box"],
+    ["a4box","b4box","c4box","d4box","e4box"],
+    ["a5box","b5box","c5box","d5box","e5box"],
+    ["a1box","a2box","a3box","a4box","a5box"],
+    ["b1box","b2box","b3box","b4box","b5box"],
+    ["c1box","c2box","c3box","c4box","c5box"],
+    ["d1box","d2box","d3box","d4box","d5box"],
+    ["e1box","e2box","e3box","e4box","e5box"],
+    ["a1box","b2box","c3box","d4box","e5box"],
+    ["e1box","d2box","c3box","b4box","a5box"]
+];
+var textlinenames = [
+    ["a1text","b1text","c1text","d1text","e1text"],
+    ["a2text","b2text","c2text","d2text","e2text"],
+    ["a3text","b3text","c3text","d3text","e3text"],
+    ["a4text","b4text","c4text","d4text","e4text"],
+    ["a5text","b5text","c5text","d5text","e5text"],
+    ["a1text","a2text","a3text","a4text","a5text"],
+    ["b1text","b2text","b3text","b4text","b5text"],
+    ["c1text","c2text","c3text","c4text","c5text"],
+    ["d1text","d2text","d3text","d4text","d5text"],
+    ["e1text","e2text","e3text","e4text","e5text"],
+    ["a1text","b2text","c3text","d4text","e5text"],
+    ["e1text","d2text","c3text","b4text","a5text"]
+];
+
+var boxlines = new Array(12);
+var textlines = new Array(12);
+
+for(var i=0 ; i<12 ; i++){
+    boxlines[i] = new Array(5);
+    textlines[i] = new Array(5);
+    for(var j=0 ; j<5 ; j++){
+        boxlines[i][j] = document.getElementById(boxlinenames[i][j]);
+        textlines[i][j] = document.getElementById(textlinenames[i][j]);
+    }
+}
+
+var sayings = [
+    "A URL",
+    "A confession",
+    "A living apostle",
+    "A personal experience",
+    "A reference to how often the speaker bears public testimony",
+    "A reference to the length of the meeting",
+    "Adam and Eve",
+    "Agency",
+    "An animal",
+    "Angel",
+    "Any word that starts with 'K'",
+    "Any word that starts with 'Q'",
+    "Any word that starts with 'V'",
+    "Articles of faith",
+    "Atonement",
+    "Baptism",
+    "Bishop",
+    "Blessing",
+    "Blindness",
+    "Brigham Young",
+    "Celestial Kingdom",
+    "Cell phone rings",
+    "Charity",
+    "Chastity",
+    "Church",
+    "Confirmation",
+    "Congregation stands for a hymn",
+    "Covenant",
+    "Creation",
+    "Crinkling wrapper",
+    "Death",
+    "Dictionary definition",
+    "Dream",
+    "Education",
+    "Esoteric analogy",
+    "Eternity",
+    "Example",
+    "Faith",
+    "Family history work",
+    "Fasting",
+    "Fear",
+    "Food storage",
+    "Garden of Eden",
+    "Gethsemane",
+    "Glory",
+    "God's omnipotence",
+    "God's omniscience",
+    "Gratitude",
+    "Hate",
+    "Hell",
+    "Hope",
+    "Humility",
+    "Idaho",
+    "Integrity",
+    "Investigator",
+    "Jesus (before testimony)",
+    "Joseph Smith",
+    "Journal",
+    "Joy",
+    "Justice",
+    "Kindness",
+    "Knowledge",
+    "Laugh at own joke",
+    "Love",
+    "Magnifying callings",
+    "Marriage",
+    "Men",
+    "Mercy",
+    "Miracle",
+    "Missionary work",
+    "Modesty",
+    "Money",
+    "Nephi",
+    "Obedience",
+    "Offense",
+    "Parable",
+    "Patience",
+    "Peace",
+    "Pioneers",
+    "Podium height adjusted",
+    "Prayer",
+    "Pride cycle",
+    "Pride",
+    "Priesthood",
+    "Prime-numbered congregational hymn",
+    "Prophets",
+    "Reading from materials for more than 10 seconds",
+    "Referencing secular media",
+    "Releases",
+    "Repentance",
+    "Resurrection",
+    "Revelation",
+    "Reverence",
+    "Sabbath observance",
+    "Sacrament",
+    "Sacrifice",
+    "Satan",
+    "Self-aggrandizement",
+    "Service",
+    "Sharing a Book of Mormon scripture",
+    "Sharing a D&C scripture",
+    "Sharing a New Testament scripture",
+    "Sharing a Old Testament scripture",
+    "Signs",
+    "Simpleness",
+    "Social media",
+    "Someone on the stand wearing a red tie",
+    "Someone sleeping",
+    "Someone sneezes",
+    "Speaker adjusts microphone",
+    "Speaking in a foreign language",
+    "Spirit",
+    "Sports",
+    "Stake business",
+    "Story about children",
+    "Story about sickness",
+    "Strength",
+    "Sustainings",
+    "Talents",
+    "Talk outline",
+    "Teaching",
+    "Temple",
+    "Temporal bodies",
+    "Testimonies",
+    "The Holy Ghost",
+    "Thomas S. Monson",
+    "Time",
+    "Tithing",
+    "Trials",
+    "Truth",
+    "Unbelief",
+    "Utah",
+    "Virtue",
+    "Wisdom",
+    "Women",
+    "Word of Wisdom",
+    "Work",
+    "Worthiness",
+    "\"Alooo-HA!\"",
+    "\"As I prepared\"",
+    "\"Bear with me\"",
+    "\"By the same sign\"",
+    "\"Comfort zone/bubble\"",
+    "\"Daily lives\"",
+    "\"Endure to the end\"",
+    "\"Ensign\" magazine",
+    "\"Eternal companion\"",
+    "\"Eternal family\"",
+    "\"Every member a missionary\"",
+    "\"Fellowship\" as a verb",
+    "\"Fiber of my being\"",
+    "\"Focus on The One\"",
+    "\"For me personally\"",
+    "\"For those who don't know me\"",
+    "\"Good [time] brothers and sisters\"",
+    "\"I'd like to bear my testimony\"",
+    "\"I'm grateful for the opportunity\"",
+    "\"I've been asked to speak on\"",
+    "\"If you could turn with me\"",
+    "\"If you're here please stand\"",
+    "\"It's a pleasure to speak to/be with you today\"",
+    "\"Mormon standard time\"",
+    "\"My favorite scripture/hymn\"",
+    "\"Nonmember\"",
+    "\"Opposed if any\"",
+    "\"Pre-existence\"",
+    "\"Shadow of a doubt\"",
+    "\"Sorry for crying\"",
+    "\"Special musical number\"",
+    "\"Sunday school/primary answers\"",
+    "\"Sweet spirit\"",
+    "\"Ten commandments\"",
+    "\"Tender mercy\"",
+    "\"Thank you, that was wonderful/beautiful\"",
+    "\"The church/gospel is (3 or more of) [restored] [back] [on the Earth] [again] [for our time]\"",
+    "\"The family is under attack\"",
+    "\"There were ___ members at my school\"",
+    "\"This talk is for me\"",
+    "\"Thy son\" while closing a talk",
+    "\"Umm\"",
+    "\"Ward family\"",
+    "\"We'll go to that point\"",
+    "\"What would Jesus do\"",
+    "\"When I was asked to speak\"",
+    "\"When I was on my mission\"",
+];
+
+function bingo() {
+    var sayingInds = new Array(sayings.length);
+
+    for(var i=0 ; i<sayings.length ; i++){
+        sayingInds[i] = i;
+    }
+
+    var ran;
+    var saying;
+
+    for(var i=0 ; i<25 ; i++){
+        if(i==12){
+            // The FREE square always says "FREE"
+            continue;
+        }
+
+        // Pick a random unused saying
+         ran = Math.floor(Math.random()*sayingInds.length);
+         saying = sayings[sayingInds[ran]];
+
+        // Set the cell to hold the saying
+         texts[i].innerHTML = saying;
+
+        // Remove the saying being added to the board
+         sayingInds.splice(ran,1);
+    }
+}
+
+function blacken(){
+    //set all text colors to black
+    for(var i=0 ; i<25 ; i++){
+        texts[i].style.color="Black";
+    }
+}
+
+function checkwin(){
+    // It would be better to only check the lines in which the most recently changed box is involved, but I don't know how to use Javascript Maps yet
+
+    blacken();
+
+    var won;
+
+    for(var i=0 ; i<12 ; i++){
+        line = boxlines[i];
+        won = 1; // Assume win until proven otherwise
+        for(var j=0 ; j<5 ; j++){
+            if( ! line[j].checked ){
+                won = 0;
+                break;
+            }
+        }
+        if(won == 1){
+            alert("BINGO!")
+            for(var j=0 ; j<5 ; j++){
+                textlines[i][j].style.color="Red";
+            }
+            break;
+        }
+    }
+}
+
+</script>
+
+<style type="text/css">
+    td {overflow: hidden; }
+    table {table-layout: fixed; }
+</style>
+
+</html>
+
+
