@@ -1,0 +1,314 @@
+<html>
+
+<script src="maps.js"></script>
+
+<script>
+
+function loadfun(){
+    say("koan",0,koanMap.get(1));
+}
+
+/*
+tree represents the current chain of answers that have been given
+
+answering "yes" causes tree = 2*tree+1
+answering "no" causes tree = 2*tree
+
+tree is 6 (110 in binary) if the answer sequence was
+    yes,no
+
+tree is 63 (111111 in  binary) if the answer sequence was
+    yes,yes,yes,yes,yes
+
+tree is 64 (1000000 in binary) if the answer sequence was
+    no ,no ,no ,no ,no ,no
+*/
+var tree = 1;
+var nresponses = 0;
+var responses = [0,0,0,0,0,0,0,0,0];
+
+function show(s,i){
+    // show the element with id s.concat(String(i))
+    var name = s.concat(String(i));
+    var div = document.getElementById(name);
+    div.style.display = "block";
+}
+function hide(s,i){
+    // hide the element with id s.concat(String(i))
+    var name = s.concat(String(i));
+    var div = document.getElementById(name);
+    div.style.display = "none";
+}
+function say(s,i,html){
+    // set the innerHTML the element with id s.concat(String(i)) to html
+    var name = s.concat(String(i));
+    var div = document.getElementById(name);
+    div.innerHTML = html;
+}
+
+function answer(q,a){
+    // q = question number
+    // a = answer (1 for True, 0 for False)
+    
+    nresponses = q+1;
+    responses[q] = a;
+
+    var hi = Math.pow(2,nresponses);
+    while(tree>=hi){
+        tree = Math.floor(tree/2);
+    }
+    if(a)
+        tree = 2*tree+1;
+    else
+        tree *= 2;
+
+    var i,div;
+    // Hide higher-numbered sections
+    for(i=8;i>q+1;i--){
+        hide("",i);
+    }
+    // Show lower-numbered sections with "change answer" option
+    for(i=0;i<=q;i++){
+        // Show the section
+        show("",i);
+        hide("yesno",i);
+        // Show the "change answer" option
+        if(responses[i]){
+            show("changeNo",i);
+            hide("changeYes",i);
+        }
+        else{
+            hide("changeNo",i);
+            show("changeYes",i);
+        }
+    }
+    // Show most recent section with plain "yes"/"no" options
+    
+    if(koanMap.has(tree)){
+        say("koan",q+1,koanMap.get(tree));
+        show("",q+1);
+        show("yesno",q+1);
+        hide("changeYes",q+1);
+        hide("changeNo",q+1);
+        hide("rule","");
+    }
+    else{
+        say("rule","","The rule should be:<br>".concat(ruleMap.get(tree)).concat("<br><br>"));
+        show("rule","");
+    }
+}
+function showKoan(k,n){
+    // Display koan k in div n
+    var divname = String.concat("koan",String(n));
+    var div = document.getElementById(divname);
+    div.innerHTML = String(n);
+}
+</script>
+
+<title>
+Automatic Zendo Student
+</title>
+<h3>
+Automatic Zendo Student
+</h3>
+Some things to know:
+<ul>
+    <li> If you don't know what Zendo is, it's simply the best thing ever.
+         Links to instructive videos, reviews, the rules can be found <a href='https://www.looneylabs.com/games/zendo'>HERE</a>.
+    <li> Only rules that are printed on the cards that come with the boxed Zendo set released in 2017 can be guessed (for now).
+    <ul>
+        <li> One notable omission from the cards are rules of the type "A structure must contain a [color] on top of a [shape]".
+        <li> I have not included these rules since they are not on the cards.
+        <li> The cards do have rules that are "color on color", "shape on shape", and "shape on color".
+    </ul>
+    <li> For now, most of the koans (structures) are only given by a text description. Hopefully the text is self-explanatory. I will add more images when I get time.
+    <li> In case you pick a direction rule from card 27, only pieces that are pointing UP or DOWN should be considered to be pointing in the same direction as anything.
+    <ul>
+        <li> Pieces that are WEIRD or FLAT (or CHEESECAKE or DOORSTOP) do not point in the same direction as other pieces.
+        <li> If W and X are pointing UP and Y and Z are pointing DOWN, then
+        <ul>
+            <li> W and X are pointing in the same direction
+            <li> Y and Z are pointing in the same direction
+            <li> W and Y are pointing in opposite directions
+            <li> etc.
+        </ul>
+        <li> The "Directions" list makes this explicit. For example, if the directions list is [1,-1,1,2,3], then
+        <ul>
+            <li> Piece 0 and piece 2 are pointing the same direction
+            <li> Piece 1 is pointing the opposite direction as pieces 0 and 2 (since it has the same direction number but negative)
+            <li> Pieces 3 and 4 don't point the same direction as anything
+        </ul>
+    </ul>
+    <li> The koans and rules have numbers to make debugging easier.
+</ul>
+
+<div id="rule" style="display:none">
+</div>
+<div id="8" style="display:none">
+    <div id="yesno8">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(8,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(8,0)">No</a>
+    </div>
+    <div id="changeYes8" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(8,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo8" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(8,0)">change answer to "no"</a>
+    </div>
+    <div id="koan8"></div>
+</div>
+<div id="7" style="display:none">
+    <div id="yesno7">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(7,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(7,0)">No</a>
+    </div>
+    <div id="changeYes7" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(7,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo7" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(7,0)">change answer to "no"</a>
+    </div>
+    <div id="koan7"></div>
+</div>
+<div id="6" style="display:none">
+    <div id="yesno6">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(6,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(6,0)">No</a>
+    </div>
+    <div id="changeYes6" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(6,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo6" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(6,0)">change answer to "no"</a>
+    </div>
+    <div id="koan6"></div>
+</div>
+<div id="5" style="display:none">
+    <div id="yesno5">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(5,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(5,0)">No</a>
+    </div>
+    <div id="changeYes5" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(5,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo5" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(5,0)">change answer to "no"</a>
+    </div>
+    <div id="koan5"></div>
+</div>
+<div id="4" style="display:none">
+    <div id="yesno4">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(4,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(4,0)">No</a>
+    </div>
+    <div id="changeYes4" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(4,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo4" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(4,0)">change answer to "no"</a>
+    </div>
+    <div id="koan4"></div>
+</div>
+<div id="3" style="display:none">
+    <div id="yesno3">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(3,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(3,0)">No</a>
+    </div>
+    <div id="changeYes3" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(3,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo3" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(3,0)">change answer to "no"</a>
+    </div>
+    <div id="koan3"></div>
+</div>
+<div id="2" style="display:none">
+    <div id="yesno2">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(2,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(2,0)">No</a>
+    </div>
+    <div id="changeYes2" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(2,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo2" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(2,0)">change answer to "no"</a>
+    </div>
+    <div id="koan2"></div>
+</div>
+<div id="1" style="display:none">
+    <div id="yesno1">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(1,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(1,0)">No</a>
+    </div>
+    <div id="changeYes1" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(1,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo1" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(1,0)">change answer to "no"</a>
+    </div>
+    <div id="koan1"></div>
+</div>
+<div id="0">
+    <div id="yesno0">
+        The koan below is a
+        <br>
+        <a href="javascript:answer(0,1)">Yes</a>
+        <br>
+        <a href="javascript:answer(0,0)">No</a>
+    </div>
+    <div id="changeYes0" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(0,1)">change answer to "yes"</a>
+    </div>
+    <div id="changeNo0" style="display:none">
+        <br>
+        For the koan below, <a href="javascript:answer(0,0)">change answer to "no"</a>
+    </div>
+    <div id="koan0"></div>
+</div>
+
+<script>
+window.onload = loadfun();
+</script>
+
+</html>

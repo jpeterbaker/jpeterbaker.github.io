@@ -1,0 +1,1438 @@
+
+Koans used:
+
+0
+
+    Pieces:
+0: RED, BLOCK, UP, GROUNDED
+1: RED, BLOCK, UP, GROUNDED
+2: RED, BLOCK, UP, GROUNDED
+3: RED, BLOCK, UP, GROUNDED
+    Pointing:
+None
+    Touching:
+None
+    On top:
+None
+    Inside:
+None
+            
+1
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: BLUE, PYRAMID, UP, GROUNDED
+2: BLUE, PYRAMID, FLAT, GROUNDED
+3: YELLOW, WEDGE, CHEESECAKE, GROUNDED
+    Pointing:
+None
+    Touching:
+None
+    On top:
+None
+    Inside:
+None
+            
+2
+
+    Pieces:
+0: RED, BLOCK, DOWN, GROUNDED
+1: RED, PYRAMID, DOWN, UNGROUNDED
+2: RED, WEDGE, CHEESECAKE, UNGROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+1 is in 0
+            
+3
+
+    Pieces:
+0: RED, BLOCK, DOWN, GROUNDED
+1: RED, WEDGE, DOWN, UNGROUNDED
+2: YELLOW, PYRAMID, DOWN, UNGROUNDED
+    Pointing:
+1 points at 0
+2 points at 0
+2 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+1 is in 0
+2 is in 1
+            
+4
+
+    Pieces:
+0: YELLOW, BLOCK, DOWN, GROUNDED
+1: BLUE, BLOCK, DOWN, UNGROUNDED
+2: RED, PYRAMID, DOWN, UNGROUNDED
+    Pointing:
+1 points at 0
+2 points at 0
+2 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+2 is in 1
+            
+5
+
+    Pieces:
+0: YELLOW, BLOCK, DOWN, GROUNDED
+1: RED, PYRAMID, DOWN, UNGROUNDED
+2: YELLOW, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+1 is in 0
+            
+6
+
+    Pieces:
+0: YELLOW, BLOCK, DOWN, GROUNDED
+1: RED, PYRAMID, DOWN, UNGROUNDED
+2: BLUE, WEDGE, DOWN, UNGROUNDED
+    Pointing:
+1 points at 0
+2 points at 0
+2 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+1 is in 0
+2 is in 1
+            
+8
+
+    Pieces:
+0: BLUE, BLOCK, DOWN, GROUNDED
+1: YELLOW, WEDGE, DOWN, UNGROUNDED
+2: RED, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+1 is in 0
+            
+9
+
+    Pieces:
+0: BLUE, BLOCK, DOWN, GROUNDED
+1: YELLOW, WEDGE, CHEESECAKE, UNGROUNDED
+2: BLUE, BLOCK, DOWN, UNGROUNDED
+    Pointing:
+2 points at 0
+2 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+None
+            
+10
+
+    Pieces:
+0: BLUE, WEDGE, CHEESECAKE, GROUNDED
+1: YELLOW, WEDGE, CHEESECAKE, UNGROUNDED
+2: YELLOW, BLOCK, DOWN, UNGROUNDED
+    Pointing:
+2 points at 0
+2 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+1 touches 2
+2 touches 1
+    On top:
+1 in on 0
+2 in on 1
+    Inside:
+None
+            
+11
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: BLUE, BLOCK, DOWN, UNGROUNDED
+    Pointing:
+0 points at 1
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+12
+
+    Pieces:
+0: BLUE, BLOCK, DOWN, GROUNDED
+1: RED, BLOCK, UP, UNGROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+13
+
+    Pieces:
+0: BLUE, WEDGE, CHEESECAKE, GROUNDED
+1: YELLOW, WEDGE, UP, UNGROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+14
+
+    Pieces:
+0: BLUE, BLOCK, DOWN, GROUNDED
+    Pointing:
+None
+    Touching:
+None
+    On top:
+None
+    Inside:
+None
+            
+15
+
+    Pieces:
+0: BLUE, BLOCK, UP, GROUNDED
+1: BLUE, BLOCK, FLAT, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+None
+    Inside:
+None
+            
+16
+
+    Pieces:
+0: RED, BLOCK, DOWN, GROUNDED
+1: BLUE, PYRAMID, FLAT, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+None
+    Inside:
+None
+            
+17
+
+    Pieces:
+0: BLUE, WEDGE, UP, GROUNDED
+1: BLUE, WEDGE, UP, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+None
+    Inside:
+None
+            
+18
+
+    Pieces:
+0: BLUE, WEDGE, DOORSTOP, GROUNDED
+1: BLUE, WEDGE, CHEESECAKE, GROUNDED
+    Pointing:
+None
+    Touching:
+None
+    On top:
+None
+    Inside:
+None
+            
+19
+
+    Pieces:
+0: RED, BLOCK, UP, GROUNDED
+1: YELLOW, PYRAMID, FLAT, UNGROUNDED
+2: YELLOW, BLOCK, FLAT, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+20
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: YELLOW, PYRAMID, UP, UNGROUNDED
+2: YELLOW, PYRAMID, UP, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+21
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: BLUE, PYRAMID, UP, UNGROUNDED
+2: RED, BLOCK, DOWN, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+22
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: RED, WEDGE, UP, UNGROUNDED
+2: BLUE, PYRAMID, FLAT, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+23
+
+    Pieces:
+0: RED, BLOCK, DOWN, GROUNDED
+1: RED, PYRAMID, FLAT, UNGROUNDED
+2: RED, BLOCK, FLAT, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+24
+
+    Pieces:
+0: YELLOW, BLOCK, DOWN, GROUNDED
+1: RED, PYRAMID, DOWN, UNGROUNDED
+2: BLUE, WEDGE, DOORSTOP, GROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+1 is in 0
+            
+25
+
+    Pieces:
+0: YELLOW, BLOCK, DOWN, GROUNDED
+1: BLUE, WEDGE, DOORSTOP, UNGROUNDED
+2: BLUE, PYRAMID, UP, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+26
+
+    Pieces:
+0: BLUE, BLOCK, DOWN, GROUNDED
+1: BLUE, PYRAMID, DOWN, UNGROUNDED
+2: RED, PYRAMID, FLAT, GROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+1 is in 0
+            
+27
+
+    Pieces:
+0: BLUE, BLOCK, DOWN, GROUNDED
+1: BLUE, PYRAMID, DOWN, UNGROUNDED
+2: RED, WEDGE, DOORSTOP, GROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+1 is in 0
+            
+28
+
+    Pieces:
+0: YELLOW, BLOCK, FLAT, GROUNDED
+1: YELLOW, BLOCK, DOWN, UNGROUNDED
+2: RED, WEDGE, DOORSTOP, GROUNDED
+    Pointing:
+1 points at 0
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+29
+
+    Pieces:
+0: BLUE, BLOCK, FLAT, GROUNDED
+1: BLUE, BLOCK, FLAT, UNGROUNDED
+2: BLUE, BLOCK, FLAT, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+30
+
+    Pieces:
+0: BLUE, BLOCK, FLAT, GROUNDED
+1: YELLOW, PYRAMID, FLAT, UNGROUNDED
+2: YELLOW, BLOCK, FLAT, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+None
+            
+31
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: RED, PYRAMID, UP, UNGROUNDED
+2: RED, PYRAMID, UP, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+0 is in 1
+            
+32
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: RED, WEDGE, UP, UNGROUNDED
+2: BLUE, BLOCK, UP, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+0 is in 1
+            
+33
+
+    Pieces:
+0: BLUE, WEDGE, UP, GROUNDED
+1: BLUE, BLOCK, UP, UNGROUNDED
+2: YELLOW, BLOCK, UP, GROUNDED
+    Pointing:
+0 points at 1
+    Touching:
+0 touches 1
+1 touches 0
+    On top:
+1 in on 0
+    Inside:
+0 is in 1
+            
+35
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: YELLOW, BLOCK, UP, GROUNDED
+2: YELLOW, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+36
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: BLUE, WEDGE, DOWN, GROUNDED
+2: BLUE, WEDGE, CHEESECAKE, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+37
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: RED, BLOCK, DOWN, GROUNDED
+2: RED, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+38
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: RED, BLOCK, DOWN, GROUNDED
+2: BLUE, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+39
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: RED, WEDGE, UP, GROUNDED
+2: YELLOW, WEDGE, CHEESECAKE, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+40
+
+    Pieces:
+0: YELLOW, PYRAMID, UP, GROUNDED
+1: RED, WEDGE, UP, GROUNDED
+2: BLUE, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+41
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: RED, BLOCK, UP, GROUNDED
+2: BLUE, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+42
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: RED, BLOCK, UP, GROUNDED
+2: YELLOW, WEDGE, CHEESECAKE, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+43
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: BLUE, BLOCK, UP, GROUNDED
+2: RED, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+44
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: RED, BLOCK, DOWN, GROUNDED
+2: RED, WEDGE, CHEESECAKE, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+45
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: YELLOW, WEDGE, DOWN, GROUNDED
+2: YELLOW, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+46
+
+    Pieces:
+0: BLUE, PYRAMID, UP, GROUNDED
+1: YELLOW, WEDGE, DOWN, GROUNDED
+2: BLUE, WEDGE, CHEESECAKE, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+47
+
+    Pieces:
+0: RED, WEDGE, UP, GROUNDED
+1: YELLOW, WEDGE, DOWN, GROUNDED
+2: RED, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+49
+
+    Pieces:
+0: YELLOW, WEDGE, UP, GROUNDED
+1: RED, WEDGE, DOWN, GROUNDED
+2: BLUE, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+0 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+50
+
+    Pieces:
+0: BLUE, WEDGE, UP, GROUNDED
+1: BLUE, PYRAMID, UP, GROUNDED
+2: BLUE, WEDGE, DOORSTOP, UNGROUNDED
+    Pointing:
+0 points at 2
+1 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+51
+
+    Pieces:
+0: RED, WEDGE, DOWN, GROUNDED
+1: YELLOW, WEDGE, UP, GROUNDED
+2: YELLOW, WEDGE, DOORSTOP, UNGROUNDED
+    Pointing:
+1 points at 2
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+52
+
+    Pieces:
+0: YELLOW, WEDGE, DOWN, GROUNDED
+1: BLUE, PYRAMID, UP, GROUNDED
+2: RED, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+1 points at 2
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+53
+
+    Pieces:
+0: YELLOW, WEDGE, DOWN, GROUNDED
+1: BLUE, WEDGE, DOWN, GROUNDED
+2: RED, BLOCK, FLAT, UNGROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 2
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+55
+
+    Pieces:
+0: BLUE, WEDGE, DOWN, GROUNDED
+1: BLUE, WEDGE, DOWN, GROUNDED
+2: YELLOW, PYRAMID, FLAT, UNGROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+0 touches 2
+1 touches 0
+1 touches 2
+2 touches 0
+2 touches 1
+    On top:
+2 in on 0
+2 in on 1
+    Inside:
+None
+            
+56
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: BLUE, BLOCK, WEIRD, GROUNDED
+2: RED, WEDGE, CHEESECAKE, GROUNDED
+3: YELLOW, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+    Inside:
+None
+            
+57
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: YELLOW, WEDGE, WEIRD, GROUNDED
+2: BLUE, WEDGE, DOORSTOP, GROUNDED
+3: YELLOW, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+    Inside:
+None
+            
+58
+
+    Pieces:
+0: YELLOW, BLOCK, UP, GROUNDED
+1: BLUE, WEDGE, WEIRD, GROUNDED
+2: BLUE, WEDGE, UP, GROUNDED
+3: YELLOW, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+3 in on 2
+    Inside:
+None
+            
+59
+
+    Pieces:
+0: BLUE, BLOCK, UP, GROUNDED
+1: BLUE, BLOCK, WEIRD, GROUNDED
+2: RED, WEDGE, DOORSTOP, GROUNDED
+3: RED, BLOCK, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+    Inside:
+None
+            
+60
+
+    Pieces:
+0: YELLOW, BLOCK, FLAT, GROUNDED
+1: YELLOW, PYRAMID, WEIRD, GROUNDED
+2: BLUE, WEDGE, CHEESECAKE, GROUNDED
+3: RED, BLOCK, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+None
+    Inside:
+None
+            
+61
+
+    Pieces:
+0: YELLOW, BLOCK, FLAT, GROUNDED
+1: RED, WEDGE, WEIRD, GROUNDED
+2: RED, WEDGE, DOORSTOP, GROUNDED
+3: RED, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+None
+    Inside:
+None
+            
+62
+
+    Pieces:
+0: YELLOW, BLOCK, FLAT, GROUNDED
+1: RED, WEDGE, WEIRD, GROUNDED
+2: YELLOW, WEDGE, DOORSTOP, GROUNDED
+3: RED, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+None
+    Inside:
+None
+            
+63
+
+    Pieces:
+0: BLUE, BLOCK, FLAT, GROUNDED
+1: RED, BLOCK, WEIRD, GROUNDED
+2: RED, WEDGE, DOORSTOP, GROUNDED
+3: BLUE, PYRAMID, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+None
+    Inside:
+None
+            
+64
+
+    Pieces:
+0: BLUE, BLOCK, FLAT, GROUNDED
+1: YELLOW, PYRAMID, WEIRD, GROUNDED
+2: YELLOW, PYRAMID, UP, GROUNDED
+3: RED, BLOCK, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+3 in on 2
+    Inside:
+None
+            
+65
+
+    Pieces:
+0: BLUE, BLOCK, FLAT, GROUNDED
+1: RED, WEDGE, WEIRD, GROUNDED
+2: BLUE, WEDGE, UP, GROUNDED
+3: RED, BLOCK, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+3 in on 2
+    Inside:
+None
+            
+67
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: BLUE, PYRAMID, WEIRD, GROUNDED
+2: BLUE, PYRAMID, UP, GROUNDED
+3: RED, BLOCK, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+3 in on 2
+    Inside:
+None
+            
+68
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: BLUE, PYRAMID, WEIRD, GROUNDED
+2: YELLOW, WEDGE, DOORSTOP, GROUNDED
+3: RED, PYRAMID, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+    Inside:
+None
+            
+69
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: RED, WEDGE, WEIRD, GROUNDED
+2: RED, WEDGE, DOORSTOP, GROUNDED
+3: YELLOW, PYRAMID, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+    Inside:
+None
+            
+70
+
+    Pieces:
+0: RED, PYRAMID, UP, GROUNDED
+1: YELLOW, WEDGE, WEIRD, GROUNDED
+2: RED, WEDGE, UP, GROUNDED
+3: RED, BLOCK, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+3 in on 2
+    Inside:
+None
+            
+73
+
+    Pieces:
+0: YELLOW, PYRAMID, UP, GROUNDED
+1: RED, BLOCK, WEIRD, GROUNDED
+2: RED, WEDGE, CHEESECAKE, GROUNDED
+3: YELLOW, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+    Inside:
+None
+            
+76
+
+    Pieces:
+0: YELLOW, PYRAMID, UP, GROUNDED
+1: BLUE, PYRAMID, WEIRD, GROUNDED
+2: BLUE, WEDGE, UP, GROUNDED
+3: BLUE, WEDGE, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+1 in on 0
+3 in on 2
+    Inside:
+None
+            
+77
+
+    Pieces:
+0: YELLOW, PYRAMID, FLAT, GROUNDED
+1: BLUE, BLOCK, WEIRD, GROUNDED
+2: YELLOW, WEDGE, DOORSTOP, GROUNDED
+3: YELLOW, PYRAMID, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+None
+    Inside:
+None
+            
+78
+
+    Pieces:
+0: YELLOW, PYRAMID, FLAT, GROUNDED
+1: YELLOW, PYRAMID, WEIRD, GROUNDED
+2: YELLOW, WEDGE, DOORSTOP, GROUNDED
+3: YELLOW, PYRAMID, WEIRD, GROUNDED
+    Pointing:
+None
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+    On top:
+None
+    Inside:
+None
+            
+79
+
+    Pieces:
+0: RED, PYRAMID, FLAT, GROUNDED
+1: RED, PYRAMID, FLAT, GROUNDED
+2: RED, PYRAMID, FLAT, GROUNDED
+    Pointing:
+None
+    Touching:
+None
+    On top:
+None
+    Inside:
+None
+            
+80
+
+    Pieces:
+0: RED, BLOCK, UP, UNGROUNDED
+1: RED, BLOCK, UP, GROUNDED
+2: YELLOW, BLOCK, UP, UNGROUNDED
+3: YELLOW, PYRAMID, UP, GROUNDED
+4: BLUE, BLOCK, UP, UNGROUNDED
+5: BLUE, WEDGE, UP, GROUNDED
+6: RED, PYRAMID, UP, UNGROUNDED
+7: YELLOW, WEDGE, UP, GROUNDED
+8: YELLOW, PYRAMID, UP, UNGROUNDED
+9: BLUE, BLOCK, UP, GROUNDED
+10: BLUE, PYRAMID, UP, UNGROUNDED
+11: RED, PYRAMID, UP, GROUNDED
+12: RED, WEDGE, UP, UNGROUNDED
+13: BLUE, PYRAMID, UP, GROUNDED
+14: YELLOW, WEDGE, UP, UNGROUNDED
+15: RED, WEDGE, UP, GROUNDED
+16: BLUE, WEDGE, UP, UNGROUNDED
+17: YELLOW, BLOCK, UP, GROUNDED
+18: RED, BLOCK, UP, GROUNDED
+    Pointing:
+1 points at 0
+3 points at 2
+5 points at 4
+7 points at 6
+9 points at 8
+11 points at 10
+13 points at 12
+15 points at 14
+17 points at 16
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+4 touches 5
+5 touches 4
+6 touches 7
+7 touches 6
+8 touches 9
+9 touches 8
+10 touches 11
+11 touches 10
+12 touches 13
+13 touches 12
+14 touches 15
+15 touches 14
+16 touches 17
+17 touches 16
+    On top:
+0 in on 1
+2 in on 3
+4 in on 5
+6 in on 7
+8 in on 9
+10 in on 11
+12 in on 13
+14 in on 15
+16 in on 17
+    Inside:
+2 is in 3
+4 is in 5
+6 is in 7
+10 is in 11
+12 is in 13
+14 is in 15
+            
+81
+
+    Pieces:
+0: RED, BLOCK, UP, UNGROUNDED
+1: RED, BLOCK, UP, GROUNDED
+2: YELLOW, BLOCK, UP, UNGROUNDED
+3: YELLOW, PYRAMID, UP, GROUNDED
+4: BLUE, BLOCK, UP, UNGROUNDED
+5: BLUE, WEDGE, UP, GROUNDED
+6: RED, PYRAMID, UP, UNGROUNDED
+7: YELLOW, WEDGE, UP, GROUNDED
+8: YELLOW, PYRAMID, UP, UNGROUNDED
+9: BLUE, BLOCK, UP, GROUNDED
+10: BLUE, PYRAMID, UP, UNGROUNDED
+11: RED, PYRAMID, UP, GROUNDED
+12: RED, WEDGE, UP, UNGROUNDED
+13: BLUE, PYRAMID, UP, GROUNDED
+14: YELLOW, WEDGE, UP, UNGROUNDED
+15: RED, WEDGE, UP, GROUNDED
+16: BLUE, WEDGE, UP, UNGROUNDED
+17: YELLOW, BLOCK, UP, GROUNDED
+18: RED, BLOCK, UP, GROUNDED
+19: RED, PYRAMID, UP, GROUNDED
+    Pointing:
+1 points at 0
+3 points at 2
+5 points at 4
+7 points at 6
+9 points at 8
+11 points at 10
+13 points at 12
+15 points at 14
+17 points at 16
+    Touching:
+0 touches 1
+1 touches 0
+2 touches 3
+3 touches 2
+4 touches 5
+5 touches 4
+6 touches 7
+7 touches 6
+8 touches 9
+9 touches 8
+10 touches 11
+11 touches 10
+12 touches 13
+13 touches 12
+14 touches 15
+15 touches 14
+16 touches 17
+17 touches 16
+    On top:
+0 in on 1
+2 in on 3
+4 in on 5
+6 in on 7
+8 in on 9
+10 in on 11
+12 in on 13
+14 in on 15
+16 in on 17
+    Inside:
+2 is in 3
+4 is in 5
+6 is in 7
+10 is in 11
+12 is in 13
+14 is in 15
