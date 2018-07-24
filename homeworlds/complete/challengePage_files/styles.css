@@ -1,0 +1,89 @@
+body {color: black; background: #666633; font-family: arial, sans-serif; font-size: small; margin: 0; padding: 0}
+
+a:link {color: #666633; background-color: transparent; text-decoration: none}
+a:visited {color: #666633; background-color: transparent; text-decoration: none}
+a:active {color: #666633; background-color: transparent; text-decoration: underline}
+a:hover {color: #666633; background-color: transparent; text-decoration: underline}
+
+tr.alt0 {background-color: #CCCC99; color: black}
+tr.alt1 {background-color: #FFFFCC; color: black}
+tr.alt2 {background-color: #CCCC99; color: black}
+tr.alt3 {background-color: #FFFFCC; color: black}
+
+.level1 {margin-left: 0px}
+.level2 {margin-left: 15px}
+.level3 {margin-left: 30px}
+.level4 {margin-left: 45px}
+
+.alert {color: #FFFFCC; text-align: center}
+
+table.frame {background-color: #CCCC99; border-style: none; margin-left: auto; margin-right: auto; width: 85%; padding-left: 5%; padding-right: 5%}
+
+table.help {background-color: #FFFFCC; border-style: none; margin: auto; height: 75%; width: 75%; padding-left: 5%; padding-right: 5%}
+
+table.info {background-color: #FFFFCC; border-style: none; margin-left: auto; margin-right: auto;}
+th.info {background-color: #990033; color: white;}
+td.info {padding: 5px}
+
+.active {font-weight: bolder; background-color: #CCCC99; color: black; text-align: center}
+.resigned {font-weight: bolder; text-decoration: line-through; text-align: center}
+.participant {font-weight: bolder; text-align: center}
+
+table.dist {margin: auto}
+td.dist {padding-left: 5px; padding-right: 5px; white-space: nowrap}
+caption.dist {margin: auto; font-weight: bolder; background-color: #990033; color: white; white-space: nowrap}
+
+.quip {background-color: #CCCC99; font-family: courier; padding-left: 5px; padding-right: 5px; margin-left: auto; margin-right: auto; width: 85%}
+.highlight {background-color: #CCCC99; font-family: courier; padding-left: 5px; padding-right: 5px; margin-left: auto; margin-right: auto}
+
+.personchat {color: #990033
+;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
+word-break: break-word;
+}
+.kibitzchat {color: green}
+.consolechat {color: blue}
+
+/* ---------- table of contents ------------------- */
+
+div.toc {
+  margin-left: 2em;
+  margin-top: 1.2em;
+  margin-bottom: 0;
+  float:right;
+  width: 200px;
+  font-size: 80%;
+  clear:both;
+}
+
+div.tocheader {
+  padding: 3px;
+  border: 1px solid #8cacbb;
+  background-color: #FFFFCC;
+  text-align: left;
+  font-weight:bold;
+  margin-bottom: 2px;
+}
+
+#tocinside {
+  border: 1px solid #8cacbb;
+  background-color: #FFFFCC;
+  text-align: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.7em;
+}
+
+ul.toc {
+  list-style: none;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+  padding-left: 1em;
+}
+
+
+
+	
