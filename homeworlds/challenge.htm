@@ -11,6 +11,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         the next line corrects relative URL
         the following lines corrects the favicon
         default options are set and locked
+        each input has a hidden, non-disabled counterpart with actual data
+            the values of disabled inputs are not submitted with forms
         opponent list is reduced
         the h3 page description explains that this is a modified page
         Account specifics are removed
@@ -20,8 +22,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     Form submission totally works!
     -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" href="favicon.ico">
-    <base href="https://www.superdupergames.org">
+    <link rel="icon" href="favicon.ico"/>
+    <base href="https://www.superdupergames.org"/>
 
 
     <title>Super Duper Games</title>
@@ -96,7 +98,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     <tr>
         <td class="info">Num. Players:</td>
         <td class="info">
-            <select name="numplayers" size="1" disabled>
+            <select size="1" disabled>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="numplayers" size="1" style="display:none">
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
@@ -106,7 +113,12 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     <tr>
         <td class="info">Seating:<br /><div style="font-size: smaller">2-Player Games Only!</div></td>
         <td class="info">
-            <select name="seat" size="1" disabled>
+            <select size="1" disabled>
+                <option value="NULL">Random</option>
+                <option value="1">Me First!</option>
+                <option value="2">Me Second!</option>
+            </select>
+            <select name="seat" size="1" style="display:none">
                 <option value="NULL">Random</option>
                 <option value="1">Me First!</option>
                 <option value="2">Me Second!</option>
@@ -118,7 +130,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         <td class="info">
             <table>
                 <tr>
-                    <td><input type="checkbox" name="variants" value="Hard Time" checked="checked" disabled/></td>
+                    <td>
+                    <input type="checkbox" value="Hard Time" checked="checked" disabled/>
+                    <input type="checkbox" name="variants" value="Hard Time" checked="checked" style="display:none"/>
+                    </td>
                     <td>Hard Time</td>
                 </tr>
                 <tr>
@@ -126,7 +141,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                     <td><div style="font-size: smaller">This variant will auto-surrender players that time out.  It is totally unforgiving, so be careful when playing such games.  Zendo games are unaffected by this variant.</div></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="variants" value="No Undo" disabled/></td>
+                    <td>
+                    <input type="checkbox" value="No Undo" disabled/>
+                    <input type="checkbox" name="variants" value="No Undo" disabled/>
+                    </td>
                     <td>No Undo</td>
                 </tr>
                 <tr>
@@ -134,7 +152,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                     <td><div style="font-size: smaller">This variant disables the Undo button (in games that have said feature of course).</div></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="variants" value="Sinister" disabled/></td>
+                    <td>
+                    <input type="checkbox" value="Sinister" disabled/>
+                    <input type="checkbox" name="variants" value="Sinister" style="display:none"/>
+                    </td>
                     <td>Sinister</td>
                 </tr>
                 <tr>
@@ -142,7 +163,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                     <td><div style="font-size: smaller">This variant is a 3-4 player alternative to the default &quot;Last Man Standing&quot; end-of-game condition.  Here, the player that eliminates the player to his left is victorious.</div></td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="variants" value="Unrated" disabled/></td>
+                    <td>
+                    <input type="checkbox" value="Unrated" disabled/>
+                    <input type="checkbox" name="variants" value="Unrated" style="display:none"/>
+                    </td>
                     <td>Unrated</td>
                 </tr>
                 <tr>
@@ -170,9 +194,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 <option value="Laurie_Menke">Laurie_Menke</option>
                 <option value="mneme">mneme</option>
                 <option value="nycavri">nycavri</option>
-                <option value="orangeblood">orangeblood</option>
-                <option value="Remneb">Remneb</option>
-                <option value="tetsuhari">tetsuhari</option>
                 <option value="Trydnt">Trydnt</option>
                 <option value="ts52">ts52</option>
                 <option value="wil">wil</option>
@@ -181,7 +202,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     </tr>
     <tr>
         <td class="info">Notes:</td>
-        <td class="info"><textarea name="notes" disabled>For the Grea Homeworlds Tournament of 2018</textarea></td>
+        <td class="info">
+        <textarea disabled>For the Great Homeworlds Tournament of 2018</textarea>
+        <textarea name="notes" style="display:none">For the Great Homeworlds Tournament of 2018</textarea>
+        </td>
     </tr>
     <tr>
         <td class="info">Move Clock:<br /><div style="font-size: smaller"><a href="http://wiki.superdupergames.org/howto/clocks" target="_NEW">What does this mean?</a></div></td>
@@ -193,9 +217,18 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                     <th>Max.</th>
                 </tr>
                 <tr>
-                    <td><input type="text" name="int_start" size="2" value="2" disabled/></td>
-                    <td><input type="text" name="int_inc" size="2" value="2" disabled/></td>
-                    <td><input type="text" name="int_max" size="2" value="7" disabled/></td>
+                    <td>
+                    <input type="text" size="2" value="2" disabled/>
+                    <input type="text" name="int_start" size="2" value="2" style="display:none"/>
+                    </td>
+                    <td>
+                    <input type="text" size="2" value="2" disabled/>
+                    <input type="text" name="int_inc" size="2" value="2" style="display:none"/>
+                    </td>
+                    <td>
+                    <input type="text" size="2" value="7" disabled/>
+                    <input type="text" name="int_max" size="2" value="7" style="display:none"/>
+                    </td>
                 </tr>
             </table>
         </td>
@@ -203,8 +236,17 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     <tr>
         <td class="info"><a href="javascript:newwindow('/help.html?page=forced_threshold')">Forced Score Threshold</a>:</td>
         <td class="info">
-            <input type="checkbox" value="ON" name="enable_forced" disabled/>&nbsp;Enable?&nbsp;
-            <select name="forcedscore" size="1" disabled>
+            <input type="checkbox" value="ON" disabled/>&nbsp;Enable?&nbsp;
+            <input type="checkbox" value="ON" name="enable_forced" style="display:none"/>
+            <select size="1" disabled>
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <select name="forcedscore" size="1" style="display:none" disabled>
                 <option value="0" selected="selected">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
