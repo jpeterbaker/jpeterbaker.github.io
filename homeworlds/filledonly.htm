@@ -9,10 +9,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     Compared to the regular SDG page,
     This differs in several ways
         the next line corrects relative URL
-        the following lines corrects the favicon
-        default options are set and locked
-        each input has a hidden, non-disabled counterpart with actual data
-            the values of disabled inputs are not submitted with forms
         opponent list is reduced
         the h3 page description explains that this is a modified page
         Account specifics are removed
@@ -21,9 +17,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             number of ladders
     -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!--<link rel="icon" href="https://jpeterbaker.github.io/homeworlds/favicon.ico"/>-->
     <base href="https://www.superdupergames.org"/>
-
 
     <title>Super Duper Games</title>
     <meta http-equiv="Pragma" content="no-cache" />
@@ -85,9 +79,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             The Great Homeworlds Tournament of 2018
             </h3>
 
-<form method="post" action="/main.html?page=newgame">
-    <input type="hidden" name="mode" value="process" />
+<form method="post" action="http://superdupergames.org/main.html?page=newgame">
     <input type="hidden" name="cardset" value="homeworlds" />
+    <input type="hidden" name="mode" value="process" />
 <table class="info">
 
     <tr>
@@ -97,23 +91,21 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     <tr>
         <td class="info">Num. Players:</td>
         <td class="info">
-            <select size="1" disabled>
+            <select size="1" >
                 <option value="2" selected="selected">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
-            <input type="hidden" name="numplayers" size="1" value="2"/>
         </td>
     </tr>
     <tr>
         <td class="info">Seating:<br /><div style="font-size: smaller">2-Player Games Only!</div></td>
         <td class="info">
-            <select size="1" disabled>
+            <select size="1" >
                 <option value="NULL" selected="selected">Random</option>
                 <option value="1">Me First!</option>
                 <option value="2">Me Second!</option>
             </select>
-            <input type="hidden" name="seat" size="1" value="NULL"/>
         </td>
     </tr>
     <tr style="vertical-align: top">
@@ -122,8 +114,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
             <table>
                 <tr>
                     <td>
-                    <input type="checkbox" value="Hard Time" checked="checked" disabled/>
-                    <input type="hidden" name="variants" value="Hard Time" checked="checked"/>
+                    <input type="checkbox" value="Hard Time" checked="checked" />
                     </td>
                     <td>Hard Time</td>
                 </tr>
@@ -133,8 +124,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 </tr>
                 <tr>
                     <td>
-                    <input type="checkbox" value="No Undo" disabled/>
-                    <input type="hidden" name="variants" value="No Undo"/>
+                    <input type="checkbox" value="No Undo" />
                     </td>
                     <td>No Undo</td>
                 </tr>
@@ -144,8 +134,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 </tr>
                 <tr>
                     <td>
-                    <input type="checkbox" value="Sinister" disabled/>
-                    <input type="hidden" name="variants" value="Sinister"/>
+                    <input type="checkbox" value="Sinister" />
                     </td>
                     <td>Sinister</td>
                 </tr>
@@ -155,8 +144,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 </tr>
                 <tr>
                     <td>
-                    <input type="checkbox" value="Unrated" disabled/>
-                    <input type="hidden" name="variants" value="Unrated"/>
+                    <input type="checkbox" value="Unrated" />
                     </td>
                     <td>Unrated</td>
                 </tr>
@@ -194,8 +182,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     <tr>
         <td class="info">Notes:</td>
         <td class="info">
-        <textarea disabled>For the Great Homeworlds Tournament of 2018</textarea>
-        <input type="hidden" name="notes" value="For the Great Homeworlds Tournament of 2018"/>
+        <textarea >For the Great Homeworlds Tournament of 2018</textarea>
         </td>
     </tr>
     <tr>
@@ -209,16 +196,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 </tr>
                 <tr>
                     <td>
-                    <input type="text" size="2" value="2" disabled/>
-                    <input type="hidden" name="int_start" size="2" value="2">
+                    <input type="text" size="2" value="2" />
                     </td>
                     <td>
-                    <input type="text" size="2" value="2" disabled/>
-                    <input type="hidden" name="int_inc" size="2" value="2">
+                    <input type="text" size="2" value="2" />
                     </td>
                     <td>
-                    <input type="text" size="2" value="7" disabled/>
-                    <input type="hidden" name="int_max" size="2" value="7">
+                    <input type="text" size="2" value="7" />
                     </td>
                 </tr>
             </table>
@@ -227,9 +211,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     <tr>
         <td class="info"><a href="javascript:newwindow('/help.html?page=forced_threshold')">Forced Score Threshold</a>:</td>
         <td class="info">
-            <input type="checkbox" value="ON" disabled/>&nbsp;Enable?&nbsp;
-            <input type="hidden" value="ON" name="enable_forced"/>
-            <select size="1" disabled>
+            <input type="checkbox" value="ON" />&nbsp;Enable?&nbsp;
+            <select size="1" >
                 <option value="0" selected="selected">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -237,7 +220,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                 <option value="4">4</option>
                 <option value="5">5</option>
             </select>
-            <input type="hidden" name="forcedscore" size="1" value="0"/>
         </td>
     </tr>
     <tr>
