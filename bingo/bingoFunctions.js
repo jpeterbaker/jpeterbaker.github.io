@@ -7,6 +7,14 @@ var colorText = "black"
 // 0: unchecked, 1: checked, 2: part of win
 var states = new Array(5)
 
+var totalWeight = 0;
+function setTotalWeight(){
+    var k;
+    for(k=0;k<allsayings.length;k+=2){
+        totalWeight += allsayings[k];
+    }
+}
+
 function clearStates(){
     var i,j;
     for(i=0 ; i<5 ; i++){
@@ -125,6 +133,7 @@ var victory;
 var blackout;
 
 setup();
+setTotalWeight();
 
 function setup() {
     clearBlackout()
@@ -134,19 +143,12 @@ function setup() {
     populateGrid();
 }
 
-function getSayings(){
-    // Make a list of 24 random sayings from the distribution described earlier
-
-}
-
 function populateGrid(){
-    var sayingInds = new Array(sayings.length);
+    // Make a copy of the list so removing choices doesn't destroy only copy
+    var sayings = allsayings.slice();
+    var weight = totalWeight;
 
     var i,j,div;
-
-    for(i=0 ; i<sayings.length ; i++){
-        sayingInds[i] = i;
-    }
 
     var ran;
     var saying;
@@ -161,14 +163,22 @@ function populateGrid(){
             div = document.getElementById(ids[i][j]);
 
             // Pick a random unused saying
-             ran = Math.floor(Math.random()*sayingInds.length);
-             saying = sayings[sayingInds[ran]];
+             ran = Math.floor(Math.random()*weight);
+             for(k=0;k<sayings.length;k+=2){
+                ran -= sayings[k];
+                if(ran < 0){
+                    break
+                }
+            }
+
+             weight -= sayings[k];
+             saying = sayings[k+1];
 
             // Set the cell to hold the saying
              div.innerHTML = saying;
 
-            // Remove the saying being added to the board
-             sayingInds.splice(ran,1);
+            // Remove the saying being added to the board and its weight
+             sayings.splice(k,2);
          }
     }
 }
