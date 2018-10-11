@@ -1,0 +1,32 @@
+var allsayings = [
+    10,"Zuko says \"Honor\"",
+    8,"Sokka or Katara mention one of their parents",
+    7,"Aang enters the Avatar state",
+    8,"\"Yip yip\",
+    4,"Toph makes a blind joke",
+    8,"Mentioning or seeing a hybrid animal",
+    1,"A spirit",
+    10,"Mentioning the Firelord",
+    5,"Mentioning the comet, eclipse, or solstice",
+    10,"A physical fight",
+    3,"An argument",
+    6,"Sokka makes a joke",
+    7,"Any suggestion of romance",
+    10,"Appa vocalizes",
+    10,"Momo vocalizes",
+    10,"Fire",
+    8,"Sokka makes a plan",
+    7,"Tea",
+    5,"Iroh says something wise",
+    5,"Zukko fails at something",
+    8,"Aang laughs",
+    10,"Firebending",
+    10,"Airbending",
+    10,"Waterbending",
+    10,"Earthbending",
+    8,"Aang uses his glider",
+    8,"Aang rides an air ball",
+    4,"Eating"
+];
+
+
