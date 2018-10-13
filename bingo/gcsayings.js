@@ -132,7 +132,7 @@ var allsayings = [
     4,"Witness",
     4,"Worthiness",
     4,"Zion",
-    4,"\"The Church of Jesus Christ of Latter-day Saints\",
+    4,"\"The Church of Jesus Christ of Latter-day Saints\"",
     5,"A king",
     5,"A tree",
     5,"Asian nation or region",
