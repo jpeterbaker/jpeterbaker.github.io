@@ -148,37 +148,44 @@ function populateGrid(){
     var sayings = allsayings.slice();
     var weight = totalWeight;
 
-    var i,j,div;
+    var i,j,k,div;
 
     var ran;
-    var saying;
+    var sample = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
-    for(i=0 ; i<5 ; i++){
-        for(j=0 ; j<5 ; j++){
-            
+    // Pick a sample of 24 random sayings
+    for(i=0 ; i<24 ; ++i){
+        // Pick an unused saying
+        ran = Math.floor(Math.random()*weight);
+        for(k=0;k<sayings.length;k+=2){
+            ran -= sayings[k];
+            if(ran < 0)
+                break
+        }
+        weight -= sayings[k];
+        sample[i] = sayings[k+1];
+
+        // Remove the saying being added to the board and its weight
+        sayings.splice(k,2);
+    }
+    // Now, add sample to the board in a random order
+    // this second randomization is necessary to prevent
+    // heavily weighted options from being placed preferentially in
+    // the squares filled first
+    for(i=0 ; i<5 ; ++i){
+        for(j=0 ; j<5 ; ++j){
             if(i==2 && j==2){
                 // The FREE square always says "FREE"
                 continue;
             }
             div = document.getElementById(ids[i][j]);
-
-            // Pick a random unused saying
-             ran = Math.floor(Math.random()*weight);
-             for(k=0;k<sayings.length;k+=2){
-                ran -= sayings[k];
-                if(ran < 0){
-                    break
-                }
-            }
-
-             weight -= sayings[k];
-             saying = sayings[k+1];
-
+            // Choose a random saying from the sample
+            ran = Math.floor(Math.random()*sample.length);
             // Set the cell to hold the saying
-             div.innerHTML = saying;
+            div.innerHTML = sample[ran];
+            // Remove that saying from the sample
+            sample.splice(ran,1);
 
-            // Remove the saying being added to the board and its weight
-             sayings.splice(k,2);
          }
     }
 }
