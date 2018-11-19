@@ -1,0 +1,28 @@
+var allsayings = [
+    10,"Blackmail",
+    9,"Will or inheritance",
+    5,"Murderer is victim's spouse",
+    6,"An affair",
+    3,"Bumbling police",
+    10,"Obviously lying",
+    10,"Caught in a lie",
+    7,"Confronting a killer",
+    2,"Theft",
+    2,"Mistaken identity",
+    2,"False confession",
+    5,"Planted evidence",
+    3,"Unrelated event pompts epiphany",
+    6,"Actual or apparent suicide",
+    4,"Multiple deaths",
+    2,"Conspiracy to murder",
+    4,"Interviewee says too much",
+    5,"A doctor",
+    7,"An autopsy",
+    4,"A family secret",
+    3,"A lawyer",
+    5,"People pretending to be strangers",
+    4,"Body was moved",
+    5,"Unlikeable victim",
+];
+
+
