@@ -1,0 +1,30 @@
+http://www.gocomics.com/freerange/2018/12/12/
+
+<html><head>
+    <link rel="stylesheet" type="text/css" href="page-load-errors.css">
+    <link rel="stylesheet" type="text/css" href="page-load-errors-extras.css">
+    <!-- LOCALIZERS: You might want to change the font family. You can also add styles to override sizes, etc. -->
+    <style>
+        body {font-family:'-apple-system-font';}
+    </style>
+    <!-- LOCALIZERS: The next line contains the page title that appears in the window's title bar -->
+    <title>Failed to open page</title>
+</head>
+
+<body>
+    <div class="content-container">
+        <div class="error-container">
+            <div class="text-container">
+                <!-- Main title here. -->
+                <p class="error-title">You Are Not Connected to the Internet</p>
+            </div>
+            <div class="text-container">
+                <!-- Error message here. -->
+                <p class="error-message">This page can’t be displayed because your computer is currently offline.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body></html>
