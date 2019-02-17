@@ -83,7 +83,6 @@ function getIndex(id){
             col = 4
             break;
     }
-    
     row = parseInt(id.charAt(1))
     return [row,col]
 }
@@ -132,8 +131,8 @@ function boxtap(id){
 var victory;
 var blackout;
 
-setup();
 setTotalWeight();
+setup();
 
 function setup() {
     clearBlackout()
