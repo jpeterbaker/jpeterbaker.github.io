@@ -4,7 +4,7 @@ var allsayings = [
     1,"A trap",
     1,"Crying",
     1,"False confession",
-    1,"Pretending not to know each other"
+    1,"Pretending not to know each other",
     2,"A Newspaper",
     2,"A conspiracy",
     2,"Disguise, fake name, mistaken identity, or paternity fraud",
