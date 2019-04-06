@@ -8,7 +8,7 @@ var allsayings = [
     1,"Dictionary definition",
     1,"Dramatic hand gesture",
     1,"Dreams",
-    1,"Espressing feelings about assignment to speak",
+    1,"Expressing feelings about assignment to speak",
     1,"Fruit",
     1,"Idaho",
     1,"Island nation",
@@ -20,7 +20,7 @@ var allsayings = [
     1,"Prime-numbered hymn",
     1,"Quoting same scripture as another talk this conference",
     1,"Redeemer",
-    1,"Someone in congrgation noticing camera",
+    1,"Someone in congregation noticing camera",
     1,"South American nation or region",
     1,"Speaker coughs or gets choked up",
     1,"The United States",
@@ -198,7 +198,7 @@ var allsayings = [
     9,"Story about children",
     9,"Temples",
     9,"Testimonies",
-    9,"Trials or burdans",
+    9,"Trials or burdens",
     9,"Work",
 ];
 
