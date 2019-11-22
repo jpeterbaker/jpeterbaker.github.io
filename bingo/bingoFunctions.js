@@ -135,9 +135,9 @@ setTotalWeight();
 setup();
 
 function setup() {
-    clearBlackout()
+    clearBlackout();
     lineVictory = [0,0,0,0,0,0,0,0,0,0,0,0];
-    clearStates()
+    clearStates();
     victory = 0;
     populateGrid();
 }
