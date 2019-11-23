@@ -1,3 +1,8 @@
+var TITLE = "Murer Mystery Bingo";
+var BOARDTOP = "BINGO for Murder Mysteries";
+var FREE = "FREE";
+var USEFREE = 1;
+var AUTOFREE = 1;
 var allsayings = [
     1,"A dog or horse",
     1,"Crying",

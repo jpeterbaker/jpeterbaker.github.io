@@ -20,17 +20,22 @@ function clearStates(){
     for(i=0 ; i<5 ; i++){
         states[i] = [0,0,0,0,0]
     }
-    states[2][2] = 1
+    if(USEFREE && AUTOFREE){
+        // FREE square starts game marked
+        states[2][2] = 1;
+    }
 
     for(i=0 ; i<5 ; i++){
         for(j=0 ; j<5 ; j++){
             div = document.getElementById(ids[i][j]);
             div.bgColor = colorBlank
-            
         }
     }
-    div = document.getElementById('FREE');
-    div.bgColor = colorSelect
+    if(USEFREE && AUTOFREE){
+        // FREE square starts game colored
+        div = document.getElementById('N2');
+        div.bgColor = colorSelect
+    }
 }
 
 var lines = [[[0,0],[0,1],[0,2],[0,3],[0,4]],//0 horizontal
@@ -46,7 +51,7 @@ var lines = [[[0,0],[0,1],[0,2],[0,3],[0,4]],//0 horizontal
              [[0,0],[1,1],[2,2],[3,3],[4,4]],//10 diagonal
              [[0,4],[1,3],[2,2],[3,1],[4,0]]]//11
 
-var lineVictory
+var lineVictory;
 
 // box2lines[i][j] is a list of indices of the lines to which box i,j belongs
 var box2lines = [[[0,5,10],[0,6   ],[0,7      ],[0,8   ],[0,9,11]],
@@ -55,13 +60,15 @@ var box2lines = [[[0,5,10],[0,6   ],[0,7      ],[0,8   ],[0,9,11]],
                  [[3,5   ],[3,6,11],[3,7      ],[3,8,10],[3,9   ]],
                  [[4,5,11],[4,6   ],[4,7      ],[4,8   ],[4,9,10]]]
 
-var ids = [['B0','I0','N0'  ,'G0','O0'],
-           ['B1','I1','N1'  ,'G1','O1'],
-           ['B2','I2','FREE','G2','O2'],
-           ['B3','I3','N3'  ,'G3','O3'],
-           ['B4','I4','N4'  ,'G4','O4']]
+var ids = [['B0','I0','N0','G0','O0'],
+           ['B1','I1','N1','G1','O1'],
+           ['B2','I2','N2','G2','O2'],
+           ['B3','I3','N3','G3','O3'],
+           ['B4','I4','N4','G4','O4']]
 
-document.getElementById('FREE').bgColor = colorSelect
+if(USEFREE && AUTOFREE){
+document.getElementById('N2').bgColor = colorSelect;
+}
 
 function getIndex(id){
     // Get the index in [0,24] for the box with given id e.g. B4
@@ -107,6 +114,10 @@ function nohilite(id){
     div.bgColor=colorBlank
 }
 function boxtap(id){
+    if(id=="N2" && USEFREE && AUTOFREE){
+        // Tapping FREE square does nothing
+        return;
+    }
     var rowcol = getIndex(id)
     var i = rowcol[0]
     var j = rowcol[1]
@@ -173,8 +184,8 @@ function populateGrid(){
     // the squares filled first
     for(i=0 ; i<5 ; ++i){
         for(j=0 ; j<5 ; ++j){
-            if(i==2 && j==2){
-                // The FREE square always says "FREE"
+            if(i==2 && j==2 && USEFREE){
+                // The saying on the FREE square is constant
                 continue;
             }
             div = document.getElementById(ids[i][j]);
@@ -184,7 +195,6 @@ function populateGrid(){
             div.innerHTML = sample[ran];
             // Remove that saying from the sample
             sample.splice(ran,1);
-
          }
     }
 }
@@ -202,16 +212,6 @@ function lineWins(i){
         alert("BINGO!");
     }
     victory = 1;
-}
-
-function findBoxWins(){
-// for each box, determine whether it is involved in a Bingo
-    var i,j,div;
-    for(i=0 ; i<5 ; m++){
-        for(j=0 ; j<5 ; n++){
-            
-        }
-    }
 }
 
 function setBlackout(){

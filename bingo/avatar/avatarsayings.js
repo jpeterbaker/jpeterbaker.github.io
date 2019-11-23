@@ -1,3 +1,8 @@
+var TITLE = "Avatar Bingo";
+var BOARDTOP = "BIGO for Avatar: the Last Airbender";
+var FREE = "FREE";
+var USEFREE = 1;
+var AUTOFREE = 1;
 var allsayings = [
     1,"A spirit",
     10,"A physical fight",

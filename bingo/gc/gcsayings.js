@@ -1,3 +1,9 @@
+var TITLE = "General Conference Bingo";
+var BOARDTOP = "General Conference BINGO";
+var FREE = "FREE";
+var USEFREE = 1;
+var AUTOFREE = 1;
+
 var allsayings = [
     1,"A cough",
     1,"A joke",
