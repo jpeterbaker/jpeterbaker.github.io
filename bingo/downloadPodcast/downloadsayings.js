@@ -24,8 +24,7 @@ var allsayings = [
     27,"A superhero",
     27,"A role-playing game",
     27,"A non-Baker, non-Looney game",
-    27,"A convention",
-    9,"Magic or mysterious force",
+    27,"A convention or cruise",
     9,"Looney product besides Fluxx or pyramids",
     9,"Gloom",
     9,"Cover art depicts an established fictional character",
@@ -59,8 +58,6 @@ var allsayings = [
     1,"Doctor Who",
     1,"Battlestar Galactica",
     1,"An inside joke or obscure reference",
-    1,"An ambient noise",
     1,"A project whose details can't be shared",
-    1,"A cruise",
 ];
 
