@@ -21,7 +21,7 @@ var allsayings = [
     3,"Nonviolent death",
     4,"A family secret",
     4,"A note or letter",
-    4,"A photograph",
+    4,"A photograph or painting",
     4,"An unhappy family or divorce",
     4,"Autopsy or special test on evidence",
     4,"Haste or a chase",
