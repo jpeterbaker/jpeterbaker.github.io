@@ -1,6 +1,15 @@
 #moves {
-width: 300px;
-padding: 10px;  
-border: 2px solid red;
-font-family: monospace;
+    width: 300px;
+    padding: 10px;  
+    border: 2px solid red;
+    font-family: monospace;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+P {
+    margin : 20;
+    line-height : 150%;
 }
