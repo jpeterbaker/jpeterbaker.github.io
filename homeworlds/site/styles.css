@@ -13,3 +13,6 @@ P {
     margin : 20;
     line-height : 150%;
 }
+body {
+    padding-bottom: 300px;
+}
