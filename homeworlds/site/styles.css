@@ -13,6 +13,14 @@ P {
     margin : 20;
     line-height : 150%;
 }
+ul {
+    margin : 20;
+    line-height : 150%;
+}
+ol {
+    margin : 20;
+    line-height : 150%;
+}
 body {
     padding-bottom: 300px;
 }
