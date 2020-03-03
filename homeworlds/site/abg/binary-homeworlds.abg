@@ -1,5 +1,9 @@
 {"_new":1,"pieces":[
 
+{"faces":["https://imgur.com/SqWuyDz.png","https://imgur.com/bmFYR4Q.png"],"x":450,"y": 80,"z":2,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
+
+{"faces":["https://imgur.com/wPyo8Qx.gif","https://imgur.com/wPyo8Qx.gif"],"x":650,"y": 80,"z":2,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
+
 {"faces":["http://jpeterbaker.github.io/homeworlds/site/abg/r3.svg","http://jpeterbaker.github.io/homeworlds/site/abg/r3u.svg"],"x": 30,"y": 80,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
 {"faces":["http://jpeterbaker.github.io/homeworlds/site/abg/r3.svg","http://jpeterbaker.github.io/homeworlds/site/abg/r3u.svg"],"x": 30,"y": 50,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
 {"faces":["http://jpeterbaker.github.io/homeworlds/site/abg/r3.svg","http://jpeterbaker.github.io/homeworlds/site/abg/r3u.svg"],"x": 30,"y": 20,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
