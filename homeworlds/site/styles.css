@@ -9,7 +9,18 @@ table, th, td {
     border: 1px solid black;
 }
 
-P {
+p {
     margin : 20;
     line-height : 150%;
+}
+ul {
+    margin : 0;
+    line-height : 150%;
+}
+ol {
+    margin : 00;
+    line-height : 150%;
+}
+body {
+    padding-bottom: 300px;
 }
