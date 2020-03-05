@@ -9,16 +9,16 @@ table, th, td {
     border: 1px solid black;
 }
 
-P {
+p {
     margin : 20;
     line-height : 150%;
 }
 ul {
-    margin : 20;
+    margin : 0;
     line-height : 150%;
 }
 ol {
-    margin : 20;
+    margin : 00;
     line-height : 150%;
 }
 body {
