@@ -11,12 +11,13 @@ Homeworlds files for Anywhere Board Games
 <p>
 <a href="index.html">My main Homeworlds page</a>
 </p>
+<img src="https://imgur.com/Q83eU7I.png" style="float:right"/>
 <h2>
 What Anywhere Board Games is
 </h2>
 <p>
 <a href='http://anywhereboardgames.com/'>Anywhere Board Games</a> (ABG)
-is an open source web app for playing board games online.
+is an open source web app for playing board games online in real time.
 The interface is drag-and-drop based with a context menu for special operations,
 like rotating a piece or changing (flipping) its state (face).
 </p>
@@ -24,13 +25,14 @@ like rotating a piece or changing (flipping) its state (face).
 Users can provide .abg files (JSON format) to the server
 in order to describe pieces, their positions, and image URLs
 of what they pieces should look like in each state.
-Pieces of any kind can be added to a game in progress,
+Pieces can be added to a game in progress,
 and the game state can be saved as a .abg file for future use,
 so the game board is also a game creation tool.
 </p>
 <p>
-<u>Users need to run their own servers</u>.
-The Windows version of ABG is packed with a launcher for an Apache server
+<span style="background-color:yellow">Users need to run their own servers</span>
+(unlike SDG, ABG does not run servers for you to play on).
+The Windows version of ABG comes with a launcher for an Apache server
 (this is the only version I've tested so far).
 Clients can then connect with browsers via IP address
 (the default port for the Windows version is 8080).
@@ -39,18 +41,18 @@ Clients can then connect with browsers via IP address
 Playing Homeworlds through ABG
 </h2>
 <p>
-You can download my .abg file for Homeworlds using the link below.
-I plan to make several similar versions
-of my Homeworlds .abg file to include different features
-(turn token, turn timers, colorblind-friendly pieces, etc.).
+You can download my .abg files for Homeworlds using the links below.
+I plan to make several similar versions to include different features
+(support for more players, colorblind-friendly pieces, etc.).
 I will list them here as they are created.
 </p>
 <p>
 You should right click on the link and choose "Save link/target as..."
-and then open the file from the game interface while connected to the server.
+You can open the file once you are connected to an ABG server through the game interface.
 </p>
 <ul>
-<li> <a href='abg/binary-homeworlds.abg'>ABG file</a>: Binary Homeworlds with turn token and 5-minute timer
+<li> <a href='../abg/setups/binary-homeworlds-token.abg'>ABG file</a>: Binary Homeworlds with turn token
+<li> <a href='../abg/setups/binary-homeworlds-token-5min.abg'>ABG file</a>: Binary Homeworlds with turn token and 5-minute turn timer (flip to reset)
 </ul>
 
 </html>
