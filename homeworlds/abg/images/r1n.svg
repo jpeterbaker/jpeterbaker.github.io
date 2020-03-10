@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="y1.svg">
+   sodipodi:docname="r1n.svg">
   <defs
      id="defs2">
     <inkscape:path-effect
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -65,12 +65,13 @@
      id="layer1"
      transform="translate(0.17463963,-18.561461)">
     <g
-       id="g11851">
+       id="g11287"
+       transform="matrix(1,0,0,-1,0,63.143755)">
       <path
          inkscape:connector-curvature="0"
          id="path6041"
          d="m 0.17463963,25.888541 7.14499997,-25.40000038 7.1450004,25.40000038 z"
-         style="fill:#ffff00;fill-opacity:0.75294119;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="fill:#ff0000;fill-opacity:0.75294118;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          transform="translate(-0.17463963,18.561461)" />
       <path
          sodipodi:nodetypes="cscsc"
