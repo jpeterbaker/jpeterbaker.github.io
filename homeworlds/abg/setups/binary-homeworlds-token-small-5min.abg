@@ -1,0 +1,56 @@
+{"_new":1,"pieces":[
+
+{"faces":["https://imgur.com/SqWuyDz.png","https://imgur.com/bmFYR4Q.png"],"x":450,"y": 80,"z":2,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
+
+{"faces":["https://imgur.com/wPyo8Qx.gif","https://imgur.com/wPyo8Qx.gif"],"x":650,"y": 80,"z":2,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3u.svg"],"x": 30,"y": 80,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3u.svg"],"x": 30,"y": 50,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3u.svg"],"x": 30,"y": 20,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y3u.svg"],"x":130,"y": 80,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y3u.svg"],"x":130,"y": 50,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y3u.svg"],"x":130,"y": 20,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g3u.svg"],"x":230,"y": 80,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g3u.svg"],"x":230,"y": 50,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g3u.svg"],"x":230,"y": 20,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b3u.svg"],"x":330,"y": 80,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b3u.svg"],"x":330,"y": 50,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b3u.svg"],"x":330,"y": 20,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"60"},
+
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r2u.svg"],"x": 37,"y":275,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r2u.svg"],"x": 37,"y":245,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r2u.svg"],"x": 37,"y":215,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y2u.svg"],"x":137,"y":275,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y2u.svg"],"x":137,"y":245,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y2u.svg"],"x":137,"y":215,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g2u.svg"],"x":237,"y":275,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g2u.svg"],"x":237,"y":245,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g2u.svg"],"x":237,"y":215,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b2u.svg"],"x":337,"y":275,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b2u.svg"],"x":337,"y":245,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b2.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b2u.svg"],"x":337,"y":215,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"45"},
+
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r1u.svg"],"x": 44,"y":440,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r1u.svg"],"x": 44,"y":410,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r1u.svg"],"x": 44,"y":380,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y1u.svg"],"x":144,"y":440,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y1u.svg"],"x":144,"y":410,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/y1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/y1u.svg"],"x":144,"y":380,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g1u.svg"],"x":244,"y":440,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g1u.svg"],"x":244,"y":410,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/g1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/g1u.svg"],"x":244,"y":380,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b1u.svg"],"x":344,"y":440,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b1u.svg"],"x":344,"y":410,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/b1.svg","http://jpeterbaker.github.io/homeworlds/abg/images/b1u.svg"],"x":344,"y":380,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"33"}
+]}
