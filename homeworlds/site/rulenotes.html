@@ -69,8 +69,12 @@ Pyramid Quartet instructions
             Not addressed specifically
         </td>
         <td>
-            SDG will allow you to abandon your home and lose immediately
+            <ul>
+            <li> If an enemy ship is in your home, SDG will prevent you
+            from (permanently) abandoning your homeworld.
+            <li> Otherwise, SDG will allow you to abandon your home and lose immediately
             without the option to undo.
+            </ul>
         </td>
         <td>
             Self-elimination is presented as legal
@@ -92,10 +96,15 @@ Pyramid Quartet instructions
         </td>
         </td>
         <td>
-            SDG will not allow you to abandon your homeworld
-            and  eliminate your opponent in the same move.
-            The site will redirect the player to an error page
-            and the command is not processed.
+            <ul>
+            <li> If an enemy ship is in your home, SDG will prevent you
+            from (permanently) abandoning your homeworld
+            (even when attempting simultaneously elimination).
+            <li> If no enemy ships are in your home,
+            attempting a simultaneous elimination move
+            causes SDG to redirect the player to a system error page
+            (the command is not processed).
+            </ul>
         </td>
         <td>
             Yes
@@ -117,7 +126,7 @@ Pyramid Quartet instructions
         </td>
         <td>
             SDG will let you loop forever.
-            There is no way to end the game in a draw,
+            There is <u>no</u> way to end the game in a draw,
             even if both players agree.
         </td>
         <td>
