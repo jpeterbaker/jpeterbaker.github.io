@@ -1,6 +1,8 @@
 {"_new":1,"pieces":[
 
-{"faces":["https://imgur.com/SqWuyDz.png","https://imgur.com/bmFYR4Q.png"],"x":450,"y": 80,"z":2,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
+{"faces":["https://imgur.com/SqWuyDz.png","https://imgur.com/bmFYR4Q.png"],"x":450,"y":80,"z":2,"lock":0,"shield":0,"orientation":0,"face_showing":"0"},
+
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/bankBG.svg"],"x":0,"y":0,"z":0,"lock":1,"shield":0,"orientation":0,"face_showing":"0"},
 
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3w.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3e.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3u.svg"],"x": 30,"y": 80,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"105"},
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/r3.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3w.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3e.svg","http://jpeterbaker.github.io/homeworlds/abg/images/r3u.svg"],"x": 30,"y": 50,"z":1,"lock":0,"shield":0,"orientation":0,"face_showing":"0","face_width":"105"},
