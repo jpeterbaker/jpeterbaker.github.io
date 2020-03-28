@@ -1,3 +1,46 @@
-Finish the "what homeworlds needs" page
-    Standalone purchase option should go on there, but that's coming up! Yay!
+More puzzles
+http://superdupergames.org/?page=archive_play&gid=35877&idx=28
+In this position, I think Trydnt would have won with
+move y2 g3 D5PA
+
+Colorblind pieces (black and white)
+
+Star-name tokens for ABG (names from Homeworlds Theater below)
+In the theater videos, the tokens are white circles with the names written fairly small
+and along the circle's curve so the star marker(s) can be placed on them leaving the name visible
+    Homeworld Alpha (goes first)
+    Homeworld One 
+    Altair
+    Betelgeuse
+    Castor
+    Deneb
+    Electra
+    Fomalhaut
+    Gemma
+    Hadar
+    Izar
+    Jabbah
+    Kastra
+    Lesath
+    Menkar
+    Nashira
+    Okul
+    Polaris
+    Rigel
+    Sirius
+    Taygeta
+    Ursa Major
+    Vega
+    Zosma
+
+"Galactic Overlords" in glossary (maybe)
+"Quick Start" in glossary
+
+On "thoughts" page
+'Righteous' game mode should be the opposite of sinister: eliminate the player on your right
+    This makes more sense to me for two reasons:
+    1) "Sinister" comes from a word also meaning "left"
+        The player who is "sinister" (on your left) should be the one trying to kill you
+    2) This gives you the turn just before your would-be killer,
+       and thus you have last-minute chance to defend yourself without other players having a chance to interfere before your killer moves.
 
