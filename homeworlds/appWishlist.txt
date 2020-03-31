@@ -1,0 +1,21 @@
+Most of my feature wish-list for online Homeworlds has been listed by others, but here are some things I'd like to see (in rough order of importance)
+
+Correct implementation of the current rules (SDG is a few versions behind)
+
+Real-time play option
+
+Saved game history for future study
+
+Exporting game history as text
+
+Drag-n-drop play interface
+
+Automatic system naming (for each star color, I have a handful of names that I use. Letting users provide such lists ahead of time would be fun)
+
+Warning dialog if you are eliminating yourself
+
+Move confirmation (like a turn token: your turn isn't over until you click "Make this my move")
+
+The ability to explore games from uploaded history files
+
+Black and white piece option (good for people who are colorblind or who want to print positions without color ink)
