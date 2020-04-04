@@ -27,7 +27,7 @@ def divide(s):
 #test = 'blah blah blah "x":400,"y":15,"z":27,"face_width":150}, and more blah'
 #print(divide(test))
 
-fnames = ['EWfull.abg','NSfull.abg']
+fnames = ['NESWfull.abg']
 
 for fname in fnames:
     with open(fname,'r') as fin:
