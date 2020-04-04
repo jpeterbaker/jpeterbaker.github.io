@@ -12,9 +12,22 @@
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/deltaShield.svg"],
           "x":100,"y":620,"z":0,"lock":1,"shield":1,"face_width":100},
 
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/back.svg",
+          "http://jpeterbaker.github.io/homeworlds/abg/images/cards/good.svg"],
+          "x":222,"y":555,"z":0,"face_width":81},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/back.svg",
+          "http://jpeterbaker.github.io/homeworlds/abg/images/cards/good.svg"],
+          "x":222,"y":555,"z":0,"face_width":81},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/back.svg",
+          "http://jpeterbaker.github.io/homeworlds/abg/images/cards/evil.svg"],
+          "x":222,"y":555,"z":0,"face_width":81},
+{"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/back.svg",
+          "http://jpeterbaker.github.io/homeworlds/abg/images/cards/evil.svg"],
+          "x":222,"y":555,"z":0,"face_width":81},
+
 {"faces":["https://imgur.com/wPyo8Qx.gif",
           "https://imgur.com/wPyo8Qx.gif"],
-          "x":15,"y":725,"z":0,"face_width":80},
+          "x":550,"y":20,"z":0,"face_width":80},
 
 {"faces":["https://imgur.com/SqWuyDz.png",
           "https://imgur.com/bmFYR4Q.png"],
