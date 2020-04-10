@@ -4,6 +4,9 @@
     border: 2px solid red;
     font-family: monospace;
 }
+#solution {
+    display:none;
+}
 
 table, th, td {
     border: 1px solid black;
