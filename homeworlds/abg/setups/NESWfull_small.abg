@@ -4,13 +4,13 @@
           "x":0,"y":0,"z":0,"lock":1,"shield":0,"face_width":254},
 
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/alphaShield.svg"],
-          "x":0,"y":346,"z":0,"lock":1,"shield":1,"face_width":66},
+          "x":0,"y":346,"z":1000,"lock":1,"shield":1,"face_width":66},
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/betaShield.svg"],
-          "x":66,"y":346,"z":0,"lock":1,"shield":2,"face_width":66},
+          "x":66,"y":346,"z":1000,"lock":1,"shield":2,"face_width":66},
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/gammaShield.svg"],
-          "x":0,"y":412,"z":0,"lock":1,"shield":3,"face_width":66},
+          "x":0,"y":412,"z":1000,"lock":1,"shield":3,"face_width":66},
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/deltaShield.svg"],
-          "x":66,"y":412,"z":0,"lock":1,"shield":4,"face_width":66},
+          "x":66,"y":412,"z":1000,"lock":1,"shield":4,"face_width":66},
 
 {"faces":["http://jpeterbaker.github.io/homeworlds/abg/images/cards/back.svg",
           "http://jpeterbaker.github.io/homeworlds/abg/images/cards/good.svg"],
