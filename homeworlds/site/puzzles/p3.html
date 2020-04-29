@@ -5,6 +5,7 @@ Ketchup and mustard
 </title>
 <link rel="stylesheet" href="../styles.css">
 <script src='puzfun.js'></script>
+<!-- http://superdupergames.org/?page=archive_play&gid=35877&idx=28 -->
 </head>
 <center>
 <h1>
@@ -24,39 +25,94 @@ Beta (East) to play
 <br>
 <p>
 <div id="solution">
-<h1>
-This analysis is incorrect
-</h1>
-I goofed on this one. Alpha can respond by sacrificing a yellow at home and reinforce with a y3.
-There's no danger of yellow or red catastrophe.
-<h1>
-The incorrect analysis until I come up with something better
-</h1>
-<div id="moves">
-move y2 Altair Alpha
-</div>
+I thought I had a solution to this, but my answer turned out to be bad,
+so I haven't figured this one out myself yet.
+I think Beta's best move might be to trade r3 for y3 at home.
+</p>
 <p>
-After this move, Alpha must reinforce their home or lose by sacrifice-and-capture,
-but moving moving a yellow ship to their home causes an overpopulation,
-and moving a red to their home allows Beta to trigger a catastrophe with Alpha's red star.
+Beta's immediate attacks don't work out.
+For example, if
+<div id="moves">
+1... sacrifice y2 Altair<br>
+move r3 Beta Altair<br>
+move r3 Altair Alpha
+</div>
+</p>
+<p>
+Alpha responds with 
+<div id="moves">
+2. sacrifice y3 Betelgeuse<br>
+move r3 Betelgeuse Alpha<br>
+move r3 Castor Altair<br>
+move r3 Altair Beta
+</div>
+</p>
+<p>
+Or if
+<div id="moves">
+1... move y2 Altair Alpha
+</div>
+</p>
+<p>
+then Alpha narrowly avoids the catastrophe threat with
+<div id="moves">
+2. sacrifice y1 Alpha<br>
+move y3 Betelgeuse Alpha
+</div>
 </p>
 <p>
 This position is from a ladder game on SDG.
 Beta was challenging Alpha for position #1.
-Rather than the winning move, Beta chose to play
-</p>
+At this point in the game, Beta played
 <div id="moves">
-discover r1 Beta y3 Deneb
+1... discover r1 Beta y3 Deneb<br>
+</div>
+</p>
+<p>
+They probably intended to continue with
+<div id="moves">
+2... sacrifice y2 Altair<br>
+move r2 Altair Alpha<br>
+move r2 Altair Alpha
+</div>
+<div id="moves">
+3... move r1 Deneb Alpha<br>
+catastrophe Alpha r
 </div>
 <p>
-Alpha's homeworld originally included a large star,
-and Beta probably didn't notice the new connection between Alpha and Altair.
+but Alpha responded with
+<div id="moves">
+2. sacrifice y2 Betelgeuse<br>
+move r1 Betelgeuse Altair<br>
+move r2 Castor Altair<br>
+catastrophe Altair r
+</div>
+</p>
+<p>
 Alpha went on to win.
 </p>
 </div>
 
+<!---
+Both players have firepower but weak economies. West has a dominating material advantage, but with only one home star, East may be able to finish the game quickly.
+
+West can repel any immediate invasion of their home. For examples,
+
+...move y2 Altair Alpha
+sacrifice y1 Alpha, move y3 Betelgeuse Alpha
+
+OR
+
+...move r2 Altair Alpha
+attack r2 Alpha
+...move r2 Altair Alpha
+sacrifice r2 Alpha, attack r2 Alpha
+
+OR
+
+...sacrifice y2 Altair, move r3 Beta Altair, move r3 Altair Alpha
+-->
+
+
 </html>
-
-
-
 
