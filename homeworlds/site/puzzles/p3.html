@@ -18,7 +18,6 @@ Ketchup and mustard
 <p>
 Beta (East) to play
 </p>
-<br>
 <img src='https://imgur.com/egeSt1K.png'>
 <br>
 <a href="javascript:show()" id="showit">Show my solution</a>
@@ -26,84 +25,251 @@ Beta (East) to play
 <p>
 <div id="solution">
 <p>
-This position has proved to be pretty tricky to analyze.
-I've posted two different incorrect answers now and had to be called out
-by the real-life player Alpha.
-I'll put a complete solution here when it's ready.
+Best play ends in a draw.
 </p>
-<!--
-<p>
-In a previous version of this page, I posted poor solution:
-"move y2 Altair Alpha."
-Alpha has a reasonably good defense against this with "sacrifice y2 Alpha; move y3 Betelgeuse Alpha; move y1 Alpha Castor."
-Beta may still be able to win from here, but it's likely to be messy.
-</p>
-<p>
-Beta wins quickly after
-<div id="moves">
-1... sacrifice y2 Altair<br>
-move r3 Beta Altair<br>
-move r3 Altair Alpha
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            <br>
+            move r2 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            attack r2 Alpha
+        </div>
+        <div class="ply">
+            2....
+            <br>
+            sacrifice y2 Altair
+            <br>
+            move r3 Beta Altair
+            <br>
+            move r3 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.
+            <br>
+            sacrifice y3 Betelgeuse
+            <br>
+            move r1 Betelgeuse Altair
+            <br>
+            move r3 Castor Altair
+            <br>
+            move r2 Castor Altair
+            <br>
+            catastrophe Altair r
+        </div>
+        <div class="ply">
+            3....
+            attack r2 Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            4.
+            <br>
+            attack r2 Alpha
+        </div>
+        <div class="ply">
+            4....
+            <br>
+            attack r2 Alpha
+        </div>
+    </div>
 </div>
+<p>
+Alpha's other defenses are no better, such as
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            sacrifice y1 Alpha
+            <br>
+            move y3 Betelgeuse Alpha
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            sacrifice y2 Altair
+            <br>
+            move r2 Altair Alpha
+            <br>
+            discover r1 Beta y3 Deneb
+        </div>
+    </div>
+</div>
+<p>
+and Beta will win on their next turn.
 </p>
 <p>
-It's a great exercise to look at all of Alpha's possible responses and how the game would play out.
-I'm not going to lay it all out here at the moment
-(maybe if I get time later).
+Beta's other lines of attack end up losing.
+For example, if Beta goes for the yellow fleet catastrophe:
 </p>
--->
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            move y2 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            sacrifice y1 Alpha
+            <br>
+            move y3 Betelgeuse Alpha
+        </div>
+        <div class="ply">
+        </div>
+    </div>
+</div>
+<p>
+or if Beta starts the invasion with r3:
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            sacrifice y2 Altair
+            <br>
+            move r3 Beta Altair
+            <br>
+            move r3 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            sacrifice y2 Betelgeuse
+            <br>
+            move r1 Betelgeuse Altair
+            <br>
+            move r2 Castor Altair
+            <br>
+            catastrophe Altair red
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            attack y2 Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.
+            <br>
+            sacrifice y3 Betelgeuse
+            <br>
+            move r3 Betelgeuse Alpha
+            <br>
+            move r3 Castor Altair
+            <br>
+            move r3 Altair Beta
+        </div>
+        <div class="ply">
+            3...
+            <br>
+            attack r3 Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            4.
+            <br>
+            attack r1 Beta
+        </div>
+        <div class="ply">
+        </div>
+    </div>
+</div>
 <p>
 This position is from a ladder game on SDG where
 Beta was challenging Alpha for position #1.
 At this point in the game, Beta played
-<div id="moves">
-1... discover r1 Beta y3 Deneb<br>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            <br>
+            discover r1 Beta y3 Deneb<br>
+        </div>
+    </div>
 </div>
 </p>
 <p>
 and probably intended to continue with
-<div id="moves">
-2... sacrifice y2 Altair<br>
-move r2 Altair Alpha<br>
-move r2 Altair Alpha
-</div>
-<div id="moves">
-3... move r1 Deneb Alpha<br>
-catastrophe Alpha r
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            sacrifice y2 Altair
+            <br>
+            move r2 Altair Alpha
+            <br>
+            move r2 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            3...
+            <br>
+            move r1 Deneb Alpha
+            <br>
+            catastrophe Alpha r
+        </div>
+    </div>
 </div>
 <p>
-but Alpha responded with
-<div id="moves">
-2. sacrifice y2 Betelgeuse<br>
-move r1 Betelgeuse Altair<br>
-move r2 Castor Altair<br>
-catastrophe Altair r
-</div>
+but Alpha won quickly after
 </p>
-<p>
-Alpha went on to win.
-</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            sacrifice y2 Betelgeuse
+            <br>
+            move r1 Betelgeuse Altair
+            <br>
+            move r2 Castor Altair
+            <br>
+            catastrophe Altair r
+        </div>
+        <div class="ply">
+        </div>
+    </div>
 </div>
-
-Both players have firepower but weak economies. West has a dominating material advantage, but with only one home star, East may be able to finish the game quickly.
-
-West can repel any immediate invasion of their home. For examples,
-
-...move y2 Altair Alpha
-sacrifice y1 Alpha, move y3 Betelgeuse Alpha
-
-OR
-
-...move r2 Altair Alpha
-attack r2 Alpha
-...move r2 Altair Alpha
-sacrifice r2 Alpha, attack r2 Alpha
-
-OR
-
-...sacrifice y2 Altair, move r3 Beta Altair, move r3 Altair Alpha
--->
-
+</div>
 
 </html>
 

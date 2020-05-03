@@ -1,9 +1,30 @@
-#moves {
-    width: 300px;
+<style type="text/css">
+.moveTable {
+    display:table;
     padding: 10px;  
-    border: 2px solid red;
+}
+
+.headerRow{
+    display:table-row;
+    text-align:center;
+}
+.headerCell{
+    display:table-cell;
+    padding: 10px;  
+    border: 1px solid black;
+}
+.moveRow{
+    display:table-row;
     font-family: monospace;
 }
+.ply{
+    display:table-cell;
+    border: 1px solid red;
+    padding: 10px;  
+    width: 300px;
+}
+
+
 #solution {
     display:none;
 }
@@ -28,4 +49,5 @@ ol {
 body {
     padding-bottom: 300px;
 }
+</style>
 
