@@ -69,7 +69,7 @@ you also choose a small star <i>and first ship</i> of that color.
 You can build the last small piece of that color as a ship
 and freeze them out of that color (see below).
 <center>
-<img src='https://imgur.com/ovfEw6W.png'>
+<img src='https://i.imgur.com/oBOddA5.png'>
 </center>
 </p>
 <p>
@@ -95,23 +95,109 @@ Inevitable doom can take more than a day.
         by getting rid of the first ship (which they now own).
         But they must respond to the large by attacking it
         (assuming you have sacrificial red ships somewhere to make your large ship a threat).
-        The third ship (of any size) can then move in for the catastrophe.<br>
+        The third ship (of any size) can then move in for the catastrophe.
 </ul>
 </p>
 <p>
-In the image below, south has assembled a extra slow Doomsday machine.<br>
+In the image below, Beta has assembled a extra slow Doomsday machine.
+</p>
 <center>
-<img src='https://imgur.com/vPDdsq3.png'>
+<img src='https://i.imgur.com/Gj6FWOc.png'>
 </center>
-South safely destroys both home stars of North via
-<center>
-<div id='moves'>move g1 S1 North</div>
-<div id='moves'>move g3 S2 North</div>
-<div id='moves'>move g1 S2 North<br>catastrophe North g</div>
-<div id='moves'>move y1 S2 North</div>
-<div id='moves'>move y3 S1 North</div>
-<div id='moves'>move y1 S2 North<br>catastrophe North y</div>
-</center>
+<p>
+Beta safely destroys both home stars of Alpha via
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            <br>
+            move g1 Betelgeuse Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            attack g1 Alpha
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            move g3 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.
+            <br>
+            attack g3 Alpha
+        </div>
+        <div class="ply">
+            3...
+            <br>
+            move g1 Altair Alpha
+            <br>
+            catastrophe Alpha g
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            4.
+            <br>
+            trade b3 g3 Alpha
+        </div>
+        <div class="ply">
+            4...
+            <br>
+            move y1 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            5.
+            <br>
+            attack y1 Alpha
+        </div>
+        <div class="ply">
+            5...
+            <br>
+            move y3 Betelgeuse Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            6.
+            <br>
+            attack y3 Alpha
+        </div>
+        <div class="ply">
+            6...
+            <br>
+            move y1 Altair Alpha
+            <br>
+            catastrophe Alpha y
+        </div>
+    </div>
+</div>
+<p>
+In the particular scenario above, Alpha must attack on moves 2 and 5
+because otherwise Beta may achieve the catastrophes
+by sacrificing g3.
+In many scenarios, the defender may simply ignore the small invading ships and use the turn productively.
+Sometimes, they may use that turn to launch a counterattack,
+either on the Doomsday machine or on the enemy homeworld.
+Before you engage your slow Doomsday machine, make sure your opponent can't use the spare time to ruin your plan.
 </p>
 <p>
 Importantly, the Doomsmonth machine does not usually work on red stars
@@ -123,6 +209,7 @@ Importantly, the Doomsmonth machine does not usually work on red stars
 <p>
 Your opponent can't usually cause a red catastrophe by moving red ships one at a time.
 If they attempt this it,
+</p>
 <ol>
 <li> They move a red ship into your system.
 <li> You attack the first red ship.
@@ -130,14 +217,16 @@ If they attempt this it,
 <li> You sacrifice the first red ship to attack the second red ship.
 <li> They see the error of their ways.
 </ol>
-For example, in the position below, South has just blundered
-by moving r3 into North's home.
-North should sacrifice the r1 and attack the invader.
-South has regrets.
-<center>
-<img src='https://imgur.com/0Z0sqNA.png'>
-</center>
+<p>
+For example, in the position below, Beta has just blundered
+by moving r3 into Alpha's home.
+Alpha should sacrifice the r1 and attack the invader.
+Beta has regrets.
 </p>
+<center>
+<img src='https://i.imgur.com/SfK41v1.png'>
+</center>
+<p>
 You should check your own situation carefully, however.
 You must have a ship large enough to attack any invading reds,
 and—if you are defending a red system marker—
@@ -146,6 +235,67 @@ If your only large ship is red as well as a system marker,
 then you won't be able to sacrifice the r3 to attack an invading r3,
 so a slow red catastrophe can happen when your opponent
 moves in with their second red ship.
+</p>
+
+<h2>
+<a name='invasion'>Textbook direct assault
+</h2>
+<p>
+Of the three <a href="glossary.html#paths">paths to victory</a>,
+the direct assault seems to get the least attention.
+Every strategy guide talks about
+Doomsday machines (the surest way to achieve star demolition)
+and the Blurbird mistake (allowing a game-losing fleet catastrophe).
+New players may not ever read a description of how a direct assault occurs,
+so their first exposure is likely to be a surprising defeat.
+</p>
+<p>
+Typically, every player has a large ship in their homeworld and a red ship someplace (which they could sacrifice).
+If they don't have a red ship, they'll at least have a <a href="glossary.html#planetaryDefense">planetary defense system</a>.
+So if you move any ship into your opponent's home, they'll just capture it, right?
+</p>
+<p>
+The key is to invade with several ships at once so that they can't all be captured.
+Your opponent's defenses will determine the size of the invasion fleet you need.
+Say the number of large ships in your opponent's home is L,
+and their largest red ship is of size N
+(a planetary defense system counts as a small red ship, N=1).
+If N+L is more than 3, a basic direct assault won't work.
+You could theoretically have a two-wave invasion with more than three ships,
+but that's more complicated than I'm going to illustrate here.
+If they have no access to red, N=0.
+</p>
+<p>
+Here's what you need:
+</p>
+<ul>
+<li> N+1 large ships poised to move into your opponent's home.
+<li> A yellow ship of size N+L.
+<li> A red ship of size N+L.
+</ul>
+<p>
+Here's the battle plan:
+</p>
+<ul>
+<li> You sacrifice your yellow ship and move your N+1 large ships into your opponent's home
+<li> They sacrifice their largest red to attack N of your invading larges (you still have one left)
+<li> You sacrifice your red ship to attack the N ships that they just captured
+as well as the L large ships that they had to begin with.
+</ul>
+<p>
+You now have two or more large ships in your opponent's home and they have none.
+Usually, their only defense at this point (besides a counterattack)
+is to catastrophe your larges.
+</p>
+<p>
+Compared to catastrophe-based wins, direct assaults can be difficult to plan.
+When all you want to do is create catastrophes, it's usually easy to see if it will work out.
+When you're invading and capturing ships, you need your ships to stay alive,
+and your opponent may have time to fight back.
+It can get confusing.
+You need to examine your own case carefully to figure out how to invade.
+</p>
+
 </html>
 
 

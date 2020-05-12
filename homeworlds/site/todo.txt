@@ -1,40 +1,12 @@
 More puzzles
-http://superdupergames.org/?page=archive_play&gid=35877&idx=28
-In this position, I think Trydnt would have won with
-move y2 g3 D5PA
+such as something involving a blue sacrifice, since those are rare.
+    How about, your opponent has just moved some ships into your home. You don't have a large red,
+    but you could sacrifice a b2 to turn two of your home larges red. They could attack those, but then you can cat them,
+    and they'd be spending their only red to do so leaving them helpless and you with the advantage.
 
-Colorblind pieces (black and white)
-
-Star-name tokens for ABG (names from Homeworlds Theater below)
-In the theater videos, the tokens are white circles with the names written fairly small
-and along the circle's curve so the star marker(s) can be placed on them leaving the name visible
-    Homeworld Alpha (goes first)
-    Homeworld One 
-    Altair
-    Betelgeuse
-    Castor
-    Deneb
-    Electra
-    Fomalhaut
-    Gemma
-    Hadar
-    Izar
-    Jabbah
-    Kastra
-    Lesath
-    Menkar
-    Nashira
-    Okul
-    Polaris
-    Rigel
-    Sirius
-    Taygeta
-    Ursa Major
-    Vega
-    Zosma
-
-"Galactic Overlords" in glossary (maybe)
-"Quick Start" in glossary
+Your opponent has three small red ships (not at their home),
+but no other access to red. You invade with two r3.
+You trade an r3 three times until they are out of red power.
 
 On "thoughts" page
 'Righteous' game mode should be the opposite of sinister: eliminate the player on your right
