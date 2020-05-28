@@ -1,0 +1,48 @@
+Board game puzzle suggestions from
+https://puzzling.stackexchange.com/questions/56959/tips-for-making-board-game-victory-sequence-puzzles
+
+I'll try to list the essentials to consider. I used to moderate a go problems forum for several years, so most of this is based on go problems, but should be applicable to any strategy game puzzles, which is why the examples I used are mostly from chess problems. Yeah. Let's do this:
+
+Rule 1: Always clearly state the desired objective.
+
+"Mate in three" is very good. So is "White to play and win". "What is the best move in this situation" may work, but can be a bit tricky, since you have to justify why that move really was the best. If there's a hundred-years-old convention as to what is the default objective in that kind of problems, you might think of leaving the objective unstated. Even then, it's better to be explicit.
+
+Rule 2: The opponent(s) must try to thwart the objective.
+
+If the objective is "to play and win", the imaginary opponent should, of course, play the best possible moves, or possibly a tricky variation that the solver might get wrong. HOWEVER, if the objective is something unusual, like "white to capture a pawn", the opponent will do anything in her power to prevent that, including (but not limited to) trying to checkmate herself.
+
+Rule 3: Anything that works is a solution.
+
+If there are multiple ways to achieve the stated objective, every single one of those should be considered correct, even if there's a clear difference in effectiveness.
+
+Rule 4: Have something to say.
+
+A problem should exist for a reason. Just putting down a position from a game that you happened to win isn't a good way to create a problem. Some very good reasons are: "in this common position, you should know this exquisite technique", "Usually moves like this don't work, but look here" and "This position looks hopeless, but there's a way out", among others.
+
+If there isn't an established collection of problems on the game you are.. problemizing, some very basic tactics and strategy problems will also be well received.
+
+Rule 5: Avoid unnecessary clutter
+
+Try to refine the problem, until only the essential bits remain (see Rule 4, above). There is no need to build a realistic full game position, if you only want to show a clever sequence of moves. Remove unnecessary pieces, clip off the unimportant parts of the board to show that there will be no moves there, remove uncertainties (e.g. say "opponent has no secret cards", if that would be a possibility), and all in all, try to find the crispest possible way of saying what you wanted to say.
+
+Rule 6: Failures are also interesting
+
+While it is definitely rewarding to find glorious victory in a problem, it's also thrilling to get totally skewered by an unexpectedly clever response.
+
+When designing a puzzle, it's very important to examine all the possible moves in the variation trees, since a puzzle with a mistake as a solution is worse than no puzzle at all. From this process, you get the interesting failure paths as a by-product.
+
+Rule 7: The problems are for the solvers
+
+The reason people solve problems and puzzles of various kinds is that they want to become better persons by training their brain. That, and the smug feeling you get from correctly solving a problem. Try to cultivate those feelings. For beginner's mistakes, offer a refutation teaching the basics. For higher lever mistakes, try to offer the refutation at the level that was required to even reach that mistake. For the correct solution, offer adequate praise. Never ever insult the solver for making a mistake.
+
+In addition to these, there are some conventions that will, in general, make any puzzle better, but are not strictly necessary:
+
+Have a unique solution
+Have a starting position that could, at least in theory, occur in a real game
+Avoid tell-tales (eg. pieces in unnatural-looking places that give away that some action must happen near there)
+Have at least some plausible error paths (if all the other moves are obvious mistakes at the first glance, finding the solution isn't much of a challenge)
+Avoid duplicate problems
+..and probably many others that didn't pop into mind just now.
+All of these are essentially corollaries to the great law of puzzle design: Make your puzzles fun and rewarding to solve.
+
+Yeah, that should just about do it. Best of luck!

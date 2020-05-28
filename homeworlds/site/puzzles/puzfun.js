@@ -1,7 +1,7 @@
 
-function show(){
+function show(showDiv,hideDiv){
     // show the element with id s.concat(String(i))
-    document.getElementById("solution").style.display = "block";
-    document.getElementById("showit").style.display = "none";
+    showDiv.style.display = "block";
+    hideDiv.style.display = "none";
 }
 
