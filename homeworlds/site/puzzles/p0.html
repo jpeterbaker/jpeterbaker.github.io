@@ -38,11 +38,17 @@ Alpha (West) to play
 </p>
 <br>
 <img src='https://imgur.com/9xCPunI.png'>
-<br>
-<a href="javascript:show()" id="showit">Show my solution</a>
-<br>
-<div id="solution">
-Alpha can win in 7 moves, which I believe is the fastest possible.
+<p>
+<a href="javascript:show(hint,showhint)" id="showhint">Show a hint</a>
+</p>
+<div class="solution" id="hint">
+<p>
+Alpha can win in 7 moves.
+</p>
+<p>
+<a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
+</p>
+<div class="solution" id="solution">
 <div class="moveTable">
     <div class="headerRow">
         <div class="headerCell">
@@ -121,9 +127,10 @@ Alpha can win in 7 moves, which I believe is the fastest possible.
     </div>
 </div>
 <p>
-I suppose it's possible that this position has occurred in a real game,
-but I composed it as an exercise.
+I composed this position as an exercise.
 </p>
+</div>
+</div>
 
 </html>
 

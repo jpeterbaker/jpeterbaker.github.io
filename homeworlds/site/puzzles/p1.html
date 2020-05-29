@@ -18,10 +18,17 @@ End game?
 Beta (East) to play
 </p>
 <img src='https://imgur.com/wo6slmG.png'>
-<br>
-<a href="javascript:show()" id="showit">Show my solution</a>
-<br>
-<div id="solution">
+<p>
+<a href="javascript:show(hint,showhint)" id="showhint">Show a hint</a>
+</p>
+<div class="solution" id="hint">
+<p>
+Beta can survive the current threat.
+</p>
+<p>
+<a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
+</p>
+<div class="solution" id="solution">
 <div class="moveTable">
     <div class="headerRow">
         <div class="headerCell">
@@ -43,7 +50,7 @@ Beta (East) to play
         </div>
     </div>
     <div class="moveRow">
-class<div class="ply">
+    <div class="ply">
             sacrifice y2 Romulus
             <br>
             move r3 S Romulus
@@ -61,6 +68,7 @@ The position is about even.
 <p>
 This position is from a casual game I played.
 </p>
+</div>
 </div>
 
 </html>

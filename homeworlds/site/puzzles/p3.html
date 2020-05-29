@@ -19,14 +19,26 @@ Ketchup and mustard
 Beta (East) to play
 </p>
 <img src='https://imgur.com/egeSt1K.png'>
-<br>
-<a href="javascript:show()" id="showit">Show my solution</a>
-<br>
 <p>
-<div id="solution">
-<p>
-Best play ends in a draw.
+<a href="javascript:show(hint,showhint)" id="showhint">Show a hint</a>
 </p>
+<div class="solution" id="hint">
+<p>
+This is a very difficult puzzle. 
+If you think that Beta can win in two or three turns,
+you've missed something and should keep looking.
+</p>
+<p>
+<a href="javascript:show(hint2,showhint2)" id="showhint2">Show another hint</a>
+</p>
+<div class="solution" id="hint2">
+<p>
+Beta can't quite win and needs to play for a draw.
+</p>
+<p>
+<a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
+</p>
+<div class="solution" id="solution">
 <div class="moveTable">
     <div class="headerRow">
         <div class="headerCell">
@@ -314,7 +326,9 @@ but Alpha won quickly after
         </div>
     </div>
 </div>
-</div>
+</div><!-- End solution -->
+</div><!-- End hint 2 -->
+</div><!-- End hint 1 -->
 
 </html>
 
