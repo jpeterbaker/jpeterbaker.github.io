@@ -1,54 +1,37 @@
 <html>
 <head>
 <title>
-For beginners
+Nothing fancy
 </title>
 <link rel="stylesheet" href="../styles.css">
 <script src='puzfun.js'></script>
 </head>
 <center>
 <h1>
-For beginners
+Nothing fancy
 </h1>
 </center>
 <p>
 <a href="pindex.html">Puzzle collection index</a>
 </p>
-This is a teaching exercise for giving new players some hands-on experience
-after they've just heard or read the rules.
-<p>
-<ul>
-<li> The new player takes the role of player Alpha (on the left).
-<li> The more experienced player is Beta (on the right).
-<li> If left alone, Beta doesn't have any good moves
-(they can only pass or commit suicide by abandoning their home).
-So Alpha can take their time building up a fleet big enough to win,
-which is a chance to practice using the color powers.
-<li> If Alpha attempts a badly-planned invasion,
-Beta may get to capture a ship and even start building a fleet.
-The experienced player may want to give an instructive warning instead,
-as in, "If you do that, I'll be able to capture your ship.
-Then I'll move it to another system on my next move and start trying to build up."
-</ul>
-As a challenge to more advanced players,
-what is the fastest route to victory for Alpha?
-</p>
 <p>
 Alpha (West) to play
 </p>
-<br>
-<img src='https://imgur.com/9xCPunI.png'>
+<img src='https://imgur.com/Q2MNXIC.png'>
 <p>
 <a href="javascript:show(hint,showhint)" id="showhint">Show a hint</a>
 </p>
 <div class="solution" id="hint">
 <p>
-Alpha can win in 7 moves.
+Alpha wins in 3-4 turns.
 </p>
 <p>
 <a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
 </p>
 <div class="solution" id="solution">
+<p>
+Here is the expected line of play:
+</p>
 <div class="moveTable">
     <div class="headerRow">
         <div class="headerCell">
@@ -60,77 +43,114 @@ Alpha can win in 7 moves.
     </div>
     <div class="moveRow">
         <div class="ply">
-            build g1 Alpha
-        </div>
-        <div class="ply">
-            pass
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            trade g1 y1 Alpha
-        </div>
-        <div class="ply">
-            pass
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            build y1 Alpha
-        </div>
-        <div class="ply">
-            pass
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            discover y1 Alpha b2 Altair
-        </div>
-        <div class="ply">
-            pass
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            sacrifice g3 Alpha
+            1.
             <br>
-            build y1 Altair
-            <br>
-            build y2 Altair
-            <br>
-            build y2 Alpha
-        </div>
-        <div class="ply">
-            pass
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            move y1 Altair Beta
-        </div>
-        <div class="ply">
-            attack y1 Beta
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
             sacrifice y2 Alpha
             <br>
-            move y1 Altair Beta
+            move b3 Betelgeuse Beta
             <br>
-            move y2 Altair Beta
+            move y3 Betelgeuse Beta
+        </div>
+        <div class="ply">
+            1...
             <br>
-            catastrophe Beta y
+            attack y3 Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            sacrifice r2 Alpha
+            <br>
+            attack y3 Beta
+            <br>
+            attack g3 Beta
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            build r1 Altair
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.
+            <br>
+            attack y1 Beta
         </div>
         <div class="ply">
         </div>
     </div>
 </div>
 <p>
-I composed this position as an exercise.
+Beta could instead make the game take longer by stalling instead of fighting back:
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            <br>
+            sacrifice g2 Altair
+            <br>
+            build g1 Beta
+            <br>
+            build y1 Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            sacrifice r2 Alpha
+            <br>
+            attack g3 Beta
+            <br>
+            attack g1 Beta
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            attack g1 Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.
+            <br>
+            trade g3 r3 Beta
+        </div>
+        <div class="ply">
+            3...
+            <br>
+            trade y1 r1 Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            4.
+            <br>
+            sacrifice r3 Beta
+            <br>
+            attack y1 Beta
+            <br>
+            attack y1 Beta
+            <br>
+            pass
+        </div>
+        <div class="ply">
+        </div>
+    </div>
+</div>
+<p>
+I composed this "puzzle" after being reminded that not every entry on my list needs to stump experts.
+I'll be adding more exercises for for learning basic tactics.
 </p>
 </div>
 </div>
 
 </html>
+
 
