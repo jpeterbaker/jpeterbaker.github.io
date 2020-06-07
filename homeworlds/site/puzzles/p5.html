@@ -5,6 +5,7 @@ Go time
 </title>
 <link rel="stylesheet" href="../styles.css">
 <script src='puzfun.js'></script>
+<!-- http://superdupergames.org/?page=archive_play&gid=36353&idx=30 -->
 </head>
 <center>
 <h1>
@@ -13,12 +14,6 @@ Go time
 </center>
 <p>
 <a href="pindex.html">Puzzle collection index</a>
-</p>
-<h2>
-This puzzle is under construction. You must have found it by poking around my repo
-</h2>
-<p>
-You're welcome to take a look, but beware of spoilers and a possibly incorrect answer.
 </p>
 <p>
 Beta (East) to play
@@ -29,22 +24,62 @@ Beta (East) to play
 </p>
 <div class="solution" id="hint">
 <p>
-I believe Beta wins in 6 turns, but I'm still checking.
 </p>
 <p>
 <a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
 </p>
 <p>
 Beta doesn't quite have enough material for a 2b/3y Doomsday machine.
-After demolishing the blue star, they are planning to move their y3 to Alpha's home.
+After demolishing Alpha's blue star and moving a y1 to Alpha,
+Beta could move their y3 to Alpha.
 But this move only poses a catastrophe threat, not a direct assault threat.
-Beta needs more red.
-I think Beta will win if they simply trade b2 for r2 in Beta on their first turn and then proceed with using the Doomsday machine.
-Alpha's attempts at counterattack include
-    destroying Beta's green star
-    (which has the side effect of forcing Beta to sacrifice their r2).
-
+Alpha could then sacrifice a y3 to move the y1 they just captured out of Alpha
+and invade Beta with their r3.
+Beta needs more red for a 2b/3y machine to work.
 </p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...
+            <br>
+            move b2 Altair Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            2...
+            <br>
+            sacrifice y2 Altair
+            <br>
+            move b2 Altair Alpha
+            <br>
+            move b1 Altair Alpha
+            <br>
+            catastrophe Alpha b
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            3...
+            <br>
+            build y1 Altair
+        </div>
+    </div>
+</div>
 <p>
 This position is from a casual game on SDG with permission from the players.
 </p>
