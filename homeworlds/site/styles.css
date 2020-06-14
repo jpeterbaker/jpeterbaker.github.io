@@ -1,29 +1,32 @@
 <style type="text/css">
+
 .moveTable {
     display:table;
     padding: 10px;  
 }
 
-.headerRow{
+.headerRow {
     display:table-row;
     text-align:center;
 }
-.headerCell{
+
+.headerCell {
     display:table-cell;
     padding: 10px;  
     border: 1px solid black;
 }
-.moveRow{
+
+.moveRow {
     display:table-row;
     font-family: monospace;
 }
-.ply{
+
+.ply {
     display:table-cell;
     border: 1px solid red;
     padding: 10px;  
     width: 300px;
 }
-
 
 .solution {
     display:none;
@@ -38,14 +41,17 @@ p {
     margin : 20;
     line-height : 150%;
 }
+
 ul {
     margin : 0;
     line-height : 150%;
 }
+
 ol {
     margin : 00;
     line-height : 150%;
 }
+
 body {
     padding-bottom: 300px;
 }
