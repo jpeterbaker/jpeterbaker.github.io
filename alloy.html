@@ -1,0 +1,432 @@
+<html>
+
+<button onClick="go()">Update</button>
+
+<br>
+<br>
+
+<a id="output">Alloy name</a>
+
+<br>
+<br>
+
+<table border="1" >
+
+<!-- Output row -->
+<tr>
+<td>Ore percentage</td>
+
+<td id="outA">0%</td>
+<td id="outB">0%</td>
+<td id="outC">0%</td>
+<td id="outD">0%</td>
+</tr>
+
+<!-- Ore selection row -->
+<tr>
+<td>Ore name</td>
+
+<!--
+option values will be parsed as integers for indexing component array
+-->
+<td>
+<select id="typeA">
+<option value="-1">None</option>
+<optgroup label="Copper">
+<option value="0">Native Copper</option>
+<option value="0">Tetrahedrite</option>
+<option value="0">Malachite</option>
+</optgroup>
+<optgroup label="Other Ores">
+<option value="1">Cassiterite (Tin)</option>
+<option value="2">Sphalerite (Zinc)</option>
+<option value="3">Bismuthinite (Bismuth)</option>
+<option value="4">Garnierite (Nickel)</option>
+<option value="5">Silver</option>
+<option value="6">Gold</option>
+</optgroup>
+<optgroup label="Bronzes">
+<option value="7">Bismuth Bronze</option>
+<option value="8">Black Bronze</option>
+</optgroup>
+<optgroup label="Steels">
+<option value="9">Steel</option>
+<option value="10">Black Steel</option>
+</optgroup>
+<optgroup label="Other Alloys">
+<option value="11">Brass</option>
+<option value="12">Sterling Silver</option>
+<option value="13">Rose Gold</option>
+</optgroup>
+</select>
+</td>
+
+<td>
+<select id="typeB">
+<option value="-1">None</option>
+<optgroup label="Copper">
+<option value="0">Native Copper</option>
+<option value="0">Tetrahedrite</option>
+<option value="0">Malachite</option>
+</optgroup>
+<optgroup label="Other Ores">
+<option value="1">Cassiterite (Tin)</option>
+<option value="2">Sphalerite (Zinc)</option>
+<option value="3">Bismuthinite (Bismuth)</option>
+<option value="4">Garnierite (Nickel)</option>
+<option value="5">Silver</option>
+<option value="6">Gold</option>
+</optgroup>
+<optgroup label="Bronzes">
+<option value="7">Bismuth Bronze</option>
+<option value="8">Black Bronze</option>
+</optgroup>
+<optgroup label="Steels">
+<option value="9">Steel</option>
+<option value="10">Black Steel</option>
+</optgroup>
+<optgroup label="Other Alloys">
+<option value="11">Brass</option>
+<option value="12">Sterling Silver</option>
+<option value="13">Rose Gold</option>
+</optgroup>
+</select>
+</td>
+
+<td>
+<select id="typeC">
+<option value="-1">None</option>
+<optgroup label="Copper">
+<option value="0">Native Copper</option>
+<option value="0">Tetrahedrite</option>
+<option value="0">Malachite</option>
+</optgroup>
+<optgroup label="Other Ores">
+<option value="1">Cassiterite (Tin)</option>
+<option value="2">Sphalerite (Zinc)</option>
+<option value="3">Bismuthinite (Bismuth)</option>
+<option value="4">Garnierite (Nickel)</option>
+<option value="5">Silver</option>
+<option value="6">Gold</option>
+</optgroup>
+<optgroup label="Bronzes">
+<option value="7">Bismuth Bronze</option>
+<option value="8">Black Bronze</option>
+</optgroup>
+<optgroup label="Steels">
+<option value="9">Steel</option>
+<option value="10">Black Steel</option>
+</optgroup>
+<optgroup label="Other Alloys">
+<option value="11">Brass</option>
+<option value="12">Sterling Silver</option>
+<option value="13">Rose Gold</option>
+</optgroup>
+</select>
+</td>
+
+<td>
+<select id="typeD">
+<option value="-1">None</option>
+<optgroup label="Copper">
+<option value="0">Native Copper</option>
+<option value="0">Tetrahedrite</option>
+<option value="0">Malachite</option>
+</optgroup>
+<optgroup label="Other Ores">
+<option value="1">Cassiterite (Tin)</option>
+<option value="2">Sphalerite (Zinc)</option>
+<option value="3">Bismuthinite (Bismuth)</option>
+<option value="4">Garnierite (Nickel)</option>
+<option value="5">Silver</option>
+<option value="6">Gold</option>
+</optgroup>
+<optgroup label="Bronzes">
+<option value="7">Bismuth Bronze</option>
+<option value="8">Black Bronze</option>
+</optgroup>
+<optgroup label="Steels">
+<option value="9">Steel</option>
+<option value="10">Black Steel</option>
+</optgroup>
+<optgroup label="Other Alloys">
+<option value="11">Brass</option>
+<option value="12">Sterling Silver</option>
+<option value="13">Rose Gold</option>
+</optgroup>
+</select>
+</td>
+
+
+</tr>
+
+<!-- Ore size row -->
+<tr>
+<td>Ore size</td>
+
+<td>
+<select id="sizeA">
+<option value="0">None</option>
+<option value="10">Nugget/Small</option>
+<option value="15">Poor</option>
+<option value="25">Normal (ore name only)</option>
+<option value="35">Rich</option>
+<option value="100">Ingot</option>
+<option value="1400">Anvil</option>
+</select>
+</td>
+<td>
+<select id="sizeB">
+<option value="0">None</option>
+<option value="10">Nugget/Small</option>
+<option value="15">Poor</option>
+<option value="25">Normal (ore name only)</option>
+<option value="35">Rich</option>
+<option value="100">Ingot</option>
+<option value="1400">Anvil</option>
+</select>
+</td>
+<td>
+<select id="sizeC">
+<option value="0">None</option>
+<option value="10">Nugget/Small</option>
+<option value="15">Poor</option>
+<option value="25">Normal (ore name only)</option>
+<option value="35">Rich</option>
+<option value="100">Ingot</option>
+<option value="1400">Anvil</option>
+</select>
+</td>
+<td>
+<select id="sizeD">
+<option value="0">None</option>
+<option value="10">Nugget/Small</option>
+<option value="15">Poor</option>
+<option value="25">Normal (ore name only)</option>
+<option value="35">Rich</option>
+<option value="100">Ingot</option>
+<option value="1400">Anvil</option>
+</select>
+</td>
+
+</tr>
+<!-- Ore number row -->
+<tr>
+<td>Number of pieces</td>
+
+<td>
+<input type="text" id="countA" value=""></input>
+</td>
+<td>
+<input type="text" id="countB" value=""></input>
+</td>
+<td>
+<input type="text" id="countC" value=""></input>
+</td>
+<td>
+<input type="text" id="countD" value=""></input>
+</td>
+
+</tr>
+</table>
+
+<br>
+
+<a href="http://wiki.terrafirmacraft.com/Alloys">
+TFC Wiki on Alloys
+</a>
+
+<script>
+var outs = [outA,
+            outB,
+            outC,
+            outD];
+var types = [typeA,
+             typeB,
+             typeC,
+             typeD];
+var sizes = [sizeA,
+             sizeB,
+             sizeC,
+             sizeD];
+var counts = [countA,
+              countB,
+              countC,
+              countD];
+
+var output = document.getElementById("output");
+
+function entryRange(a,b,c){
+    // Returns 1 if each element of b is between corresponding elements of a and c
+    for(i=0;i<a.length;i++){
+        if(a[i]>b[i])
+            return 0;
+        if(b[i]>c[i])
+            return 0;
+    }
+    return 1;
+}
+
+function go(){
+    // Parse the number of each item
+    ns = [0,0,0,0];
+    for(i=0;i<4;i++){
+        n = parseInt(counts[i].value);
+        if(isNaN(n)){
+            continue;
+        }
+        ns[i] = n;
+    }
+    // Get the total weight and the weight of each column
+    ws = [0,0,0,0];
+    elementInds = [-1,-1,-1,-1];
+    totalWeight = 0;
+    for(i=0;i<4;i++){
+        w = parseInt(sizes[i].options[sizes[i].selectedIndex].value);
+        elementInds[i] = parseInt(types[i].options[types[i].selectedIndex].value);
+        if(elementInds[i] < 0){
+            continue;
+        }
+        ws[i] = ns[i]*w;
+        totalWeight += ws[i];
+    }
+    if(totalWeight == 0){
+        alert("Please select at least one input");
+        return;
+    }
+    // Display the weight percentage of each column
+    for(i=0;i<4;i++){
+        outs[i].innerHTML = (100*ws[i]/totalWeight).toString()+"%";
+    }
+    // Weights of alloy-making components in the order given earlier:
+    //  0   1   2   3   4   5   6
+    // Cu, Sn, Zn, Bi, Ni, Ag, Au
+    //              7             8      9           10
+    // Bismuth Bronze, Black Bronze, Steel, Black Steel
+    //    11               12         13
+    // Brass, Sterling Silver, Rose Gold
+
+    elementWs = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    // Calculate each element weight
+    for(i=0;i<4;i++){
+        if(elementInds[i] < 0){
+            continue;
+        }
+        elementWs[elementInds[i]] += ws[i];
+    }
+    // Percentage of each element
+    elementPs = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    nelem = 14
+    for(i=0;i<nelem;i++){
+        elementPs[i] = elementWs[i]/totalWeight;
+    }
+    Cu     = elementPs[0] //Copper alloys
+    Sn     = elementPs[1] //Copper alloys
+    Zn     = elementPs[2] //Copper alloys
+    Bi     = elementPs[3] //Copper alloys
+    Ni     = elementPs[4]   //Steel alloys
+    Ag     = elementPs[5] //Copper alloys
+    Au     = elementPs[6] //Copper alloys
+    BsBz   = elementPs[7]   //Steel alloys
+    BkBz   = elementPs[8]   //Steel alloys
+    Stl    = elementPs[9]   //Steel alloys
+    BkStl  = elementPs[10]  //Steel alloys
+    Brass  = elementPs[11]  //Steel alloys
+    StAg   = elementPs[12]  //Steel alloys
+    RsAu   = elementPs[13]  //Steel alloys
+    
+    result = "Unknown"
+
+    // Pure metals
+    if(Cu == 1)
+        result = "Copper";
+    else if(Sn == 1)
+        result = "Tin";
+    else if(Zn == 1)
+        result = "Zinc";
+    else if(Bi == 1)
+        result = "Bismuth";
+    else if(Ni == 1)
+        result = "Nickel";
+    else if(Ag == 1)
+        result = "Silver";
+    else if(Au == 1)
+        result = "Gold";
+    else if(BsBz == 1)
+        result = "Bismuth Bronze";
+    else if(BkBz == 1)
+        result = "Black Bronze";
+    else if(Stl == 1)
+        result = "Steel";
+    else if(BkStl == 1)
+        result = "Black Steel";
+    else if(Brass == 1)
+        result = "Brass (Original TFC only. TFC-plus has different recipe)";
+    else if(StAg == 1)
+        result = "Sterling Silver";
+    else if(RsAu == 1)
+        result = "Rose Gold";
+    else if(Cu > 0){
+        // Copper alloys
+        if(Ni + BsBz + BkBz + Stl + BkStl + Brass + StAg + RsAu == 0){
+            if(Zn >= 0.20 && Zn <= 0.30 &&
+               Cu >= 0.50 && Cu <= 0.65 &&
+               Bi >= 0.10 && Bi <= 0.20 &&
+               Sn + Ag + Au == 0)
+                result = "Bismuth bronze"
+            else if(Cu >= 0.50 && Cu <= 0.70 &&
+                    Ag >= 0.10 && Ag <= 0.25 &&
+                    Au >= 0.10 && Au <= 0.25 &&
+                    Sn + Zn + Bi == 0)
+                result = "Black bronze"
+            else if(Sn >= 0.08 && Sn <= 0.12 &&
+                    Cu >= 0.88 && Cu <= 0.92 &&
+                    Ag + Au + Zn + Bi == 0)
+                result = "Bronze"
+            else if(Zn >= 0.08 && Zn <= 0.12 &&
+                    Cu >= 0.88 && Cu <= 0.92 &&
+                    Ag + Au + Sn + Bi == 0)
+                result = "Brass"
+            else if(Au >= 0.70 && Au <= 0.85 &&
+                    Cu >= 0.15 && Cu <= 0.30 &&
+                    Ag + Zn + Sn + Bi == 0)
+                result = "Rose gold"
+            else if(Ag >= 0.60 && Ag <= 0.80 &&
+                    Cu >= 0.20 && Cu <= 0.40 &&
+                    Ag + Zn + Sn + Bi == 0)
+                result = "Sterling silver"
+        }
+        // If any copper alloys contained Ni, Bismuth Bronze, etc., they'd go here
+    }
+    // If a new steel alloy contains copper, the else will need to go
+    else if(Stl >0){
+        // Steel alloys
+        if(Cu + Sn + Zn + Bi + Ag + Au == 0){
+            if(Stl  >= 0.50 && Stl  <= 0.70 &&
+               Ni   >= 0.15 && Ni   <= 0.25 &&
+               BkBz >= 0.15 && BkBz <= 0.25 &&
+               BsBz + BkStl + Brass + StAg + RsAu == 0)
+                result = "(Weak) Black Steel"
+            else if(BkStl >= 0.50 && BkStl <= 0.55 &&
+                    BsBz  >= 0.10 && BsBz  <= 0.15 &&
+                    StAg  >= 0.10 && StAg  <= 0.15 &&
+                    Stl   >= 0.20 && Stl   <= 0.25 &&
+                    Ni + BkBz + Brass + RsAu == 0)
+                result = "(Weak) Blue Steel"
+            else if(BkStl >= 0.50 && BkStl <= 0.55 &&
+                    RsAu  >= 0.10 && RsAu  <= 0.15 &&
+                    Brass >= 0.10 && Brass <= 0.15 &&
+                    Stl   >= 0.20 && Stl   <= 0.25 &&
+                    Ni + BsBz + BkBz + StAg == 0)
+                result = "(Weak) Red Steel"
+        }
+        // If any steel alloys contained Cu, Sn, etc., they'd go here
+    }
+    result += " (" + totalWeight.toString() + " units)"
+
+    output.innerHTML = result
+
+}
+</script>
+
+</html>
