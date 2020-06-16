@@ -235,6 +235,10 @@ option values will be parsed as integers for indexing component array
 <a href="http://wiki.terrafirmacraft.com/Alloys">
 TFC Wiki on Alloys
 </a>
+<br>
+<a href="https://plus.terrafirmacraft.com/Alloys">
+TFC-plus Wiki on Alloys
+</a>
 
 <script>
 var outs = [outA,
@@ -361,7 +365,7 @@ function go(){
     else if(BkStl == 1)
         result = "Black Steel";
     else if(Brass == 1)
-        result = "Brass (Original TFC only. TFC-plus has different recipe)";
+        result = "Brass";
     else if(StAg == 1)
         result = "Sterling Silver";
     else if(RsAu == 1)
@@ -386,7 +390,11 @@ function go(){
             else if(Zn >= 0.08 && Zn <= 0.12 &&
                     Cu >= 0.88 && Cu <= 0.92 &&
                     Ag + Au + Sn + Bi == 0)
-                result = "Brass"
+                result = "Brass (original TFC only)"
+            else if(Zn >= 0.20 && Zn <= 0.30 &&
+                    Cu >= 0.70 && Cu <= 0.80 &&
+                    Ag + Au + Sn + Bi == 0)
+                result = "Brass (TFC-plus only)"
             else if(Au >= 0.70 && Au <= 0.85 &&
                     Cu >= 0.15 && Cu <= 0.30 &&
                     Ag + Zn + Sn + Bi == 0)
