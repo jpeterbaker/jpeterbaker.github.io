@@ -13,10 +13,6 @@ you then cat whichever one they capture
 then you cat the other one
 The hard part will be making it so no other move order would work
 
-Puzzle
-Easy ones for the beginners (marked visibly so someone can just go through the introductory ones)
-    Need to trade for a red right away
-
 On "thoughts" page
 'Righteous' game mode should be the opposite of sinister: eliminate the player on your right
     This makes more sense to me for two reasons:
@@ -27,3 +23,49 @@ On "thoughts" page
 
 
 Homestar on glossary page
+
+
+
+
+Puzzle from SDG message from D5PA
+I think this works. East to play. Uppercase ships are East's, lowercase are West's, [] is stars. Title: "Cornered"?
+
+Homeworld West [b2r1]
+y1
+g3
+
+Altair [b3]
+g2
+r1
+
+Betelgeuse [g3]
+b1
+b1
+b2
+
+Castor [b3]
+G1
+G1
+R2
+Y1
+
+Deneb [g2]
+b1 
+
+Electra [g3]
+Y2
+R1
+
+Homeworld East [b3]
+Y2
+Y1
+R2
+G2
+
+East has two main problems: lack of a large ship and a solitary homestar. If east doesn't win quickly, one of these will probably cost them the game.
+East may be able to force a catastrophe involving West's large:
+start by moving two greens to Alpha
+    if he attacks or does something unrelated, cat
+    if he trades for r3, move in two reds
+    if he trades for y3, move in two yellows
+
