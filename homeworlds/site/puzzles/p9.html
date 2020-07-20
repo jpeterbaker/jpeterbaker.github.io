@@ -15,10 +15,6 @@ Cornered
 <a href="pindex.html">Puzzle collection index</a>
 </p>
 <p>
-This puzzle is still under review.
-I think there may be a problem, which I'll explain in the solution.
-</p>
-<p>
 Beta (East) to play
 </p>
 <img src='https://imgur.com/isKpVqw.png'>
@@ -27,20 +23,16 @@ Beta (East) to play
 </p>
 <div class="solution" id="hint">
 <p>
-Beta will win in about four turns (maybe).
+Beta will win in about four turns.
 </p>
 <p>
 <a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
 </p>
 <div class="solution" id="solution">
 <p>
-I'm not really convinced that Beta has the win here.
-If Alpha starts with building r2, I think Beta needs more material to win.
-</p>
-<p>
 Beta wins by catching Alpha's large ship in a catastrophe
 and then invading with a direct assault.
-For example
+For example,
 </p>
 <div class="moveTable">
     <div class="headerRow">
@@ -114,7 +106,12 @@ For example
     </div>
 </div>
 <p>
-But I think the right approach for Alpha is actually to just let their g3 die while preparing for the invasion.
+Of course, Alpha can't save their large ship by trading their it for red or yellow
+since Beta can also destroy a y3 or r3 in a catastrophe.
+</p>
+<p>
+Alpha can try to prepare for the direct assault one turn earlier by getting r2,
+but this allows Beta to build r3:
 </p>
 <div class="moveTable">
     <div class="moveRow">
@@ -135,34 +132,99 @@ But I think the right approach for Alpha is actually to just let their g3 die wh
         <div class="ply">
             2...
             <br>
-            Maybe attack the y1 or just kill the g3.
-            Hmm. I'll get back to you.
-            <br>
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            3.
-            <br>
-        </div>
-        <div class="ply">
-            3...
-            <br>
-        </div>
-    </div>
-    <div class="moveRow">
-        <div class="ply">
-            4.
-            <br>
-        </div>
-        <div class="ply">
-            4...
-            <br>
+            build r3 Electra
         </div>
     </div>
 </div>
 <p>
-This puzzle was composed by SDG user Draw5PlayAll.
+Alpha's g3 is still doomed, and Beta is now prepared to invade with a large ship.
+Alpha must build r3 as well.
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            3.
+            <br>
+            build r3 Betelgeuse
+        </div>
+        <div class="ply">
+            3...
+            <br>
+            sacrifice y2 Electra
+            <br>
+            move g1 Castor Alpha
+            <br>
+            move g1 Castor Alpha
+            <br>
+            catastrophe Alpha g
+        </div>
+    </div>
+</div>
+<p>
+No matter how Alpha tries to defend,
+Beta either wins by catastrophe or direct assault.
+For example, if Alpha defends with r3,
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            4.
+            <br>
+            sacrifice y1 Alpha
+            <br>
+            move r3 Betelgeuse Alpha
+        </div>
+        <div class="ply">
+            4...
+            <br>
+            sacrifice y2 Beta
+            <br>
+            move r1 Electra Alpha
+            <br>
+            move r2 Castor Alpha
+            <br>
+            catastrophe Alpha r
+        </div>
+    </div>
+</div>
+<p>
+or if Alpha tries to defend with another ship,
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            4.
+            <br>
+            sacrifice y1 Alpha
+            <br>
+            move g2 Altair Alpha
+        </div>
+        <div class="ply">
+            4...
+            <br>
+            move r3 Electra Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            5.
+            <br>
+            build g1 Alpha
+        </div>
+        <div class="ply">
+            5...
+            <br>
+            sacrifice r2 Castor
+            <br>
+            attack g1 Alpha
+            <br>
+            attack g2 Alpha
+        </div>
+    </div>
+</div>
+<p>
+This position was submitted as a possible puzzle by SDG user Draw5PlayAll.
+The analysis is my own.
 </p>
 </div><!-- End solution -->
 </div><!-- End hint -->
