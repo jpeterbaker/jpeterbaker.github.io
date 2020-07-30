@@ -1,71 +1,16 @@
 More puzzles
 
 Puzzle
-such as something involving a blue sacrifice, since those are rare.
+something involving a blue sacrifice, since those are rare.
     How about, your opponent has just moved some ships into your home. You don't have a large red,
     but you could sacrifice a b2 to turn two of your home larges red. They could attack those, but then you can cat them,
     and they'd be spending their only red to do so leaving them helpless and you with the advantage.
 
 Puzzle
 A Doomsday machine where the phases are necessarily intermingled
-For example, you move in two larges of the star colors to start with
-you then cat whichever one they capture
-then you cat the other one
-The hard part will be making it so no other move order would work
+    For example, you move in two larges of the star colors to start with
+    you then cat whichever one they capture
+    then you cat the other one
+    The hard part will be making it so no other move order would work
 
-On "thoughts" page
-'Righteous' game mode should be the opposite of sinister: eliminate the player on your right
-    This makes more sense to me for two reasons:
-    1) "Sinister" comes from a word also meaning "left"
-        The player who is "sinister" (on your left) should be the one trying to kill you
-    2) This gives you the turn just before your would-be killer,
-       and thus you have last-minute chance to defend yourself without other players having a chance to interfere before your killer moves.
-
-
-Homestar on glossary page
-
-
-
-
-Puzzle from SDG message from D5PA
-I think this works. East to play. Uppercase ships are East's, lowercase are West's, [] is stars. Title: "Cornered"?
-
-Homeworld West [b2r1]
-y1
-g3
-
-Altair [b3]
-g2
-r1
-
-Betelgeuse [g3]
-b1
-b1
-b2
-
-Castor [b3]
-G1
-G1
-R2
-Y1
-
-Deneb [g2]
-b1 
-
-Electra [g3]
-Y2
-R1
-
-Homeworld East [b3]
-Y2
-Y1
-R2
-G2
-
-East has two main problems: lack of a large ship and a solitary homestar. If east doesn't win quickly, one of these will probably cost them the game.
-East may be able to force a catastrophe involving West's large:
-start by moving two greens to Alpha
-    if he attacks or does something unrelated, cat
-    if he trades for r3, move in two reds
-    if he trades for y3, move in two yellows
 
