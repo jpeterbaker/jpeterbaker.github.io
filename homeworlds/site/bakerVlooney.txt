@@ -107,5 +107,6 @@ sacrifice y2 H
     mvoe g1 ? Babamots
 
 sacrifice r2 A
-attack everything
+    attack everything
 
+These notes at the time are not totally correct
