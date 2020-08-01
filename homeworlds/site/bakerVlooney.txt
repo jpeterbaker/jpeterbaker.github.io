@@ -1,0 +1,112 @@
+Baker vs Looney
+
+homeworld r1 b2 g3
+homeworld y3 b1 g3
+
+build g1 Babamots
+build g1 Andy
+
+trade g1 b1 Babamots
+trade g1 b1 Andy
+
+build b2 Babamots
+build b2 Andy
+
+trade b2 y2 Babamots
+discover b2 Andy g2 A
+
+discover b1 Babamots g3 B
+build g1 Andy
+
+build y1 Babamots
+trade g1 y1 Andy
+
+move y1 Babamots B
+move y1 Andy A
+
+build g1 Babamots
+build g1 Andy
+
+build y1 Babamots
+build y2 A
+
+build y2 B
+discover y2 A b3 C
+
+trade y1 r1 B
+trade g1 r1 Andy
+
+discover y2 Babamots b3 D
+discover b2 A y3 E
+
+sacrifice g3 Babamots
+    build y1 D
+    build y3 Babamots
+    build b2 B
+trade b2 g2 E
+
+sacrifice b2 B
+    trade y1 g1 Jon
+    trade y2 g2 D
+build r2 Andy
+
+build r2 B
+discover r2 Andy y2 F
+
+move g1 Babamots E
+move r2 F C
+
+move r2 B A
+discover y1 A g3 G
+
+sacrifice g2 D
+    build r2 A
+    build r3 B
+sacrifice g2 E
+    build r3 Andy
+    build r3 E
+
+trade r3 b3 B
+sacrifice r1 Andy
+    attack g1 E
+
+move b3 B A
+discover r3 Andy y2 H
+
+build b2 A
+discover b1 Andy g2 I
+
+move y1 D A
+move r3 H B
+
+sacrifice y2 B
+    move b1 B A
+    move b1 A Andy
+sacrifice r2 E
+    attack r1 B
+    attack b1 Andy
+
+move b3 A Andy
+sacrifice r1 B
+    attack b3 Andy
+
+move b2 A Andy
+    catastrophe Andy b
+build g1 Andy
+
+build y1 A
+build y2 G
+
+move y1 A Andy
+sacrifice r3 E
+    attack y1 Andy
+
+move y3 Babamots Andy
+sacrifice y2 H
+    move g1 Anday Babamots
+    mvoe g1 ? Babamots
+
+sacrifice r2 A
+    attack everything
+
+These notes at the time are not totally correct
