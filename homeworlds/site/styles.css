@@ -21,12 +21,33 @@
     font-family: monospace;
 }
 
+.commentRow {
+    display:table-row;
+    padding: 10px;  
+    border: 1px solid blue;
+}
+
 .ply {
     display:table-cell;
     border: 1px solid red;
     padding: 10px;  
     width: 300px;
 }
+
+.noply {
+    display:table-cell;
+    border: 0px;
+    padding: 10px;  
+    width: 300px;
+}
+
+div>p {
+    margin : 20;
+    line-height : 150%;
+    width: 620px;
+    background-color:powderblue;
+}
+
 
 .solution {
     display:none;
