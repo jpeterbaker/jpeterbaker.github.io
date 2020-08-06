@@ -41,13 +41,12 @@
     width: 300px;
 }
 
-div>p {
+.movetable>p {
     margin : 20;
     line-height : 150%;
     width: 620px;
     background-color:powderblue;
 }
-
 
 .solution {
     display:none;
