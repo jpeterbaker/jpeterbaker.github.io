@@ -45,6 +45,7 @@ var allsayings = [
     3,"NASA or space",
     3,"Portland area",
     3,"Washington, D.C. area",
+    1,"\"All I'm saying\"",
     1,"A project whose details can't be shared",
     1,"A robot",
     1,"An alien",
