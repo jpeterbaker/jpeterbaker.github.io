@@ -154,18 +154,23 @@ Introduction
 <p>
 This whole section deals with the very rare case that an overpopulation
 is created by a player who doesn't want to trigger a catastrophe.
+I'm talking about when the overpopulation is going to exist at the <u>end</u> of the player's turn,
+not when a ship happens to briefly create an overpopulation as it passes through a system
+while it moves twice with a yellow sacrifice move.
+</p>
+<p>
 Overpopulations are almost always created intentionally
 so that triggering the catastrophe will destroy their opponent's resources.
 When I first teach people to play the game,
 I usually don't bother to tell them that catastrophes are technically optional.
-I occasionally (improperly) use the words "overpopulation" and "catastrophe" interchangeably.
-But the topic of unwanted overpopulations comes up in strategy conversations,
-so it's my intention to thoroughly explore the topic in this section.
+I sometimes use the words "overpopulation" and "catastrophe" interchangeably.
+However, several people have asked me about whether it could ever be a good idea
+to leave an overpopulation on the board at the end of their turn.
+So I want to thoroughly explore the topic in this section.
 </p>
 <p>
-For now, I'm not even going to try to concoct a game position where it makes some kind of sense to
-overpopulate without triggering the catastrophe.
-For some idea of why not, take a look at
+For some idea of why it's not normal to create an overpopulation where you don't want the catastrophe,
+take a look at
 <a href="https://www.youtube.com/watch?v=ZAIn7kDugGE&t=822s">this Homeworlds Theater episode</a>.
 The overpopulating player didn't call catastrophe,
 so their opponent called catastrophe instead.
@@ -173,34 +178,52 @@ That move was so poor that the next HW Theater episode was
 all about replaying the game from that point with a different move.
 </p>
 <h4>
-Yes, you should almost certainly call catastrophe
+Yes, you should (almost) certainly call catastrophe
 </h4>
 <p>
-With some rare exceptions to this already rare situation,
-if your turn is going to end with an overpopulation on the board for any reason,
-you should always trigger the catastrophe, even if it's a bad catastrophe for you.
+I'm going to start by arguing that,
+if your turn is going to <u>end</u> with an overpopulation on the board for any reason,
+you should always trigger the catastrophe.
 </p>
 <ul>
-    <li> If it's a catastrophe that's good for you, then obviously you should trigger it.
+    <li> If it's a catastrophe that helps you win (making it more likely that you will win),
+    then obviously you should trigger it.
     This is usually what happens in games.
-    <li> If it's a catastrophe that's bad for you, then your opponent will just trigger it on their turn.
+    <li> If it's a catastrophe that improves your opponent's chances of winning,
+    then your opponent (<u>if</u> they also believe that the catastrophe helps them)
+    will trigger the catastrophe on their turn.
     What's more, if you let them trigger it, they might find a way to get some advantage out of
     triggering the catastrophe <u>after</u> they perform some other action
     (like building a large ship that will be unavailable after the catastrophe).
     So it is no worse and possibly better for you to trigger it yourself.
+    <br>
+    (The <u>if</u> part of the preceding paragraph is the topic of the entire next section.)
+    <li> If it's a catastrophe that doesn't improve either player's chances of winning,
+    then of course, it won't matter whether you trigger it.
+    Just like with the "bad" catastrophe in the previous point,
+    calling catastrophe won't hurt your chances.
 </ul>
-<p>
-There can also be catastrophes that won't change the result of a game.
-and of course in that case, it won't matter whether you trigger it,
-I still recommend calling catastrophe if you think it's a break-even catastrophe
-just in case you've miscalculated.
-</p>
 <p>
 Human calculations on Homeworlds positions aren't perfect,
 so you may not be sure whether a catastrophe is good, bad, or neutral.
 But as I've just argued, you should trigger all kinds of catastrophes,
-so it doesn't even matter if you don't know which kind it is.
+so it doesn't even matter if you are completely sure which kind it is.
 Trigger it anyway.
+</p>
+<center>
+<img src='https://imgur.com/zR4p9no.png'>
+</center>
+<p>
+Consider the extensive form game diagram above.
+If Alice doesn't trigger the catastrophe, then Bob gets to choose between States A, B, and C.
+Bob should choose whichever of these states is best for him (and therefore worst for Alice).
+If Alive does trigger the catastrophe, she is limiting Bob's options;
+State A is guaranteed.
+If State A is the worst of the three states for Alice,
+Bob would choose it,
+and the outcome is the same whether Alice triggers it or leaves it for Bob.
+Therefore, Alice can't improve on the strategy
+of always triggering catastrophes at the end of her turn.
 </p>
 
 <h4>
@@ -212,7 +235,7 @@ Strict game theoretical logic dictates that every overpopulation should become a
 But there are several justifications for not triggering catastrophes
 that are based on a belief in an opponent's imperfect mental state
 (nobody thinks as perfectly as the game theory argument requires).
-You may choose not to trigger a catastrophe as a gamble
+You may choose not to trigger a bad-for-you catastrophe as a gamble
 that your opponent will also choose not to trigger it for some reason.
 In that case, they will have gifted you another turn to try to resolve the overpopulation advantageously.
 </p>
@@ -223,73 +246,82 @@ Opponent has different beliefs
 </h5>
 </center>
 <p>
-There's an argument for not triggering a catastrophe
-when you and your opponent have different beliefs about whether the catastrophe is bad.
-Models of what people think about what others are thinking
-can (literally) get infinitely complicated,
-as in, "Does he know that I know that he knows that I know that he ate my cookie?"
-It's difficult to give strategy advice about something so complex,
-but I'm going to give it a shot.
+Take a look at the diagram above.
+Let's say that Alice thinks that State C is the best for her
+(and therefore the worst for Bob)
+but for some reason, Alice suspects that Bob believes that
+State C is actually the <u>best</u> for Bob.
+Alice would like the game to arrive in State C,
+and she expects Bob to also prefer State C.
+Alice rationally ignores the overpopulation and hopes that she is right that
+Bob will choose to ignore it as well.
 </p>
 <p>
-Imagine that you believe that a catastrophe is bad for you,
-but your opponent believes that the catastrophe is bad for them instead
-(and you know that they they think it is bad for them).
-My argument in the previous section is that
-you should trigger the bad catastrophe because your opponent will do it anyway
-and they might gain some advantage by performing another action first.
-But that was based on players calculating perfectly
-and therefore agreeing on who benefits from the catastrophe.
-If you <u>don't</u> trigger the catastrophe,
-your opponent will try to defuse the overpopulation
-because they believe that the catastrophe is bad for them.
-<p>
-If your opponent can't remove the overpopulation,
-then they are in the position that you were just in;
-they are wondering whether to trigger a bad catastrophe.
-If they know that you think the catastrophe is bad for you
-(which they may suspect from the fact that you just declined to trigger it),
-then they may decline to trigger the catastrophe using your same reasoning.
+On Bob's turn, he believes (incorrectly, in Alice's opinion) that State C is best for him.
+He doesn't want to trigger the catastrophe,
+and if he is unable to remove the overpopulation some other way,
+then Bob is in the position that Alice was just in;
+he is wondering whether to trigger the bad catastrophe.
+Having just turned down the opportunity to trigger the catastrophe,
+Alice has given Bob a clue:
+Bob should <u>know</u> that Alice believes the catastrophe is bad for her
+<u>and</u> that she thinks that Bob thinks the catastrophe is bad for him
+(since, as I've just argued, that's the only time Alice would choose not to trigger it).
+So, if Bob hasn't changed his opinion that State C is better than the alternative (State B),
+then he may decline to trigger the catastrophe using the same reasoning as Alice.
 This could carry on until a player finds a way to
 trade, move, or sacrifice one of the ships involved in the overpopulation.
 </p>
 <p>
-Notice that a catastrophe can't <u>actually</u> be bad for both you and for your opponent
-since this is a zero-sum game.
-But usually, neither of you can analyze the position perfectly.
-You both make mistakes.
-If you know your opponent well enough,
-you may know what kinds of miscalculation they tend to make
-and how that will affect their evaluation of a catastrophe.
+Notice that Alice's decision to ignore the overpopulation doesn't actually rise from
+the players' disagreement about which state benefits which player.
+Alice's decision is based on Alice's <u>belief</u> that Bob's mental calculations are different from her own.
+If Bob's calculations are different but Alice doesn't know it,
+Alice should trigger the catastrophe.
 </p>
 <p>
-For example, suppose that (in your opinion),
-your opponent overestimates the strength of large ships.
-Say there is an overpopulation involving three of your medium ships
-and one of your opponent's large ships.
-You might think your three mediums are worth more than their large
-but also know that your opponent thinks that their large is better than your three mediums.
-You are happy to not trigger the catastrophe,
-and (assuming that you are correct about how they think)
-your opponent won't trigger it either
-(which you believe is good for you).
+Homeworlds is zero-sum game,
+so Alice and Bob can't both be right:
+if State C is better for Alice than A or B,
+then State C is worse for Bob than A or B.
+But there are various reasons why they might disagree.
+Most likely it's because both players make mistakes.
+No one can perfectly calculate how a catastrophe will affect the rest of the game
+(unless it's very nearly over).
+If Alice knows Bob well enough,
+she may know what kinds of miscalculation he tends to make
+and how that will affect his evaluation of a catastrophe.
+</p>
+<p>
+For example, suppose that (in Alice's opinion),
+Bob overestimates the strength of large ships.
+Say that the overpopulation involves three of Alice's medium ships
+and one of Bob's large ships.
+Alice might think that her three mediums are worth more than Bob's large,
+but Alice also knows that Bob thinks that their large is better than Alice's three mediums.
+Alice is happy to not trigger the catastrophe,
+and (assuming that Alice is correct about how Bob thinks)
+Bob won't trigger it either.
+</p>
 <p>
 Besides miscalculation, other things can cause players to have different beliefs.
 For example, if you're playing with time control,
 each player may think that they are more likely than their opponent to make mistakes under time pressure.
 Prolonging the game will put both players under time pressure,
 so each player thinks that they will be at a disadvantage in a long game.
-If there's a catastrophe that is expected to prolong the game,
-then you may each think that triggering the catastrophe is bad for you.
-If you know that your opponent thinks that <u>you</u> are more vulnerable to time pressure than they are
+If there's a catastrophe that is expected to prolong the game
+(but that otherwise doesn't give an advantage to either player),
+then each player will think that triggering the catastrophe is bad for them.
+If you are aware of your opponent's belief that they
+are more vulnerable to time pressure than you are
 (the opposite of your belief),
-then it is reasonable to not trigger the catastrophe.
+then it is reasonable to not trigger the game-prolonging catastrophe.
 </p>
 <p>
 Similarly, energy for concentration is a limited resource that needs to be managed,
 even in a game that isn't under formal time control.
 If you believe that you are more tired than your opponent
-but you believe that your opponent thinks that you are more tired than they are,
+but you believe that your opponent thinks that they are more tired than you are,
 then you can reasonably not trigger a game-prolonging catastrophe.
 </p>
 <p>
@@ -297,7 +329,7 @@ The examples above take as a premise that
 a catastrophe that destroys similar amounts of material for both players
 tends to make the game last longer.
 It's been my experience that catastrophes
-(at least ones in <a href="glossary.html#colony">colonies</a>) are often followed
+(ones in <a href="glossary.html#colony">colonies</a> at any rate) are often followed
 by several turns of rebuilding for both players,
 which slows the game down.
 This principle definitely doesn't apply to catastrophes that involve a homestar,
@@ -305,7 +337,8 @@ which tend to <a href="#swiftVictory">accelerate the game dramatically</a>.
 Maybe you believe that the catastrophe in your game will make the game end sooner
 than if the catastrophe didn't happen.
 In that case, just reverse the beliefs from the earlier arguments.
-If each player believes themself to be less vulnerable to time pressure than their opponent,
+If each player believes themself to be <u>less</u> vulnerable to time pressure than their opponent
+(and if they are aware of their opponent's opposing belief),
 then they may reasonably choose not to trigger a game-shortening catastrophe.
 </p>
 <p>
@@ -313,8 +346,9 @@ To summarize this subsection,
 it is reasonable for you to not trigger a catastrophe if
 </p>
 <ul>
-    <li> You think that the catastrophe is bad for you.
-    <li> You believe that your opponent erroneously thinks that the catastrophe is bad for them.
+    <li> You think that the catastrophe is bad for you
+    <li> And you believe that your opponent erroneously thinks that the catastrophe is bad for them.
+    <br>
     If your opponent also declines to trigger the catastrophe,
     it will be because they really do believe that the catastrophe is bad for them.
 </ul>
@@ -357,7 +391,8 @@ they might not even know what a catastrophe is.
 So you might be able to get away with an un-triggered catastrophe due to ignorance,
 but, I absolutely do not condone exploiting players who don't know all of the rules.
 You should make it a teaching moment by pointing out what they ought to do.
-(And by the way, how did such an inexperienced player manage to tangle you into an unwanted overpopulation anyway?)
+(And by the way, how did such an inexperienced player manage
+to tangle you into an unwanted overpopulation anyway?)
 </p>
 
 <center>
@@ -379,12 +414,14 @@ Suppose that
 <li> You are sure that, if you leave the overpopulation on the board,
 your opponent will <u>not</u> be able to get some extra advantage by triggering the catastrophe
 at the end of their turn instead of the beginning.
+<br>
+In terms of the digram, you are Alice and State B is no worse for you than State A is.
 </ul>
 <p>
 You might want to leave the overpopulation on the board
 so that your opponent has to trigger the catastrophe themself,
 which will cost them some time.
-If you are playing with physical pieces,
+If you are playing with real life pieces,
 carrying out the physical act of clearing the catastrophe pieces from the board
 and sorting them back in the bank can easily take 10 seconds or more.
 If you're playing on a digital system,
@@ -401,7 +438,7 @@ All else being equal, it's better if that time comes off of your opponent's cloc
 This whole section on when to trigger catastrophes goes out the window
 if you're not playing Binary Homeworlds.
 When three or more players are involved, you can engage in diplomacy,
-which is a type of strategy, but if I ever discuss diplomacy, it will be on a separate page.
+which is a totally different beast from what I'm analyzing on this page.
 </p>
 <p>
 For an easy example of when not to trigger a catastrophe in a three-player game,
@@ -410,9 +447,10 @@ Bob and Carol have agreed to cooperate with each other for a while
 until Alice is less of a threat.
 Suppose Bob moves a large ship into one of Carol's systems in order to help defend against Alice,
 but Bob's ship is the same color as three of Carol's ships.
-Carol doesn't trigger the catastrophe that would harm herself and her ally.
+Carol may choose not to trigger the catastrophe that would harm herself and her ally.
 Instead, Carol can move, trade, or sacrifice a ship to remove the overpopulation.
-Of course, Alice would trigger that catastrophe if it were still on the board when her turn came.
+Of course, Alice would trigger that catastrophe if the overpopulation
+were still on the board when her turn came.
 </p>
 
 <h2>
