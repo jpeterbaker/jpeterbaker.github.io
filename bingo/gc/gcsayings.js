@@ -194,6 +194,7 @@ var allsayings = [
     1,"Debt",
     1,"Dreams",
     1,"Fruit",
+    1,"Grief",
     1,"Hell",
     1,"Idaho",
     1,"Island nation",
