@@ -41,6 +41,7 @@ var allsayings = [
     2,"A book",
     2,"A video game",
     2,"An animal",
+    2,"Andy's squeamishenss",
     2,"Burning Man",
     2,"Dessert",
     2,"Doctor Who",
@@ -52,10 +53,11 @@ var allsayings = [
     2,"NASA or space",
     2,"Portland area",
     2,"The Twilight Zone",
-    2,"The production process of the podcast",
+    2,"Suggesting a title for the episode",
     2,"Washington, D.C. area",
     2,"\"Anyway...\"",
     2,"\"On that note\"",
+    2,"\"That's the thing...\"",
     1,"A project whose details can't be shared",
     1,"A robot",
     1,"Agreeing to disagree",
@@ -75,5 +77,6 @@ var allsayings = [
     1,"The Bates Discordians",
     1,"The X-Files",
     1,"\"All I'm saying\"",
+    1,"\"There you go\"",
 ];
 
