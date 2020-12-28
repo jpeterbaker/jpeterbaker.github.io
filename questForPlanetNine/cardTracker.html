@@ -7,9 +7,13 @@ Quest for Planet Nine Card Tracker
 <link rel="stylesheet" href="styles.css">
 </head>
 
+<body>
 <button onclick='reset()' style='padding:10px 20px'>RESET</button>
 <button onclick='bga3()' style='padding:10px 20px'>THREE PLAYER</button>
-
+<br>
+<h3>
+Track played cards
+</h3>
 <table> <!-- style='width500px'>-->
     <tr height='30px'>
         <td data-suit='0' onclick='clicked(this)'>1</td>
@@ -62,13 +66,15 @@ Quest for Planet Nine Card Tracker
         <td data-suit='4' onclick='clicked(this)'>4</td>
     </tr>
 </table>
-
+<h3>
+Track who is out of which suit
+</h3>
 <table>
     <tr>
-        <td colspan='5'><input style='width:100%' type='text'></td>
-        <td colspan='5'><input style='width:100%' type='text'></td>
-        <td colspan='5'><input style='width:100%' type='text'></td>
-        <td colspan='5'><input style='width:100%' type='text'></td>
+        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
     </tr>
     <tr height='50px'>
         <td data-suit='0' onclick='clicked(this)'/>
@@ -93,15 +99,16 @@ Quest for Planet Nine Card Tracker
         <td data-suit='4' onclick='clicked(this)' data-three='0'/>
     </tr>
 </table>
+</body>
 
 
 <script>
 colors = [
     [
-        'DD0000',
+        'ED74A2',
         'DDDD00',
         '4444FF',
-        '00AA00',
+        '33B000',
         '555555'
     ],
     [
