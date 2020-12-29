@@ -8,12 +8,12 @@ Quest for Planet Nine Card Tracker
 </head>
 
 <body>
-<button onclick='reset()' style='padding:10px 20px'>RESET</button>
-<button onclick='bga3()' style='padding:10px 20px'>THREE PLAYER</button>
-<button onclick='undo()' style='padding:10px 20px'>UNDO</button>
+<button onclick='reset()'>RESET</button>
+<button onclick='bga3()'>THREE PLAYER</button>
+<button onclick='undo()'>UNDO</button>
 <br>
 <h3>
-Track played cards
+Cards still in play
 </h3>
 <table> <!-- style='width500px'>-->
     <tr>
@@ -68,38 +68,53 @@ Track played cards
     </tr>
 </table>
 <h3>
-Track who is out of which suit
+Suit ownership
 </h3>
 <table>
     <tr>
-        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
-        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
-        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
-        <td colspan='5'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='right'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='middle'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='middle'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='left'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+    </tr>
+    <tr>
+        <td colspan='2' class='right'>May be holding</td>
+        <td colspan='2' class='middle'>May be holding</td>
+        <td colspan='2' class='middle'>May be holding</td>
+        <td colspan='2' class='left'>May be holding</td>
     </tr>
     <tr>
         <td data-suit='0' onclick='clicked(this)'/>
-        <td data-suit='1' onclick='clicked(this)'/>
-        <td data-suit='2' onclick='clicked(this)'/>
-        <td data-suit='3' onclick='clicked(this)'/>
-        <td data-suit='4' onclick='clicked(this)'/>
-        <td data-suit='0' onclick='clicked(this)'/>
-        <td data-suit='1' onclick='clicked(this)'/>
-        <td data-suit='2' onclick='clicked(this)'/>
-        <td data-suit='3' onclick='clicked(this)'/>
-        <td data-suit='4' onclick='clicked(this)'/>
-        <td data-suit='0' onclick='clicked(this)' data-three='0'/>
+        <td data-suit='1' onclick='clicked(this)' class='right'/>
+        <td data-suit='0' onclick='clicked(this)' class='left'/>
+        <td data-suit='1' onclick='clicked(this)' class='right'/>
+        <td data-suit='0' onclick='clicked(this)' data-three='0' class='left'/>
+        <td data-suit='1' onclick='clicked(this)' data-three='0' class='right'/>
+        <td data-suit='0' onclick='clicked(this)' data-three='0' class='left'/>
         <td data-suit='1' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='2' onclick='clicked(this)' data-three='0'/>
+    </tr>
+    <tr>
+        <td data-suit='2' onclick='clicked(this)'/>
+        <td data-suit='3' onclick='clicked(this)' class='right'/>
+        <td data-suit='2' onclick='clicked(this)' class='left'/>
+        <td data-suit='3' onclick='clicked(this)' class='right'/>
+        <td data-suit='2' onclick='clicked(this)' data-three='0' class='left'/>
+        <td data-suit='3' onclick='clicked(this)' data-three='0' class='right'/>
+        <td data-suit='2' onclick='clicked(this)' data-three='0' class='left'/>
         <td data-suit='3' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='4' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='0' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='1' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='2' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='3' onclick='clicked(this)' data-three='0'/>
-        <td data-suit='4' onclick='clicked(this)' data-three='0'/>
+    </tr>
+    <tr>
+        <td data-suit='4' onclick='clicked(this)'/>
+        <td class='right'/>
+        <td data-suit='4' onclick='clicked(this)' class='left'/>
+        <td class='right'/>
+        <td data-suit='4' onclick='clicked(this)' data-three='0' class='left'/>
+        <td class='right'/>
+        <td data-suit='4' onclick='clicked(this)' data-three='0' class='left'/>
+        <td/>
     </tr>
 </table>
+
 </body>
 
 
@@ -164,6 +179,7 @@ function bga3(){
         suit = cell.getAttribute('data-suit');
         if(suit == 3 || cell.getAttribute('data-three') == 0){
             cell.bgColor = colors[1][suit];
+            cell.setAttribute('data-state',1);
         }
     }
 }
