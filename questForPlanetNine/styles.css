@@ -8,6 +8,10 @@ td{
     text-align:center
 }
 
+tr{
+    height: 50px
+}
+
 table{
     border: 1px solid black;
     line-height : 150%;
