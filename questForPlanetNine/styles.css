@@ -1,0 +1,46 @@
+<style type="text/css">
+
+.firstEntryIgnoredWorkAroudn{}
+
+td {
+    text-align:center;
+    border:4px solid white;
+}
+
+.numberLabel {
+    font-size:20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button{
+    padding:10px 20px;
+}
+
+.right{
+    border-right:5px solid black;
+}
+.left{
+    border-left:5px solid black;
+}
+.middle{
+    border-right:5px solid black;
+    border-left:5px solid black;
+}
+
+table {
+    border: 5px solid black;
+    width: 100%
+}
+
+tr{
+    height:20px;
+}
+
+</style>
+
+

@@ -1,0 +1,209 @@
+<html>
+
+<head>
+<title>
+Quest for Planet Nine Card Tracker
+</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<button onclick='reset()'>RESET</button>
+<button onclick='bga3()'>THREE PLAYER</button>
+<button onclick='undo()'>UNDO</button>
+<button onclick='resize()'>CHANGE SIZE</button>
+<br>
+<h3>
+Cards still in play
+</h3>
+<table> <!-- style='width500px'>-->
+    <tr class='colorRow'>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>1</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>2</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>3</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>4</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>5</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>6</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>7</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>8</p></td>
+        <td data-suit='0' onclick='clicked(this)'><p class='numberLabel'>9</p></td>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>1</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>2</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>3</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>4</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>5</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>6</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>7</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>8</p></td>
+        <td data-suit='1' onclick='clicked(this)'><p class='numberLabel'>9</p></td>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>1</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>2</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>3</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>4</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>5</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>6</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>7</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>8</p></td>
+        <td data-suit='2' onclick='clicked(this)'><p class='numberLabel'>9</p></td>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>1</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>2</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>3</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>4</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>5</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>6</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>7</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>8</p></td>
+        <td data-suit='3' onclick='clicked(this)'><p class='numberLabel'>9</p></td>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='4' onclick='clicked(this)' data-three='0'><p class='numberLabel'>1</p></td>
+        <td data-suit='4' onclick='clicked(this)'><p class='numberLabel'>2</p></td>
+        <td data-suit='4' onclick='clicked(this)'><p class='numberLabel'>3</p></td>
+        <td data-suit='4' onclick='clicked(this)'><p class='numberLabel'>4</p></td>
+    </tr>
+</table>
+<h3>
+Suit ownership
+</h3>
+<table>
+    <tr>
+        <td colspan='2' class='right'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='middle'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='middle'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+        <td colspan='2' class='left'><input style='width:100%' type='text' placeholder='Enter teammate name'></td>
+    </tr>
+    <tr>
+        <td colspan='2' class='right'>May be holding</td>
+        <td colspan='2' class='middle'>May be holding</td>
+        <td colspan='2' class='middle'>May be holding</td>
+        <td colspan='2' class='left'>May be holding</td>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='0' onclick='clicked(this)'/>
+        <td data-suit='1' onclick='clicked(this)' class='right'/>
+        <td data-suit='0' onclick='clicked(this)' class='left'/>
+        <td data-suit='1' onclick='clicked(this)' class='right'/>
+        <td data-suit='0' onclick='clicked(this)' data-three='0' class='left'/>
+        <td data-suit='1' onclick='clicked(this)' data-three='0' class='right'/>
+        <td data-suit='0' onclick='clicked(this)' data-three='0' class='left'/>
+        <td data-suit='1' onclick='clicked(this)' data-three='0'/>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='2' onclick='clicked(this)'/>
+        <td data-suit='3' onclick='clicked(this)' class='right'/>
+        <td data-suit='2' onclick='clicked(this)' class='left'/>
+        <td data-suit='3' onclick='clicked(this)' class='right'/>
+        <td data-suit='2' onclick='clicked(this)' data-three='0' class='left'/>
+        <td data-suit='3' onclick='clicked(this)' data-three='0' class='right'/>
+        <td data-suit='2' onclick='clicked(this)' data-three='0' class='left'/>
+        <td data-suit='3' onclick='clicked(this)' data-three='0'/>
+    </tr>
+    <tr class='colorRow'>
+        <td data-suit='4' onclick='clicked(this)'/>
+        <td class='right'/>
+        <td data-suit='4' onclick='clicked(this)' class='left'/>
+        <td class='right'/>
+        <td data-suit='4' onclick='clicked(this)' data-three='0' class='left'/>
+        <td class='right'/>
+        <td data-suit='4' onclick='clicked(this)' data-three='0' class='left'/>
+        <td/>
+    </tr>
+</table>
+
+</body>
+
+
+<script>
+var colors = [
+    [
+        'ED74A2', // Pink
+        'E9CF39', // Yellow
+        '118AC2', // Blue
+        '97C21B', // Green
+        '555555'  // Rocket
+    ],
+    [
+        'FFFFFF',
+        'FFFFFF',
+        'FFFFFF',
+        'FFFFFF',
+        'FFFFFF'
+    ],
+]
+
+var clickHistory = [];
+
+function toggle(div){
+    var newState = 1 - div.getAttribute('data-state');
+    div.setAttribute('data-state',newState);
+    var suit = div.getAttribute('data-suit');
+    if(suit == null){
+        return
+    }
+    div.bgColor = colors[newState][suit];
+}
+
+function undo(){
+    if(clickHistory.length == 0)
+        return
+    var div = clickHistory.pop();
+    toggle(div);
+}
+
+function clicked(div){
+    toggle(div);
+    clickHistory.push(div);
+}
+
+var rowHindex = 0;
+var rowHeights = [20,40,60,80,100,120];
+function resize() {
+    rowHindex = (rowHindex + 1)%rowHeights.length;
+    var rows = document.getElementsByClassName('colorRow');
+    var h = rowHeights[rowHindex];
+    for(i=0 ; i<rows.length ; i++){
+        rows[i].style.height = h;
+    }
+    var labels = document.getElementsByClassName('numberLabel');
+    var h2 = h/2;
+    for(i=0 ; i<labels.length ; i++){
+        labels[i].style.fontSize = h2;
+    }
+}
+
+function reset(){
+    var i,cell;
+    var cells = document.getElementsByTagName('td');
+    clickHistory = [];
+    for(i=0 ; i<cells.length ; i++){
+        cell = cells[i];
+        cell.setAttribute('data-state',1);
+        toggle(cells[i]);
+    }
+}
+
+function bga3(){
+    var i,cell,suit;
+    var cells = document.getElementsByTagName('td');
+    for(i=0 ; i<cells.length ; i++){
+        cell = cells[i];
+        suit = cell.getAttribute('data-suit');
+        if(suit == 3 || cell.getAttribute('data-three') == 0){
+            cell.bgColor = colors[1][suit];
+            cell.setAttribute('data-state',1);
+        }
+    }
+}
+
+reset();
+
+</script>
+
+</html>
+

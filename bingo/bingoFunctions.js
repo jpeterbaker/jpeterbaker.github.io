@@ -1,5 +1,5 @@
-var colorSelect = "BBBBBB"
-var colorHilite = "BBBBFF"
+var colorSelect = "#BBBBBB"
+var colorHilite = "#BBBBFF"
 var colorWin = "#BBFFBB"
 var colorBlank = "white"
 var colorText = "black"
