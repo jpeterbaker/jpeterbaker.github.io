@@ -34,6 +34,7 @@ var allsayings = [
     4,"Defending media (apologetics)",
     4,"Something from the fantasy genre",
     4,"Gloom",
+    4,"Gushing with praise",
     4,"Looney Pyramids",
     4,"Looney product besides Fluxx or pyramids",
     4,"Postponing a topic for a future conversation",
