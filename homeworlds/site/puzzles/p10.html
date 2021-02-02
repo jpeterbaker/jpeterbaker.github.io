@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>
+Theater Five
+</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="icon" type="image/png" href="https://i.imgur.com/dGP5Nqv.png">
+<script src='puzfun.js'></script>
+</head>
+<center>
+<h1>
+Theater Five
+</h1>
+</center>
+<p>
+<a href="pindex.html">Puzzle collection index</a>
+</p>
+<p>
+Player One (West) to play 
+</p>
+<img src='https://i.imgur.com/ysQJ2Oa.png'>
+<p>
+<a href="javascript:show(hint,showhint)" id="showhint">Show a hint</a>
+</p>
+<div class="solution" id="hint">
+<p>
+Player One will win in two turns.
+Player One is pretty obviously ahead, but winning in just two turns is a little tricky.
+</p>
+<p>
+<a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
+</p>
+<div class="solution" id="solution">
+<p>
+Capturing both of Alpha's reds seems like the obvious choice,
+but that's a mistake since Alpha can then regain control of their home with a red catastrophe.
+Instead, One must capture the Alpha's r2 and one of the g1 ships.
+Then, Alpha must cause a red catastrophe to prevent One winning by capture:
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Player One
+        </div>
+        <div class="headerCell">
+            Player Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            1.
+            <br>
+            sacrifice r2 Homeworld_One
+            <br>
+            attack r2 Homeworld_Alpha
+            <br>
+            attack g1 Homeworld_Alpha
+        </div>
+        <div class="ply">
+            1...
+            <br>
+            build r2 Homeworld_Alpha
+            <br>
+            catastrophe Homeworld_Alpha r
+        </div>
+    </div>
+</div>
+<p>
+But One still wins with a green catastrophe of their own:
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            2.
+            <br>
+            sacrifice g2 Ursa_Major
+            <br>
+            build g2 Homeworld_Alpha
+            <br>
+            build g2 Homeworld_Alpha
+            <br>
+            catastrophe Homeworld_Alpha g
+            <br>
+            1-0
+        </div>
+    </div>
+</div>
+<p>
+This position arose in
+<a href='https://www.youtube.com/watch?v=Uu0Gt5q0tKw&t=247s'>
+Homeworlds Theater Episode Five</a>
+after Andy and John have taken over for the original players.
+Andy (having taken over for Player One) won slightly slower than possible in three moves, starting with the color change
+</p>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+            1.
+            <br>
+            trade r3 b3 Homeworld_Alpha
+        </div>
+    </div>
+</div>
+<p>
+The correct play was shown to me by a player with screen name "thelast19digitsofpi."
+</p>
+</div><!-- End solution -->
+</div><!-- End hint -->
+
+</html>
+
