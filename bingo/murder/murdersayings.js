@@ -1,8 +1,8 @@
 var TITLE = "Murer Mystery Bingo";
 var BOARDTOP = "BINGO for Murder Mysteries";
-var FREE = "FREE";
+var FREE = "Murder!";
 var USEFREE = 1;
-var AUTOFREE = 1;
+var AUTOFREE = 0;
 var allsayings = [
     1,"Admitting happiness at death",
     1,"An animal",
