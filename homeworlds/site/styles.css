@@ -1,8 +1,9 @@
 
+/*
 .moveTable {
     display:table;
     padding: 10px;  
-}
+}*/
 
 .headerRow {
     display:table-row;
@@ -24,6 +25,7 @@
     display:table-row;
     padding: 10px;  
     border: 1px solid blue;
+    background-color:powderblue;
 }
 
 .ply {
@@ -48,7 +50,7 @@
 }
 
 .solution {
-    display:none;
+    /*display:none;*/
 }
 
 table, th, td {

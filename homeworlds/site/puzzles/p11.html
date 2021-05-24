@@ -1,0 +1,181 @@
+<html>
+<head>
+<title>
+So close
+</title>
+<link rel="stylesheet" href="../styles.css">
+<link rel="icon" type="image/png" href="https://i.imgur.com/dGP5Nqv.png">
+<script src='puzfun.js'></script>
+</head>
+<center>
+<h1>
+So close
+</h1>
+</center>
+<p>
+<a href="pindex.html">Puzzle collection index</a>
+</p>
+<p>
+Player 1 (West) to play
+</p>
+<ol>
+    <li> How can West prevent East from winning on their next turn?
+    <li> After West makes their best move, how should East respond?
+</ol>
+<img width='800px' src='https://i.imgur.com/gkBm4oL.png'>
+<p>
+<a href="javascript:show(hint,showhint)" id="showhint">Show a hint</a>
+</p>
+<div class="solution" id="hint">
+<p>
+West has exactly one choice that will
+prevent East from winning on the next turn.
+<br>
+East should win about 4 turns later.
+</p>
+<p>
+<a href="javascript:show(solution,showsolution)" id="showsolution">Show solution</a>
+</p>
+<div class="solution" id="solution">
+<p>
+West's best turn is
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            West
+        </div>
+        <div class="headerCell">
+            East
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            1.<br>
+            sacrifice y2 3<br>
+            move r3 1 2<br>
+            catastrophe 2 r<br>
+            discover g1 5 g2 8
+        </div>
+        <div class='noply'>
+        </div>
+    </div>
+</div>
+<p>
+<h4>West will lose immediately with any other turn</h4>
+<p>
+If West does not catastrophe the reds in East's home,
+East will win on their turn by moving g3 to West's home and calling catastrophe.
+The red catastrophe can only be achieved with the yellow sacrifice that starts
+turn 1 above.
+</p>
+<p>
+If West uses the second movement action
+for anything except discovering a g2 system,
+then a g2 piece will be in the bank for East's turn.
+East simply builds g2 in West's home and calls catastrophe.
+</p>
+<h4>
+East then has two winning continuations
+</h4>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="noply"> </div>
+        <div class="ply">
+            1a...<br>
+            sacrifice g2 1<br>
+            build g2 2<br>
+            pass
+        </div>
+    </div>
+    <p>
+    West does not have time to launch an attack
+    and must prepare for a direct assault.
+    West has two turns in which to obtain a large ship at home and a red ship.
+    If west gets the large ship first...
+    </p>
+    <div class="moveRow">
+        <div class="ply">
+            2a.<br>
+            sacrifice g3 6<br>
+            build g3 6<br>
+            build b1 1<br>
+            build b3 1
+        </div>
+        <div class="ply">
+            2a...<br>
+        </div>
+    </div>
+</div>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="noply"> </div>
+        <div class="ply">
+            1b...<br>
+            trade g3 r3 2
+        </div>
+    </div>
+    <p>
+    West must build green to keep it out of the bank and prevent catastrophe.
+    Here's more text to test width
+    </p>
+</div>
+<div class="moveTable">
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2a.<br>
+            build g3 6
+        </div>
+        <div class="ply">
+            2a...<br>
+            sacrifice g2 1<br>
+            build g2 1<br>
+            build r1 2
+        </div>
+    </div>
+    <p>
+    Now, West must defend their home from direct assault,
+    but there is no time to get a large ship to their home
+    and simultaneously obtain a red ship before East's large red arrives.
+</div>
+</p>
+<h4>East should green-teleport the g2</h4>
+<p>
+After 1., All of East's moves can be considered individually.
+</p>
+<p>
+East could settle for a draw
+by moving (or green-teleporting) g3 to West's home for a catastrophe.
+But East would prefer to make the game a little longer and win.
+</p>
+<p>
+Green-teleporting the g1 to sytem 2 is a promising move,
+but as will be seen, green-teleporting the g2 is much stronger.
+</p>
+<p>
+Trading g3 for some other color allows West to build the g3,
+leaving East without any chance of threatening a green catastrophe.
+</p>
+<p>
+This game was played between capi3101 (West) and Stevie Sasquatchie (East)
+as part of <a href='../tournament/links2021winter.html'><!--
+-->Homeworlds Live Winter League 2021</a>.
+It is <a href='https://homeworlds-live2.glitch.me/archive/view/86'><!--
+-->game 86 on HWL</a>.
+The game ended in a loss for capi3101,
+who must have resigned or run out of time without noticing the possible draw.
+</p>
+<p>
+Bruno Curfs noticed this interesting position
+and suggested it to me as a puzzle.
+</p>
+</div><!-- End solution -->
+</div><!-- End hint -->
+
+</html>
+
+
