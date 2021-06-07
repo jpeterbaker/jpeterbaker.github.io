@@ -1,0 +1,47 @@
+
+#maindiv{
+    margin-left:250px;
+    margin-right:500px;
+    z-index: 5;
+}
+#display_table{
+  padding: 16px;
+    z-index: 5;
+}
+#display_table td{
+    padding: 10px;  
+    border: 2px solid black;
+    width=200px;
+}
+#sidebar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+#imgbar{
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    background-color: #444444;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+}
+#sidebar *{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+#imgbar *{
+    font-size: 18px;
+    color: #FFFFFF;
+}
