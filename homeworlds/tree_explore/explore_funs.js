@@ -82,7 +82,6 @@ function show_state(){
         comment_display.innerHTML = ''
 }
 
-
 function trim_table(n){
     // Remove table cells corresponding to ply number n and later
 
@@ -162,14 +161,17 @@ function setup_cell(cell,ply_number,turn){
     if(children.length > 0)
         cell.removeChild(children[0]);
 
-    // Use regular expression to replace all semicolons with line breaks
     if(ply_number % 2 ==0)
         header = row_number +  '.;'
     else
         header = row_number +  '...;'
+    // Add stars if there are alternatives
+    if(get_siblings(ply_number).length > 1)
+        header = '**' + header
     // Set up new anchor child for cell
     anode = document.createElement('a');
-    anode.href='#'
+    anode.name = 'ply'+ply_number
+    anode.href='#ply'+ply_number
     append_line_broken_turn(anode,header + turn.text);
     cell.appendChild(anode)
     // Set background color based on move strength
