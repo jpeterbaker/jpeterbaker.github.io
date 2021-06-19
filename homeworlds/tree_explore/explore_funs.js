@@ -6,6 +6,7 @@ a list with id 'sidebar_list'
 */
 
 dtable = document.getElementById('display_table');
+header_cell = document.getElementById('table_header');
 sidebar_list = document.getElementById('sidebar_list');
 state_display = document.getElementById('state_display');
 comment_display = document.getElementById('comment');
@@ -87,7 +88,7 @@ function trim_table(n){
 
     // Number of rows with at least one good cell
     ngood_rows = Math.floor((n+1)/2)
-    while(dtable.rows.length > ngood_rows)
+    while(dtable.rows.length > ngood_rows+1)
         dtable.deleteRow(-1)
     if(n%2 == 1)
         // Remove one cell from last row
@@ -161,6 +162,21 @@ function setup_cell(cell,ply_number,turn){
     if(children.length > 0)
         cell.removeChild(children[0]);
 
+    // Set background color based on move strength
+    if(!turn.hasOwnProperty('quality'))
+        cell.style.backgroundColor = '#fce8b2';
+    else if(turn.quality == 'orig')
+        cell.style.backgroundColor = '#a4c2f4';
+    else if(turn.quality == 'worse')
+        cell.style.backgroundColor = '#f4c7c3';
+    else if(turn.quality == 'better')
+        cell.style.backgroundColor = '#b7e1cd';
+    else if(turn.quality == 'none'){
+        // Put nothing in 'none' cell
+        cell.style.backgroundColor = '#888888';
+        return
+    }
+
     if(ply_number % 2 ==0)
         header = row_number +  '.;'
     else
@@ -174,19 +190,6 @@ function setup_cell(cell,ply_number,turn){
     anode.href='#ply'+ply_number
     append_line_broken_turn(anode,header + turn.text);
     cell.appendChild(anode)
-    // Set background color based on move strength
-    if(!turn.hasOwnProperty('quality'))
-        cell.style.backgroundColor = '#fce8b2';
-    else if(turn.quality == 'orig')
-        cell.style.backgroundColor = '#a4c2f4';
-    else if(turn.quality == 'worse')
-        cell.style.backgroundColor = '#f4c7c3';
-    else if(turn.quality == 'better')
-        cell.style.backgroundColor = '#b7e1cd';
-    else if(turn.quality == 'none')
-        cell.style.backgroundColor = '#888888';
-    else
-        cell.style.backgroundColor = '#fce8b2';
     anode.onclick=function(){table_click(cell)}
 }
 
