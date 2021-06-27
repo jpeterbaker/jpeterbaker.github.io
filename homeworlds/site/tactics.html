@@ -418,31 +418,45 @@ So if you move any ship into your opponent's home, they'll just capture it, righ
 <p>
 Not if you invade with several ships at once so that they can't all be captured.
 Your opponent's defenses will determine the size of the invasion fleet you need.
-Say the number of large ships in your opponent's home is L,
-and their largest red ship is of size N
-(a planetary defense system counts as a small red ship, N=1).
-If N+L is more than 3, then a basic direct assault won't work.
+Say that
+</p>
+<ul>
+    <li> the number of large ships that your opponent has in their home is L
+    <li> your opponent's largest red ship is of size R.
+    <ul>
+        <li> If they have no red ships but a red homestar,
+            it counts as a small red ship, R=1.
+        <li> If they have no access to red, R=0.
+        <li> If they have a large red in their home <u>and</u>
+            that is their only large ship in their home,
+            <u>then ignore that ship when finding R</u>
+            because that R3 can't be sacrificed for capturing large invaders.
+        </ul>
+    </ul>
+</ul>
+<p>
+If R+L is more than 3, then a <u>basic</u> direct assault won't work.
 You could theoretically have a two-wave invasion with more than three ships,
 but that's more complicated than I'm going to illustrate here.
-If they have no access to red, N=0.
 </p>
 <p>
 Here's what you need:
 </p>
 <ul>
-<li> N+1 large ships poised to move into your opponent's home.
-<li> A yellow ship of size N+L.
-<li> A red ship of size N+L.
+    <li> R+1 large ships poised to move into your opponent's home.
+        These are the "invaders."
+    <li> A yellow ship of size R+1 (not one of the invaders).
+    <li> A red ship of size R+L (not one of the invaders).
 </ul>
 <p>
 Here's the battle plan:
 </p>
-<ul>
-<li> You sacrifice your yellow ship and move your N+1 large ships into your opponent's home
-<li> They sacrifice their largest red to attack N of your invading larges (you still have one left)
-<li> You sacrifice your red ship to attack the N ships that they just captured
+<ol>
+<li> You sacrifice your yellow ship and move your R+1 large ships into your opponent's home
+<li> They sacrifice their largest red to attack R of your invading larges (you still have one left)
+<li> You sacrifice your red ship to attack the R ships that they just captured
 as well as the L large ships that they had to begin with.
-</ul>
+</ol>
 <p>
 You now have two or more large ships in your opponent's home and they have none.
 Usually, their only defense at this point (besides a counterattack)
@@ -450,13 +464,297 @@ is to catastrophe your larges.
 </p>
 <p>
 Compared to catastrophe-based wins, direct assaults can be difficult to plan.
-When all you want to do is create catastrophes, it's usually easy to see if it will work out.
+When all you want to do is create catastrophes,
+it's usually easy to see if it will work out.
 When you're invading and capturing ships, you need your ships to stay alive,
 and your opponent may have time to fight back.
 It can get confusing.
 You need to examine your own case carefully to figure out how to invade.
 </p>
 
-</html>
+<h3>Examples</h3>
+
+Below are some positions where the player "Beta"
+is considering a direct assault on the enemy homeworld.
+Below each figure is some analysis
+including a table of the expected commands if Beta attempts an invasion.
+
+<img src='https://i.imgur.com/GIP0pwa.png' width='800px'/>
+<p>
+Beta wins with a basic direct assault.
+<ul>
+    <li> Alpha's maximum red power is R=1.
+    <li> Alpha has L=1 large ship at home.
+    <li> Beta can move R+1=2 large ships to Alpha's home at once.
+    <li> Alpha is expected to capture R=1 of the invaders.
+    <li> Beta can then capture all R+L=2 larges in Alpha's home.
+</ul>
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            1.<br>
+            pass
+        </div>
+        <div class="ply">
+            1...<br>
+            sacrifice y2<br>
+            Beta move y3 X Alpha<br>
+            move g3 X Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.<br>
+            attack y3 Alpha
+        </div>
+        <div class="ply">
+            2...<br>
+            sacrifice r2 Beta<br>
+            attack y3 Alpha<br>
+            attack g3 Alpha
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<img src='https://i.imgur.com/AjhTs5O.png' width='800px'/>
+<p>
+Beta wins with a basic direct assault.
+<ul>
+    <li> Alpha's maximum red power is R=2.
+    <li> Alpha has L=1 large ship at home.
+    <li> Beta can move R+1=3 large ships to Alpha's home at once.
+    <li> Alpha is expected to capture R=2 of the invaders.
+    <li> Beta can then capture all R+L=3 larges in Alpha's home.
+</ul>
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...<br>
+            sacrifice y3 Beta<br>
+            move y3 X Alpha<br>
+            move g3 X Alpha<br>
+            move b3 X Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.<br>
+            sacrifice r2 Y<br>
+            attack y3 Alpha<br>
+            attack b3 Alpha
+        </div>
+        <div class="ply">
+            2...<br>
+            sacrifice r3 Beta<br>
+            attack y3 Alpha<br>
+            attack b3 Alpha<br>
+            attack r3 Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.<br>
+            build g1 Alpha
+        </div>
+        <div class="ply">
+            3...<br>
+            sacrifice r3 Alpha<br>
+            attack g1 Alpha<br>
+            attack g1 Alpha pass
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<img src='https://i.imgur.com/fFq73c9.png' width='800px'/>
+<p>
+Beta wins with a basic direct assault.
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...<br>
+            sacrifice y3 Beta<br>
+            move y3 X Alpha<br>
+            move g3 X Alpha<br>
+            move b3 X Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.<br>
+            sacrifice r1 Y<br>
+            attack y3 Alpha
+        </div>
+        <div class="ply">
+            2...<br>
+            sacrifice r3 Beta<br>
+            attack y3 Alpha<br>
+            attack g3 Alpha<br>
+            attack g3 Alpha
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<img src='https://i.imgur.com/dKyVct7.png' width='800px'/>
+<p>
+Beta does not have enough material for a direct assault.
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Player 1
+        </div>
+        <div class="headerCell">
+            Player 2
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...<br>
+            sacrifice y3 Beta<br>
+            move y3 X Alpha<br>
+            move g3 X Alpha<br>
+            move 33 X Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.<br>
+            sacrifice r3 Alpha<br>
+            attack y3 Alpha<br>
+            attack g3 Alpha<br>
+            attack b3 Alpha
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<img src='https://i.imgur.com/iiDvn42.png' width='800px'/>
+<p>
+Beta's has enough material for a direct assault,
+but the colors are a problem because Alpha can defend with a catastrophe.
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...<br>
+            sacrifice y2 Beta<br>
+            move b3 X Alpha<br>
+            move b3 X Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.<br>
+            build b1 Alpha<br>
+            catastrophe Alpha b
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<img src='https://i.imgur.com/d8nnSjm.png' width='800px'/>
+<p>
+My calculation-based guidelines say Beta's direct assault would fail because
+</p>
+<ul>
+    <li> Alpha has L=2 large ships and R=1 red power and
+    <li> Beta does not have a red ship of size L+R=3.
+</ul>
+<p>
+However, Beta can still conduct a successful direct assault
+by attacking Alpha's only red ship instead of a large ship.
+</p>
+<div class="moveTable">
+    <div class="headerRow">
+        <div class="headerCell">
+            Alpha
+        </div>
+        <div class="headerCell">
+            Beta
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+        </div>
+        <div class="ply">
+            1...<br>
+            sacrifice y2 Beta<br>
+            move g3 X Alpha<br>
+            move b3 X Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            2.<br>
+            attack g3 Alpha
+        </div>
+        <div class="ply">
+            2...<br>
+            sacrifice r1 Beta<br>
+            attack r1 Alpha
+        </div>
+    </div>
+    <div class="moveRow">
+        <div class="ply">
+            3.<br>
+            trade g3 r3 Alpha
+        </div>
+        <div class="ply">
+            3...<br>
+            attack r3 Alpha
+        </div>
+    </div>
+</div>
 
 
