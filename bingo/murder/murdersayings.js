@@ -11,6 +11,7 @@ var allsayings = [
     1,"Nonviolent death",
     1,"Secret passage",
     1,"Solving an old case",
+    1,"Summation gathering",
     1,"Tracks",
     1,"Watching from window or hiding place",
     2,"A change of plans",
