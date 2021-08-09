@@ -62,7 +62,7 @@ var allsayings = [
     1,"A project whose details can't be shared",
     1,"A robot",
     1,"Agreeing to disagree",
-    1,"An alien",
+    1,"Alien(s)",
     1,"An award",
     1,"Another podcast",
     1,"Battlestar Galactica",
