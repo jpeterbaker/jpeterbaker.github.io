@@ -12,7 +12,7 @@ var allsayings = [
     16,"\"Have you seen...\"",
     8,"A convention or cruise",
     8,"A non-Baker, non-Looney game",
-    8,"A role-playing game",
+    8,"Role-playing game(s)",
     8,"Superhero(es)",
     8,"Getting technical",
     8,"Gushing with praise",
