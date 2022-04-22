@@ -14,6 +14,19 @@ A Doomsday machine where the phases are necessarily intermingled
     then you cat the other one
     The hard part will be making it so no other move order would work
 
+Puzzle
+A direct assault that fails because a monopoly is lost in the process.
+    South has near-monopoly on red.
+    North's only red is their large red at home.
+    South wants to direct assault.
+    It should be that North will clearly win unless South invades immediately
+    North must defend by getting a medium ship (first move, the puzzle move).
+    South moves two r3's to North's home
+    North attacks an r3
+    South sacrifices r2 elsewhere to attack two r3s
+    Now that an r2 has been freed up, North trades the medium ship for red and destroys the invaders.
+    It ought to be the case that South does not have any invasion opportunities immediately after.
+
 More puzzles involving gaining a material advantage rather than just winning.
 Also, more puzzles where the solution is not a sacrifice, catastrophe, or home invasion.
 
