@@ -56,6 +56,7 @@ var allsayings = [
     2,"NASA or space",
     2,"Portland area",
     2,"Postponing a topic for a future conversation",
+    2,"Reminder that trackanon will kill us all",
     2,"Squeamishenss",
     2,"Suggesting a title for the episode",
     2,"The Twilight Zone",
