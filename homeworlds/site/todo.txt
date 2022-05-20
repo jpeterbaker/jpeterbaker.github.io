@@ -1,5 +1,14 @@
 Talk about colonies under strategy:
     In a large universe game, you generally only need one near colony but two far colonies (for stockpiling your Doomsday machine parts)
+    What do you do if a colony is invaded?
+    Capture the invaders if you can
+    Consider catastrophe
+    Consider counter attack
+    Consider yellow sacrifice to get everyone out (sacrificing a yellow in that system reduces the number of refugees)
+
+Talk about mirroring
+    It's pretty common, especially if players have the same colors in their HWs.
+    In fact, it's often the best choice for second player.
 
 Puzzle
 Something involving a blue sacrifice, since those are rare.
