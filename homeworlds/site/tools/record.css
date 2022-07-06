@@ -1,0 +1,23 @@
+
+#record_input{
+    margin-top:10px;
+}
+#output_bga{
+    background-color:mediumpurple;
+}
+#output_hwl{
+    background-color:dimgray;
+    color:white;
+}
+#output_sdg{
+    background-color:olive;
+    color:white;
+}
+#records{
+    margin-top:10px;
+}
+.col{
+    display:inline-block;
+    vertical-align:top;
+    width:32%
+}

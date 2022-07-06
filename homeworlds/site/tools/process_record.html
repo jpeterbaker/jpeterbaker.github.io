@@ -1,0 +1,100 @@
+
+<html>
+
+<head>
+    <link rel='icon' type='image/png' href='https://i.imgur.com/dGP5Nqv.png'>
+    <link rel='stylesheet' href='record.css'>
+    <title> Homeworld game processing </title>
+</head>
+
+<body>
+
+<h1>
+BGA game record converter
+</h1>
+
+<h3>
+Instructions
+</h3>
+<div style='width:49%;display:inline-block;vertical-align:top'>
+    <ol>
+        <li> Go to a game review page
+        <a href='https://boardgamearena.com/gamereview?table=280251819'>
+        like this one</a>.
+        <li> Locate the text record of the game, like the one pictured (you'll need to scroll down a little).
+        <li> Copy the game record .</li>
+        <li> Paste the entire record into the box below.
+        The timestamps will be included, which is fine.
+        <li> Click the "Convert" button below.
+        <li> Scroll down to see the record converted to several styles.
+        <ul>
+            <li> The condensed BGA format has the timestamps and turn restarts removed.
+            <li> The SDG format is fairly compact but easy to follow while reproducing the game with physical pieces.
+            <li> The HWL format may be imported into
+            <a href='https://homeworlds-live2.glitch.me/sandbox'>
+            the HWL sandbox</a>
+            for smooth visual game review.
+        </ul>
+        </center>
+    </ol>
+</div>
+
+<div style='width:49%;display:inline-block'>
+    <img src='https://i.imgur.com/KqNotX5.png'></img>
+</div>
+
+<button id='condense_button'>Convert</button>
+<br>
+
+<textarea id='record_input' cols='100' rows='30'>
+</textarea>
+<br>
+<div id='records'>
+    <div class='row'>
+        <div class='col'>
+            Board Game Arena
+        </div>
+        <div class='col'>
+            Super Duper Games
+        </div>
+        <div class='col'>
+            Homeworlds Live
+        </div>
+    </div>
+    <div class='row'>
+        <div id='output_bga' class='col'>
+            Record will appear here
+        </div>
+        <div id='output_sdg' class='col'>
+            Record will appear here
+        </div>
+        <div id='output_hwl' class='col'>
+            Record will appear here
+        </div>
+    </div>
+</div>
+
+<h3>
+Known limitations
+</h3>
+<ul>
+    <li>
+        Information about the game result (winner/draw) is ignored.
+    </li>
+    <li>
+        You can't skip any part of a line (the system will break if you miss the final period, for example).
+    </li>
+    <li>
+        The "creation" phase of the game (placing homeworlds) must be completed or the converter will crash.
+    </li>
+    <li>
+        Some player names could break the system, like if your name is "restarts their turn"
+    </li>
+</ul>
+
+</body>
+
+<script src='record_convert.js'></script>
+
+</html>
+
