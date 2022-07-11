@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -22,15 +21,20 @@ Instructions
         <a href='https://boardgamearena.com/gamereview?table=280251819'>
         like this one</a>.
         <li> Locate the text record of the game, like the one pictured (you'll need to scroll down a little).
-        <li> Copy the game record .</li>
+        <li> Select and copy the game record.
+        <ul>
+            <li> It may be easiest to select just the first bit of the log,
+            then scroll to the bottom,
+            and select the rest of the log by holding shift and clicking at the end of the log.
+        </ul>
         <li> Paste the entire record into the box below.
         The timestamps will be included, which is fine.
         <li> Click the "Convert" button below.
         <li> Scroll down to see the record converted to several styles.
         <ul>
             <li> The condensed BGA format has the timestamps and turn restarts removed.
-            <li> The SDG format is fairly compact but easy to follow while reproducing the game with physical pieces.
-            <li> The HWL format may be imported into
+            <li> SDG format is fairly compact but descriptive, so I prefer it most of the time.
+            <li> The HWL log format may be imported into
             <a href='https://homeworlds-live2.glitch.me/sandbox'>
             the HWL sandbox</a>
             for smooth visual game review.
@@ -46,8 +50,10 @@ Instructions
 <button id='condense_button'>Convert</button>
 <br>
 
-<textarea id='record_input' cols='100' rows='30'>
-</textarea>
+<div>
+<textarea id='record_input' cols='50' rows='10'> </textarea>
+<span style='margin:50px 0 0 10px;position:absolute'>Paste your BGA game record here</span>
+</div>
 <br>
 <div id='records'>
     <div class='row'>

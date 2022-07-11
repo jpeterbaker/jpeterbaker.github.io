@@ -5,6 +5,13 @@
     padding: 10px;  
 }*/
 
+#toc{
+    float:left;
+    background-color:lavender;
+    padding-right:15px;
+    margin-right:35px
+}
+
 .headerRow {
     display:table-row;
     text-align:center;
@@ -53,27 +60,27 @@
     display:none;
 }
 
-table, th, td {
+table, th, td{
     border: 1px solid black;
     line-height : 150%;
 }
 
-p {
+p{
     margin : 20;
     line-height : 150%;
 }
 
-ul {
+ul{
     margin : 0;
     line-height : 150%;
 }
 
-ol {
+ol{
     margin : 00;
     line-height : 150%;
 }
 
-body {
+body{
     padding-bottom: 300px;
 }
 

@@ -1,10 +1,87 @@
+I'd like to rearrange my advice pages into a  more book-like format with chapters rather than just two big pages.
+
+How to redirect
+https://css-tricks.com/redirect-web-page/
+
+Quickstart (if you don't expand what's now in strategy too much, it really is a pretty quick guide to getting started)
+    Most important questions
+    What should I be doing?
+        Get more and bigger ships that your opponent
+        Win skirmishes by capturing and overpopulating
+        Surround your opponent's home with ships
+        Move a bunch of ships to their home in a winning combination (see chapter "Late game")
+    Keep an eye on your opponent
+    Keep an eye on the bank
+    Things to check for every turn
+        Maybe this could go in "middle game," but all-in attacks can happen pretty early
+    Red flags
+Early game
+    Choosing your homeworld
+        Small universes (the jury is out on whether first player gets a big advantage)
+    Third turn
+    Early bank management
+        Don't get frozen out
+        Instafreeze
+    Mirroring
+    Investment
+Middle game
+    Starts approximately when there's a yellow big enough to send something the other homeworld
+    Defending and invading colonies
+        In a large universe game, you generally only need one near colony but two far colonies (for stockpiling your Doomsday machine parts)
+        What do you do if a colony is invaded?
+        Capture the invaders if you can
+        Consider catastrophe
+        Consider counter attack
+        Consider yellow sacrifice to get everyone out (sacrificing a yellow in that system reduces the number of refugees)
+    Get there first with the most
+    in a large universe game, you generally only need one near colony but two far colonies (for stockpiling your doomsday machine parts)
+    Don't be the one without a gun
+    Red anywhere is red everywhere
+    Material advantage
+    Factory
+    Keep a large at home
+Late game (winning)
+    Starts approximately when both players have a large-defended colony adjacent to the enemy home
+    Doomsday machines, fast and slow
+        Plan for complete, swift victory
+    Direct assault
+    Demolition fleet
+    Bluebird
+Miscellaneous
+    Should I call catastrophe?
+    Etiquette
+        Novice vs expert
+        Don't move while your opponent is distracted
+        Consider stating what action you are taking to avoid confusion
+            (A trade and sacrifice start the same way, with a ship going to the bank)
+        Don't restart your turn too much
+        Perform star-towing slowly and carefully
+Puzzles
+Homeworlds timeline
+    https://www.youtube.com/watch?v=X74CeD9aKck
+    site:http://www.wunderland.com/ icetraders
+    Andy Looney writes the short story "Icehouse" describeing a game played with pyramids (1987)
+    John Cooper invents Icehouse (1989)
+    People start to invent other games for the pieces (1996)
+    John Cooper invents Icetraders 1998
+    Icetraders shipped as part of "Icehouse: The Martian Chess" set (1999)
+    Martian Chess Set wins Origins award for best abstract board game (2000)
+    John Cooper turns Icetraders into Homeworlds (2001)
+    Aaron Dalton develops the website Super Duper Games for playing many games by correspondence. This is the first organized online incarnation of Homeworlds. (2005)
+        http://wunderland.com/WhatsOld/2005/WN.10.13.05.html
+    Two-player "Binary" Homeworlds included in 3HOUSE rulebook (2007)
+    Andy begins awarding physical medals to people who beat him at Homeworlds (2015)
+        http://new.wunderland.com/2015/05/05/the-i-beat-andy-medal/
+    Homeworlds included in Pyramid Arcade (2016)
+    Great Homeworlds Tournament (2017)
+    Homeworlds gets standalone box in Pyramid Quartet (2020)
+    "thelast19digitsofpi" develops the website Homeworlds Live: the first system for LIVE online play   that enforces the rules (2020)
+    The website Board Game Arena officially releases a Homeworlds implementation that supports both correspondence and live play (2022)
+The Rules
+Glossary
+
+
 Talk about colonies under strategy:
-    In a large universe game, you generally only need one near colony but two far colonies (for stockpiling your Doomsday machine parts)
-    What do you do if a colony is invaded?
-    Capture the invaders if you can
-    Consider catastrophe
-    Consider counter attack
-    Consider yellow sacrifice to get everyone out (sacrificing a yellow in that system reduces the number of refugees)
 
 Talk about mirroring
     It's pretty common, especially if players have the same colors in their HWs.
