@@ -25,7 +25,7 @@ var allsayings = [
     8,"Superhero(es)",
     8,"Time travel",
     8,"Video streaming service(s)",
-    8,"What may happen next in a series",
+    8,"Speculation",
     4,"A disappointment",
     4,"A favorite",
     4,"A holiday",
