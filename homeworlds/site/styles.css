@@ -79,8 +79,19 @@ body{
     padding-bottom: 300px;
 }
 
+h2{
+    color:darkred;
+    margin-left:5px
+}
+
 h3{
     color:darkblue;
     margin-left:10px
+}
+
+h4{
+    color:darkgreen;
+    margin-left:15px;
+    font-style:italic;
 }
 
