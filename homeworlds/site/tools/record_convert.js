@@ -22,7 +22,6 @@ function convert_all(){
     var text = bga_lines.join('<br>');
     document.getElementById('output_bga').innerHTML = text;
 
-
     // Show SDG version
     var sdg_lines = bga_to_sdg(bga_lines);
     text = sdg_lines.join('<br>');
@@ -40,6 +39,7 @@ function convert_all(){
 
 // Lines matching these patterns should be removed
 var bad_pats = [
+    /Move \d+ :$/,
     /Change my preferences\.$/,
     /\d:\d\d:\d\d [AP]M$/,
 ];
@@ -227,7 +227,7 @@ function add_sdg_turn(i0,lines,sdg_lines){
             continue;
         }
 
-        console.error('Uknown action:',line)
+        console.error('Unknown action:',line);
     }
 
     while(sac_actions>0){
