@@ -1,3 +1,20 @@
+.flexcols{
+    column-count:3;
+}
+
+@media (max-width: 1400px) {
+    .flexcols{
+        column-count:2;
+    }
+}
+
+@media (max-width: 1000px) {
+    .flexcols{
+        column-count:1;
+    }
+}
+
+/*
 .column3 {
   float: left;
   width: 33%;
@@ -14,6 +31,7 @@
     width: 100%;
   }
 }
+*/
 
 /* Clear floats after the columns
 .row:after {
