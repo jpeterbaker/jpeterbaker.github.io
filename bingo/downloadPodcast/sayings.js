@@ -40,6 +40,7 @@ var allsayings = [
     4,"Running low on time",
     4,"Something from the fantasy genre",
     4,"Spoiler(s)",
+    4,"Weather",
     2,"A Baker product besides Gloom",
     2,"Book(s)",
     2,"An animal",
