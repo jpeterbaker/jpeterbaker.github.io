@@ -15,9 +15,9 @@ document.write("\
 \
 <table border=\"1\" style=\"height:100% ; width:100% ; font-size:20\">\
     <tr>\
-    <td colspan=\"5\" height=\"10%\" align=\"center\" onclick=\"setup()\" >\
+    <td colspan=\"5\" height=\"10%\" align=\"center\" >\
     <h3>" + BOARDTOP + "</h3>\
-    Click here or refresh for new board\
+    Refresh for new board\
     </td></tr>\
     <tr>\
     <td onclick=\"boxtap('B0');\"\
