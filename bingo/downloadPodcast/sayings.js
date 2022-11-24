@@ -34,6 +34,7 @@ var allsayings = [
     4,"Comics",
     4,"Computers",
     4,"Defending media (apologetics)",
+    4,"Feeling old",
     4,"Gloom",
     4,"Looney Pyramids",
     4,"Looney product besides Fluxx or pyramids",
