@@ -4,7 +4,7 @@ allsayings=[
     90,"Taking camp the other team started",
     90,"Taking camp on opponents' side",
     90,"One hero gets a triple kill",
-    80,"Five death potraits visible at once",
+    80,"At least five death potraits visible at once",
     80,"Winning team still has all forts and keeps",
     70,"A team reaches level 24",
     70,"A team gets 15 or more kills",
