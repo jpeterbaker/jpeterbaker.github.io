@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - orbit controls</title>
+		<title>Ain't no thang</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
@@ -21,7 +21,11 @@
 		</div>
 		<!-- Import maps polyfill -->
 		<!-- Remove this when import maps will be widely supported -->
+        <!-- My browser should handle it, right?
 		<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        -->
+        <!-- Take this out in favor of example on
+        https://threejs.org/docs/#manual/en/introduction/Installation
 		<script type="importmap">
 			{
 				"imports": {
@@ -30,6 +34,15 @@
 					"three/addons/": "./jsm/"
 				}
 			}
+		</script>
+        -->
+		<script type="importmap">
+		  {
+			"imports": {
+			  "three": "https://unpkg.com/three@<version>/build/three.module.js",
+			  "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+			}
+		  }
 		</script>
 		<script type="module">
 			import * as THREE from 'three';
