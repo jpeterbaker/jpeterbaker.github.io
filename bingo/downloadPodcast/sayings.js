@@ -45,6 +45,7 @@ var allsayings = [
     2,"A Baker product besides Gloom",
     2,"Book(s)",
     2,"An animal",
+    2,"Background sound",
     2,"Burning Man",
     2,"Cover art depicts Andy or Keith",
     2,"Cover art depicts an established fictional character",
