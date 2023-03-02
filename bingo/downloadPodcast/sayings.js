@@ -85,6 +85,7 @@ var allsayings = [
     1,"\"All I'm saying\" or \"I'm just saying\"",
     1,"\"Anyhow...\" or \"Anyway...\"",
     1,"\"Apparently\"",
+    1,"\"Basically\"",
     1,"\"On that note\"",
     1,"\"That's the thing...\"",
     1,"\"There you go\"",
