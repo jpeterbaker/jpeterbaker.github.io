@@ -4,16 +4,12 @@ var FREE = "Free";
 var USEFREE = 1;
 var AUTOFREE = 0;
 var allsayings = [
-    1,"A kitchen",
     1,"Admitting happiness at death",
     1,"Bad weather",
     1,"Crying",
     1,"Evidence tampering or planting",
-    1,"Greed",
-    1,"Jealousy",
     1,"Monologuing",
     1,"Nonviolent death",
-    1,"Regret",
     1,"Revenge",
     1,"Tracks",
     2,"A lock",
