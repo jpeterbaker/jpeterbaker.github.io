@@ -14,7 +14,7 @@ The easiest translation sequence seems to be BGA -> SDG -> HWL
 */
 
 
-function convert_all(){
+function run_bga_conversions(){
     // Get the reduced BGA record
     var bga_lines = get_condensed_bga();
 
@@ -26,6 +26,23 @@ function convert_all(){
     var sdg_lines = bga_to_sdg(bga_lines);
     text = sdg_lines.join('<br>');
     document.getElementById('output_sdg').innerHTML = text;
+
+    // Show HWL version
+    var hwl_lines = sdg_to_hwl(sdg_lines);
+    text = hwl_lines.join('<br>');
+    document.getElementById('output_hwl').innerHTML = text;
+}
+
+function run_sdg_conversions(){
+    // Warn that conversion to BGA isn't supported
+    document.getElementById('output_bga').innerHTML = 'SDG -> BGA has not been implemented';
+
+    // Get SDG version from box
+    var text = document.getElementById('record_input').value;
+    var sdg_lines = text.split('\n');
+
+    sdg_text = sdg_lines.join('<br>');
+    document.getElementById('output_sdg').innerHTML = sdg_text;
 
     // Show HWL version
     var hwl_lines = sdg_to_hwl(sdg_lines);
@@ -548,5 +565,6 @@ function hwl_put_in_bank(piece,state){
 // Connect button //
 ////////////////////
 
-document.getElementById('condense_button').onclick = convert_all;
+document.getElementById('bga_button').onclick = run_bga_conversions;
+document.getElementById('sdg_button').onclick = run_sdg_conversions;
 
