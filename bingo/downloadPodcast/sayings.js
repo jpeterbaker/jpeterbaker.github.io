@@ -70,7 +70,6 @@ var allsayings = [
     1,"Agreeing to disagree",
     1,"Alien(s)",
     1,"An award",
-    1,"Another podcast",
     1,"Battlestar Galactica",
     1,"Dreams",
     1,"Game-designing",
