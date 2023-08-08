@@ -164,7 +164,7 @@ function add_sdg_turn(i0,lines,sdg_lines){
         // Creation
         match = bga_pat_create.exec(line);
         if(match != null){
-            actions.push('homeworld '+match[3]+' '+match[4]+' '+match[2]+' '+match[1]);
+            actions.push('homeworld '+match[3]+' '+match[4]+' '+match[2]+' '+system_sanitize(match[1]));
             // There is no "end turn" after creation, and passing is detected with inc==1,
             // so we need to stop now in creation case to avoid a false positive
             sdg_lines.push(actions[0]);
