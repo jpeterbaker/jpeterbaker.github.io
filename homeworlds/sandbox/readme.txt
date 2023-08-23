@@ -19,7 +19,7 @@ Exploration mode
             Uncertain
             Blunder
             None of the above
-Hotseat play mode
+Hotseat play mode (maybe this one isn't needed)
     Rules enforced
     No undo
     Optional timer
@@ -37,3 +37,19 @@ Copy-text exports and imports
         SDG format
         BGA format
         AP format
+
+
+
+Logic outline
+
+A global variable will track the current "mode"
+    sandbox, exploration, or hotseat
+A global variable will track the current "state"
+    Like in BGA:
+        Creation
+        Expecting empower selection
+        Expecting power
+        Expecting target
+        Expecting sacrifice action
+        Expecting catastrophe selection
+

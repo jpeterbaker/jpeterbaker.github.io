@@ -1,0 +1,685 @@
+/**
+ *------
+ * BGA framework: © Gregory Isabelli <gisabelli@boardgamearena.com> & Emmanuel Colin <ecolin@boardgamearena.com>
+ * Homeworlds implementation : © Jonathan Baker <babamots@gmail.com>
+ *
+ * This code has been produced on the BGA studio platform for use on http://boardgamearena.com.
+ * See http://en.boardgamearena.com/#!doc/Studio for more information.
+ * -----
+ *
+ * homeworlds.css
+ *
+ * Homeworlds stylesheet
+ *
+ */
+
+body{
+    background-image:url('https://i.imgur.com/DC2XVh0.png');
+}
+#HWboard{
+    /* Board margin-right makes space for bank and legend */
+    margin-right:220px;
+    /* height:1000px; */
+    /*background:rgba(255,255,255,0.3);*/
+    display:block;
+}
+#HWbank{
+    /*
+    Bank must not have default position type (static)
+    or its width/height can't be used for relative sizes of stacks
+    */
+    position:relative;
+    width:200px;
+    height:600px;
+    float:right;
+    background:rgba(255,255,255,0.1);
+}
+
+/* A stack is a place for identical pieces in the bank */
+.HWstack{
+    display:inline-block;
+    position:absolute;
+    width:33.3%;
+    height:25%;
+}
+/*
+Make pieces in the stack higher the more children there are
+It's better to count from the end than from the beginning because, 
+while adding tutorial annotation images,
+mousing over an element causes it to have a new child
+at the beginning of its list.
+If you determine height by counting from the start of the list,
+the pieces hop around as you mouse over the bank.
+*/
+.HWstack>*{
+    position:absolute;
+}
+.HWstack>*:nth-last-child(1){
+    bottom:0px;
+    z-index:1;
+}
+.HWstack>*:nth-last-child(2){
+    bottom:20px;
+    z-index:2;
+}
+.HWstack>*:nth-last-child(3){
+    bottom:40px;
+    z-index:3;
+}
+/*
+Pieces traveling to the board should be in front of stacked pieces
+in order to not look weird.
+*/
+ 
+.HWship,.HWstar{
+    z-index:4;
+}
+
+
+/********
+ Systems
+********/
+.HWsystem{
+    border:2px solid white;
+    display:inline-block;
+    margin:5px;
+    padding:8px;
+    border-radius:20px;
+    position:relative;
+}
+/* A homeworld system with a non-none homeplayer_id attribute*/
+.HWsystem:not([homeplayer_id=none]){
+    border:5px double white;
+}
+/*
+A dummy div so that the system container can be centered
+and rows of same-sized systems are created
+*/
+.HWcenterizer{
+    text-align:center;
+    display:block;
+    min-height:50px;
+}
+/* A centered, collection-fitting container for same-sized systems */
+.HWsystem_container{
+    display:inline-block;
+    vertical-align:top;
+}
+
+/* All pieces use the same sprite background */
+.HWship,.HWstar,.HWbanked {
+    background-image:url('https://x.boardgamearena.net/data/themereleases/current/games/homeworlds/230730-0745/img/sprites.svg');
+    background-repeat:no-repeat;
+    background-size:128px 600px;
+    display:inline-block;
+    /* full size: 256px 1200; */
+}
+.HWship,.HWstar,#HWturn_token{
+    position:relative;
+    transition:.5s;
+}
+
+.HWstar_container{
+    display:inline-block;
+    text-align:center;
+}
+.HWsystem_label{
+    margin:0px 5px 0px 5px;
+    color:white;
+}
+
+/* Symbol indicator appears on pieces for colorblind friendliness */
+.HWcolor_symbol{
+    position:absolute;
+    height:20px;
+    width:20px;
+    margin:auto;
+    background-image:url('https://x.boardgamearena.net/data/themereleases/current/games/homeworlds/230730-0745/img/colorblind-white.svg');
+    background-repeat:no-repeat;
+    background-size:20px 80px;
+}
+.HWpiece>.HWcolor_symbol{
+    left:0;
+    right:0;
+}
+
+.HWsymbol_red{
+    background-position-y:-0px;
+}
+.HWsymbol_yellow{
+    background-position-y:-20px;
+}
+.HWsymbol_green{
+    background-position-y:-40px;
+}
+.HWsymbol_blue{
+    background-position-y:-60px;
+}
+
+/* To get the symbol in a vertically good spot,
+ they need a margin according to the piece size */
+
+.HWlarge.HWbanked>.HWcolor_symbol,.HWlarge.HWship>.HWcolor_symbol{
+    margin-top:40px;
+}
+.HWmedium.HWbanked>.HWcolor_symbol,.HWmedium.HWship>.HWcolor_symbol{
+    margin-top:32px;
+}
+.HWsmall.HWbanked>.HWcolor_symbol,.HWsmall.HWship>.HWcolor_symbol{
+    margin-top:15px;
+}
+
+.HWlarge.HWstar>.HWcolor_symbol{
+    margin-top:15px;
+}
+.HWmedium.HWstar>.HWcolor_symbol{
+    margin-top:10px;
+}
+.HWsmall.HWstar>.HWcolor_symbol{
+    margin-top:5px;
+}
+
+/* Hide the symbol on covered children */
+.HWbanked:not(:first-child)>.HWcolor_symbol{
+    display:none;
+}
+
+/* Hide the symbol when colorblind mode is off */
+html.colorblind_off .HWcolor_symbol{
+    display:none;
+}
+
+/* Hide the buttons when they are turned off*/
+html.power_buttons_off #HWpowerBox{
+    display:none;
+}
+
+/* Hide the legend when it is turned off*/
+html.legend_off .HWlegend_label{
+    display:none;
+}
+
+
+/* Legend labels */
+.HWlegend_label{
+    transform:rotate(-90deg);
+    transform-origin:center left;
+    position:absolute;
+    color:white;
+}
+/* Rotate the symbol back so that it matches the ones on the pieces */
+.HWlegend_label>.HWcolor_symbol{
+    display:inline;
+    margin-left:5px;
+    transform:rotate(90deg);
+}
+
+/*
+Buttons
+Power buttons are for selecting the power of a free action
+Action buttons are actions of their own:
+    offering a draw
+    triggering a catastrophe
+    passing
+    canceling
+*/
+#HWpowerBox{
+    display:table;
+    border-spacing:5px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid black;
+    border-radius:7px;
+    margin-top:7px
+}
+#HWpowerBox.HWdisabled{
+    display:none;
+}
+
+.HWbutton{
+    border-radius:7px;
+    padding:0px 5px;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    cursor:pointer;
+    vertical-align:middle;
+    box-shadow:1px 1px 0px black;
+    line-height:normal;
+    font-size:14px;
+    padding:6px 12px;
+    position:relative; /* Need relative pos so annotations appear correctly */
+}
+
+.HWactionButton{
+    display:inline-block;
+    margin:0px 0px 2px 10px;
+}
+.HWpowerButton{
+    display:table-cell;
+    width:25%;
+}
+
+/*
+Passing, catastrophes, and accepting draws are more severe actions
+and the buttons will have a more alarming color
+*/
+.HWactionButton.HWhilit{
+    background-color:rgba(255,165,0,0.6);
+}
+.HWactionButton{
+    background-color:rgba(128,0,128,0.6);
+}
+
+.HWactionButton.HWdisabled{
+    display:none;
+}
+.HWpowerButton.HWdisabled{
+    background-color:rgba(128,128,128,0.6);
+    color:gray;
+}
+
+#HWpowerButton1:not(.HWdisabled){
+    background-color:rgba(255,0,0,0.6);
+}
+#HWpowerButton2:not(.HWdisabled){
+    background-color:rgba(255,255,0,0.6);
+}
+#HWpowerButton3:not(.HWdisabled){
+    background-color:rgba(0,255,0,0.6);
+}
+#HWpowerButton4:not(.HWdisabled){
+    background-color:rgba(0,64,255,0.6);
+}
+
+/*
+The background image has every piece sprite.
+This section sets the vertical background offset by piece color and orientation.
+*/
+
+/* Offset for the top of the color section in the sprite image */
+.HWred{
+    --offsetC:-6px
+}
+.HWyellow{
+    --offsetC:-156px;
+}
+.HWgreen{
+    --offsetC:-305.5px
+}
+.HWblue{
+    --offsetC:-455px
+}
+
+/* Additional offsetP for the top of the piece */
+.HWlarge.HWship,.HWlarge.HWbanked{
+    --offsetP:-0px;
+    margin-top:5px;
+    height:86px
+}
+.HWmedium.HWship,.HWmedium.HWbanked{
+    --offsetP:-9px;
+    margin-top:14px;
+    height:68px
+}
+.HWsmall.HWship,.HWsmall.HWbanked{
+    --offsetP:-18px;
+    margin-top:23px;
+    height:50px
+}
+.HWlarge.HWstar{
+    --offsetP:-93px;
+    margin-top:5px;
+    height:49px
+}
+.HWmedium.HWstar{
+    --offsetP:-98px;
+    margin-top:10px;
+    height:39px
+}
+.HWsmall.HWstar{
+    --offsetP:-103.5px;
+    margin-top:15.5px;
+    height:29px
+}
+
+/* Add the offsets together */
+
+.HWship,.HWstar,.HWbanked{
+    background-position-y:calc(var(--offsetC) + var(--offsetP))
+}
+
+/* Non-banked pieces get bottom margin matching top margin for symmetry */
+.HWlarge.HWship{
+    margin-bottom:5px;
+}
+.HWmedium.HWship{
+    margin-bottom:14px;
+}
+.HWsmall.HWship{
+    margin-bottom:23px;
+}
+.HWlarge.HWstar{
+    margin-bottom:5px;
+}
+.HWmedium.HWstar{
+    margin-bottom:10px;
+}
+.HWsmall.HWstar{
+    margin-bottom:15.5px;
+}
+
+/* Horizontal offset by and width depend on piece size. */
+.HWlarge{
+    background-position-x:-1.5px;
+    width:49px;
+}
+.HWmedium{
+    background-position-x:-54.5px;
+    width:39px;
+}
+.HWsmall{
+    background-position-x:-98px;
+    width:29px;
+}
+
+.HWship{
+    transform:rotate(var(--rotateAmount));
+}
+.HWstar,#HWturn_token{
+    --rotateAmount:0deg;
+}
+
+/*
+Give ships and stars a little horizontal margin
+Use margin to center banked pieces
+*/
+.HWship,.HWstar{
+    margin-left:5px;
+    margin-right:5px;
+}
+.HWbanked{
+    margin:auto;
+    left:0;
+    right:0
+}
+
+/*
+Ships and systems can be friendly or hostile.
+These terms will need to be generalized if 3+ player is implemented.
+*/
+.HWhostile{
+    float:left;
+}
+.HWhostile.HWship{
+    --rotateAmount:180deg;
+}
+.HWfriendly{
+    float:right;
+}
+.HWfriendly.HWship{
+    --rotateAmount:0deg;
+}
+
+/***************
+Selectable stuff
+***************/
+
+.HWselectable{
+    cursor:pointer;
+}
+
+/* Selectable stacks and systems get a white background that brightens on hover */
+.HWselectable.HWstack,.HWselectable.HWsystem{
+    background-color:rgba(255,255,255,0.3);
+}
+.HWselectable.HWstack:hover,.HWselectable.HWsystem:hover{
+    background-color:rgba(255,255,255,0.6);
+}
+
+/*
+Pieces get a shadow if they are selectable or activated.
+On hover, the shadow tightens and looks stronger
+*/
+.HWselectable.HWpiece:hover,[activate]:not([activate=pending]){
+    filter:drop-shadow(0px 0px 10px var(--shadow_col));
+}
+
+.HWselectable.HWpiece{
+    --shadow_col:white;
+}
+/* TODO consider outlines instead of shadows and bobbing
+This looks pretty good, though transparency would be good
+    outline: 5px solid green;
+    border-radius: 1px
+Outlines don't interfere with element sizing the way borders do
+border-radius also applies to outlines
+*/
+[activate='1']{
+    --shadow_col:#ff0000;
+}
+[activate='2']{
+    --shadow_col:#fff900;
+}
+[activate='3']{
+    --shadow_col:#00ff00;
+}
+[activate='4']{
+    --shadow_col:#0044ff;
+}
+[activate=sacrifice]{
+    --shadow_col:transparent;
+}
+
+/* Activated ship always bobs */
+[activate]{
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name:bob;
+}
+@keyframes bob {
+    50% {
+        transform: translate(0px,-5px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+@keyframes shimmer {
+    50% {
+        filter: drop-shadow(0px 0px 25px var(--shadow_col));
+    }
+    100% {
+        filter: drop-shadow(0px 0px 10px var(--shadow_col));
+    }
+}
+
+/* Token's shadow embiggens on hover */
+#HWturn_token.HWselectable:hover{
+    filter: drop-shadow(0px 0px 15px white);
+}
+
+/* Token throbs when the turn appears over */
+#HWturn_token.HWonly_option{
+    /*filter:drop-shadow(15px -15px 10px white);*/
+    /* With black background, white shadow is needed for visibility,
+    so use animation to indicate the turn is over */
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: swell;
+}
+
+@keyframes swell {
+    50% {
+        transform: scale(.95, .95);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/*
+Borrowed from
+https://www.kirupa.com/snippets/getting_jittery_on_hover_using_only_css.htm
+*/
+.HWoverpopulated {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: jittery;
+}
+ 
+@keyframes jittery {
+    10% {
+        transform: rotate(var(--rotateAmount)) translate(-2px, -3px) scale(1.01, 1.01);
+    }
+    20% {
+        transform: rotate(var(--rotateAmount)) translate(3px, 2px) scale(.99, .99);
+    }
+    30% {
+        transform: rotate(var(--rotateAmount)) translate(-4px, -5px) scale(1.01, 1.01);
+    }
+    40% {
+        transform: rotate(var(--rotateAmount)) translate(2px, 3px) scale(1, 1);
+    }
+    50% {
+        transform: rotate(var(--rotateAmount)) translate(-1px, -2px) scale(.98, .98);
+    }
+    60% {
+        transform: rotate(var(--rotateAmount)) translate(0px, 3px) scale(1.02, 1.02);
+    }
+    70% {
+        transform: rotate(var(--rotateAmount)) translate(-2px, -4px) scale(1, 1);
+    }
+    80% {
+        transform: rotate(var(--rotateAmount)) translate(3px, 5px) scale(.99, .99);
+    }
+    90% {
+        transform: rotate(var(--rotateAmount)) translate(-5px, -3px) scale(1.1, 1.1);
+    }
+    100% {
+        transform: rotate(var(--rotateAmount)) translate(3px, 1px) scale(.95, .95);
+    }
+}
+
+/********************************
+Modifications to main BGA display
+********************************/
+
+/* Hide the dash that would be the player score in other games */
+.player_score_value{
+    display:none
+}
+/*
+Hide the star that would be by the player score in other games
+WARNING: The BGA rating form also uses .fa-star,
+         so make sure the selector is more specific
+*/
+.player_score>.fa-star{
+    display:none
+}
+/* Hide the dot that would separate the game score from the elo */
+.player_elo_wrap{
+    font-size:0px;
+}
+/* DON'T hide the children of the player_elo_wrap, like the elo score itself */
+.player_elo_wrap>*{
+    font-size:16px;
+}
+
+
+#HWfirst_player_indicator{
+    font-size:75%;
+    margin-top:10px;
+}
+
+/* Turn token */
+.HWtoken_space{
+    position:relative;/*Relative or absolute position needed for sliding*/
+    /* Token moves up 5px on hover, systems are normally 96px high because large ships are 86 px and have 5px above and below*/
+    height:96px;
+    width:96px;
+    margin-top:5px;
+    display:inline-block;
+    float:left;
+}
+#HWturn_token{
+    position:relative;/*Relative or absolute position needed for sliding*/
+    background-image:url('https://x.boardgamearena.net/data/themereleases/current/games/homeworlds/230730-0745/img/turn_token.svg');
+    background-repeat:no-repeat;
+    background-size:100%;
+    height:100%;
+    width:100%;
+    /*
+    Without a z-index it sometimes appears to slide under pieces,
+    and pieces need z-index 4 to stay in front of stacked pieces
+    */
+    z-index:5;
+}
+#HWturn_token:not(html.dj_safari .HWsliding,html.ios-user .HWsliding){
+    /*
+    Except while sliding in Safari,
+    add a subtle white outline to improve edge visibility
+    */
+    filter:drop-shadow(0px 0px 5px white);
+}
+
+/* Animation marker shouldn't appear */
+.HWanimarker{
+    /*
+    display:none;
+    This seems to make pieces invisible when markers are used for animations
+    */
+    position:relative;
+    height:0px;
+    width:0px;
+    /* A size and background make it easier to find when debugging */
+    /*height:50px;*/
+    /*width:50px;*/
+    /*background-color:rebeccapurple;*/
+    /**/
+}
+
+/*
+The centering margins of banked pieces mess up animations otherwise
+This should probably be the same as for stars and ships to avoid jumpiness,
+but I don't want to include it in the same command since this is the
+animation section.
+*/
+.HWsliding:not(#HWturn_token){
+    margin-left:5px;
+    margin-right:5px;
+}
+
+/*
+Try to make tutorial annotations right-side up on hostile ships.
+The bobbing animation used by annotations messes up my correction,
+so turn it off (not too noticeable)
+*/
+.HWhostile.HWship>.archiveCommentPointed{
+    transform: rotate(180deg);
+    left:0;
+    animation:none;
+    -webkit-animation:none;
+}
+.HWhostile.HWship.HWsmall>.archiveCommentPointed{
+    top:-35px;
+}
+.HWhostile.HWship.HWmedium>.archiveCommentPointed{
+    top:-25px;
+}
+.HWhostile.HWship.HWlarge>.archiveCommentPointed{
+    top:-15px;
+}
+
+/* Annotations should all be above pieces */
+.archiveCommentPointed{
+    z-index:6;
+}
+
