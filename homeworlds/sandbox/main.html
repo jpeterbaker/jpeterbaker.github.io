@@ -6,66 +6,85 @@
 
 <body>
 
-<div id='HWpowerBox' class='HWdisabled'>
-    <div id='HWpowerButton1' class='HWbutton HWpowerButton'></div>
-    <div id='HWpowerButton2' class='HWbutton HWpowerButton'></div>
-    <div id='HWpowerButton3' class='HWbutton HWpowerButton'></div>
-    <div id='HWpowerButton4' class='HWbutton HWpowerButton'></div>
+<div id='help_button'        class='actionButton button'>Help</div>
+<div id='import_button'      class='actionButton button'>Import</div>
+<div id='export_button'      class='actionButton button'>Export</div>
+<div id='togglehist_button'  class='actionButton button'>Toggle History</div>
+
+<div id='catastrophe_button' class='actionButton button hilit'>Trigger catastrophe</div>
+<div id='sacrifice_button'   class='actionButton button'>Sacrifice ship</div>
+<div id='pass_button'        class='actionButton button'>Pass</div>
+<div id='cancel_button'      class='actionButton button'>Cancel</div>
+<div id='restart_button'     class='actionButton button'>Restart turn</div>
+<div id='draw_button'        class='actionButton button hilit'>Draw</div>
+
+<div id='step_back_all_button' class='actionButton button'>|&lt;</div>
+<div id='step_back_button'     class='actionButton button'>&lt;&lt;</div>
+<div id='text_button'          class='actionButton button'>Return to text</div>
+<div id='step_button'          class='actionButton button'>&gt;</div>
+<div id='step_turn_button'     class='actionButton button'>&gt;&gt;</div>
+<div id='step_all_button'      class='actionButton button'>&gt;|</div>
+
+<div id='power_box'>
+    <div id='power_button1' class='button powerButton'>Attack</div>
+    <div id='power_button2' class='button powerButton'>Move</div>
+    <div id='power_button3' class='button powerButton'>Build</div>
+    <div id='power_button4' class='button powerButton'>Trade</div>
 </div>
 
-<div id='HWcatastropheButton' class='HWactionButton HWbutton HWdisabled HWhilit'>Temp text</div>
-<div id='HWsacrificeButton'   class='HWactionButton HWbutton HWdisabled'>Temp text</div>
-<div id='HWpassButton'        class='HWactionButton HWbutton HWdisabled'>Temp text</div>
-<div id='HWdrawButton'        class='HWactionButton HWbutton HWdisabled'>Temp text</div>
-<div id='HWcancelButton'      class='HWactionButton HWbutton HWdisabled'>Temp text</div>
-<div id='HWrestartButton'     class='HWactionButton HWbutton HWdisabled'>Temp text</div>
 
-<div id='HWbank'>
-    <div id='HWlegend_label1' class='HWlegend_label' style='bottom:75%'> </div>
-    <div id='HWlegend_label2' class='HWlegend_label' style='bottom:50%'> </div>
-    <div id='HWlegend_label3' class='HWlegend_label' style='bottom:25%'> </div>
-    <div id='HWlegend_label4' class='HWlegend_label' style='bottom:0%'> </div>
+<div id='side_panel'>
+    <div id='history_table'>
+    </div>
+    <textarea id='comments' cols='50' rows='10'></textarea>
+</div>
 
-    <div id='HWstack_1_1' class='HWstack' style='left:00.00%;top:0%'> </div>
-    <div id='HWstack_1_2' class='HWstack' style='left:33.33%;top:0%'> </div>
-    <div id='HWstack_1_3' class='HWstack' style='left:66.66%;top:0%'> </div>
-    <div id='HWstack_2_1' class='HWstack' style='left:00.00%;top:25%'> </div>
-    <div id='HWstack_2_2' class='HWstack' style='left:33.33%;top:25%'> </div>
-    <div id='HWstack_2_3' class='HWstack' style='left:66.66%;top:25%'> </div>
-    <div id='HWstack_3_1' class='HWstack' style='left:00.00%;top:50%'> </div>
-    <div id='HWstack_3_2' class='HWstack' style='left:33.33%;top:50%'> </div>
-    <div id='HWstack_3_3' class='HWstack' style='left:66.66%;top:50%'> </div>
-    <div id='HWstack_4_1' class='HWstack' style='left:00.00%;top:75%'> </div>
-    <div id='HWstack_4_2' class='HWstack' style='left:33.33%;top:75%'> </div>
-    <div id='HWstack_4_3' class='HWstack' style='left:66.66%;top:75%'> </div>
+<div id='bank'>
+    <div id='legend_label1' class='legend_label' style='bottom:75%'> </div>
+    <div id='legend_label2' class='legend_label' style='bottom:50%'> </div>
+    <div id='legend_label3' class='legend_label' style='bottom:25%'> </div>
+    <div id='legend_label4' class='legend_label' style='bottom:0%'> </div>
+
+    <div id='stack_1_1' class='stack' style='left:00.00%;top:0%'> </div>
+    <div id='stack_1_2' class='stack' style='left:33.33%;top:0%'> </div>
+    <div id='stack_1_3' class='stack' style='left:66.66%;top:0%'> </div>
+    <div id='stack_2_1' class='stack' style='left:00.00%;top:25%'> </div>
+    <div id='stack_2_2' class='stack' style='left:33.33%;top:25%'> </div>
+    <div id='stack_2_3' class='stack' style='left:66.66%;top:25%'> </div>
+    <div id='stack_3_1' class='stack' style='left:00.00%;top:50%'> </div>
+    <div id='stack_3_2' class='stack' style='left:33.33%;top:50%'> </div>
+    <div id='stack_3_3' class='stack' style='left:66.66%;top:50%'> </div>
+    <div id='stack_4_1' class='stack' style='left:00.00%;top:75%'> </div>
+    <div id='stack_4_2' class='stack' style='left:33.33%;top:75%'> </div>
+    <div id='stack_4_3' class='stack' style='left:66.66%;top:75%'> </div>
 </div>
 
 <!-- Putting the board after the bank makes it fill the remaining space-->
-<div id='HWboard'>
-    <div class='HWcenterizer'>
-        <div id='HWhome_container_top' class='HWsystem_container'>
-            <div id='HWtoken_space_top' class='HWtoken_space'></div>
+<div id='board'>
+    <div class='centerizer'>
+        <div id='home_container_top' class='system_container'>
+            <div id='token_space_top' class='token_space'></div>
         </div>
     </div>
-    <div class='HWcenterizer'>
-        <div id='HWcolony_container_1' class='HWsystem_container'></div>
+    <div class='centerizer'>
+        <div id='colony_container_1' class='system_container'></div>
     </div>
-    <div class='HWcenterizer'>
-        <div id='HWcolony_container_2' class='HWsystem_container'></div>
+    <div class='centerizer'>
+        <div id='colony_container_2' class='system_container'></div>
     </div>
-    <div class='HWcenterizer'>
-        <div id='HWcolony_container_3' class='HWsystem_container'></div>
+    <div class='centerizer'>
+        <div id='colony_container_3' class='system_container'></div>
     </div>
-    <div class='HWcenterizer'>
-        <div id='HWhome_container_bot' class='HWsystem_container'>
-            <div id='HWtoken_space_bot' class='HWtoken_space'></div>
+    <div class='centerizer'>
+        <div id='home_container_bot' class='system_container'>
+            <div id='token_space_bot' class='token_space'></div>
         </div>
     </div>
 </div>
 
 </body>
 
-<script src='logic.js'></script>
 <script src='setup.js'></script>
+<script src='nav_functions.js'></script>
 
 </html>
