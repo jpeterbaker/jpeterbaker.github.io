@@ -1,6 +1,6 @@
 // Mostly stuff that the server takes care of on BGA
 
-STATE = {
+var STATE = {
     // Select a star during creation phase
     'CREATE_STAR':  0,
     // Select a ship during creation phase
@@ -17,15 +17,15 @@ STATE = {
     'PASS':         6
 };
 
-sac_color = 0;
-sac_actions = 0;
-used_free = 0;
-on_move = 0;
+var sac_color = 0;
+var sac_actions = 0;
+var used_free = 0;
+var on_move = 0;
 
-state = STATE.CREATE_STAR;
+var state = STATE.CREATE_STAR;
 
 // Number of systems created ever
-num_systems = 0;
+var num_systems = 0;
 
 ///////////////////////////
 // State entry functions //
@@ -36,3 +36,4 @@ function enter_create_star(){
         stack.classList.add('selectable');
     }
 }
+
