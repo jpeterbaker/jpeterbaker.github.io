@@ -1,20 +1,23 @@
+var TITLE = "HOTS Bingo";
+var BOARDTOP = "Heroes of the Storm BINGO";
+var FREE = "Team wiped<br>(dead at once)";
+var USEFREE = 1;
+var AUTOFREE = 0;
+
 allsayings=[
-    100,"Team wipe",
-    100,"Series sweep",
     90,"Taking camp the other team started",
     90,"Taking camp on opponents' side",
     90,"One hero gets a triple kill",
-    80,"At least five death potraits visible at once",
+    80,"At least six death potraits visible at once",
     80,"Winning team still has all forts and keeps",
     70,"A team reaches level 24",
     70,"A team gets 15 or more kills",
     70,"Both teams get 10 or more kills",
     70,"Both teams reach level 22 or more",
     50,"Hero killed by a non-hero",
-    50,"Boss fight",
-    50,"Team gets a kill despite talent disadvantage",
+    50,"Fight over the boss",
+    50,"Team gets a kill during talent disadvantage",
     40,"Team levels differ by 3",
-    30,"Losing team has 2 <u>keeps</u> left",
     30,"Winning team has zero forts and keeps",
     20,"Winning team's core under 25% health",
     50,"Game on Battlefield of Eternity",
@@ -69,7 +72,7 @@ allsayings=[
     6,"Li-Ming banned",
     6,"Lt. Morales banned",
     6,"Lunara banned",
-    6,"Lúcio banned",
+    6,"L&uacute;cio banned",
     6,"Maiev banned",
     6,"Mal'Ganis banned",
     6,"Malfurion banned",
@@ -153,7 +156,7 @@ allsayings=[
     10,"Li-Ming picked",
     10,"Lt. Morales picked",
     10,"Lunara picked",
-    10,"Lúcio picked",
+    10,"L&uacute;cio picked",
     10,"Maiev picked",
     10,"Mal'Ganis picked",
     10,"Malfurion picked",
