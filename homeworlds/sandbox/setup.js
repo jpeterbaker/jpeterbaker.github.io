@@ -1,5 +1,7 @@
 // Create pieces, connect functions
 
+var num_players = 2;
+
 var i,j,k,stack,node;
 var colors = ['red','yellow','green','blue'];
 var sizes = ['small','medium','large'];

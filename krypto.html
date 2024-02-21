@@ -1,0 +1,27 @@
+<html>
+    Enter available numbers separated by commas
+    <br>
+    <input type="text" id="nums_input" value=""></input>
+    <br>
+    <br>
+    Enter target number
+    <br>
+    <input type="text" id="goal_input" value=""></input>
+    <br>
+    <button onClick="go()">Solve</button>
+    <br>
+    <div id='display'>Answers go here</div>
+</html>
+
+<script>
+
+function go(){
+    var nums = document.getElementById('nums_input').value.split(',').map(Number);;
+    nums.sort();
+    var goal = Number(document.getElementById('goal_input').value);
+    var out_node = document.getElementById('display');
+    out_node.innerHTML = nums + '=>' + goal;
+}
+
+</script>
+
