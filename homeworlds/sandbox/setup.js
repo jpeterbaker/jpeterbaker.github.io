@@ -5,6 +5,7 @@ var num_players = 2;
 var i,j,k,stack,node;
 var colors = ['red','yellow','green','blue'];
 var sizes = ['small','medium','large'];
+
 for(i=0;i<4;i++){
     for(j=0;j<3;j++){
         stack = document.getElementById('stack_'+(i+1)+'_'+(j+1));
@@ -19,11 +20,13 @@ for(i=0;i<4;i++){
 }
 
 var buttons = Array.from(document.querySelectorAll('.button'));
-var stacks = Array.from(document.querySelectorAll('.stack'));
+var stacks  = Array.from(document.querySelectorAll('.stack'));
+var pieces  = Array.from(document.querySelectorAll('.piece'));
+var active_ship = null;
 
 for(var button of buttons){
     button.setAttribute('onclick',button.id+'_clicked(this)');
 }
 
-enter_create_star();
+change_state(STATE.CREATE_STAR);
 

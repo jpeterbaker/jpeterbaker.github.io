@@ -32,11 +32,13 @@ Nevertheless, feel free to click on stuff.
 <div id='step_turn_button'     class='actionButton button'>&gt;&gt;</div>
 <div id='step_all_button'      class='actionButton button'>&gt;|</div>
 
-<div id='power_box'>
+<div id='power_box' class='disabled'>
     <div id='power_button1' class='button powerButton'>Attack</div>
     <div id='power_button2' class='button powerButton'>Move</div>
     <div id='power_button3' class='button powerButton'>Build</div>
     <div id='power_button4' class='button powerButton'>Trade</div>
+</div>
+<div id='status_bar' style='color:white'>
 </div>
 
 <div id='side_panel'>
@@ -90,9 +92,11 @@ Nevertheless, feel free to click on stuff.
 
 </body>
 
+<script src='fsm.js'></script>
 <script src='game_logic.js'></script>
 <script src='interface.js'></script>
 <script src='nav_functions.js'></script>
+<script src='power_functions.js'></script>
 <script src='setup.js'></script>
 
 </html>

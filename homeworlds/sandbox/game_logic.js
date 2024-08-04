@@ -1,54 +1,70 @@
 // Mostly stuff that the server takes care of on BGA
-// but also client's state entry/exit functions
+// Provide functions for the fsm to update variables, no interface stuff
 
-var STATE = {
-    // Select a star during creation phase
-    'CREATE_STAR':  0,
-    // Select a ship during creation phase
-    'CREATE_SHIP':  1,
-    // Select a ship to empower or sacrifice
-    // Catastrophe button available
-    'EMPOWER':      2,
-    // Waiting for power input (after selecting ship to empower)
-    // Select a power for the empowered ship
-    'POWER':        3,
-    // Waiting for target input
-    // Select the target of the power action, e.g., enemy ship
-    'TARGET':       4,
-    // Waiting for catastrophe input
-    // Select an overpopulated piece to trigger catastrophe
-    'CATASTROPHE':  5,
-    'PASS':         6
-};
-
+var creation_complete = 0;
 var sac_color = 0;
 var sac_actions = 0;
 var used_free = 0;
 var on_move = 0;
-
-var state = STATE.CREATE_STAR;
 
 // Number of systems created ever
 var num_systems = 0;
 
 function end_turn(){
     on_move = (on_move + 1) % num_players;
-    if(state == STATE.CREATE_SHIP && on_move != 0){
+    if(!creation_complete && on_move!=0){
         // A creation just took place and there is at least one more to go
-        enter_create_star();
-        state = STATE.CREATE_STAR;
+        change_state(STATE.CREATE_STAR);
+    }
+    else{
+        change_state(STATE.EMPOWER);
     }
 }
 
-///////////////////////////
-// State entry functions //
-///////////////////////////
-
-function enter_create_star(){
-    for(var stack of stacks){
-        stack.classList.add('selectable');
+// Get the system containing this node, if any
+function get_system(node){
+    while(node != null && !node.classList.contains('system')){
+        node = node.parentElement;
     }
+    return node;
 }
 
+function get_size(piece){
+    for(var size of sizes){
+        if(piece.classList.contains(size)){
+            return size;
+        }
+    }
+    console.error(piece);
+    alert('unknown size');
+}
 
+function get_size_complement(some_sizes){
+    return sizes.filter(x => !some_sizes.includes(x));
+}
 
+function get_stars(system){
+    return Array.from(system.querySelectorAll('.star'));
+}
+
+function get_star_sizes(system){
+    return get_stars(system).map(get_size);
+}
+
+function get_connected_systems(system){
+    var star_sizes = get_star_sizes(system);
+    var systems = Array.from(document.querySelectorAll('.system'));
+    var connected = [];
+    var common;
+    console.log('connectedness of',system);
+    for(var sys of systems){
+        // Star sizes in common
+        common = star_sizes.filter(x => get_star_sizes(sys).includes(x));
+        if(common.length == 0){
+            systems.push(sys);
+        }
+        else
+            console.log('not connected to ',sys,' due to ',common);
+    }
+    return connected;
+}
