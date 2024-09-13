@@ -28,6 +28,11 @@
     font-family: monospace;
 }
 
+.cmd {
+    color: red;
+    font-family: monospace;
+}
+
 .commentRow {
     display:table-row;
     padding: 10px;  

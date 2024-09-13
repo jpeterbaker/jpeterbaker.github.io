@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Homeworlds Notation</title>
+
+<link rel='stylesheet' href='styles.css'>
+<link rel='icon' type='image/png' href='https://i.imgur.com/dGP5Nqv.png'>
+
+</head>
+<center>
+<h1>
+Homeworlds Game Record Notation
+</h1>
+<p>
+<a href="index.html">My main Homeworlds page</a>
+</p>
+</center>
+
+<p>
+I recommend a slight variation of the notation used on
+<a href='https://play.abstractplay.com'>Abstract Play</a>
+(aka AP or SDG 2.0).
+</p>
+
+<h2>
+Actions
+</h2>
+
+<ul>
+    <li> <span class='cmd'>homeworld &lt;star1&gt; &lt;star2&gt; &lt;ship&gt; &lt;systemName&gt;</span>
+    <li> <span class='cmd'>build &lt;ship&gt; &lt;system&gt;</span>
+    <li> <span class='cmd'>trade &lt;ship&gt; &lt;system&gt; &lt;newColor&gt;</span>
+    <li> <span class='cmd'>discover &lt;ship&gt; &lt;oldSystem&gt; &lt;newStar&gt; &lt;newName&gt;</span>
+    <li> <span class='cmd'>move &lt;ship&gt; &lt;oldSystem&gt; &lt;newSystemName&gt;</span>
+    <li> <span class='cmd'>attack &lt;ship&gt; &lt;system&gt; &lt;newSystemName&gt;</span>
+    <li> <span class='cmd'>sacrifice &lt;ship&gt; &lt;system&gt;</span>
+    <li> <span class='cmd'>catastrophe &lt;system&gt; &lt;color&gt;</span>
+    <li> <span class='cmd'>pass</span>
+</ul>
+
+<h2>
+Notes
+</h2>
+
+<p>
+Multiple turn actions are simply concatenated in the order they are performed,
+with any convenient character separating the actions, for example
+<br>
+<span class='cmd'>
+sacrifice y1 Alpha /
+move b1 Beta Gamma /
+catastrophe Gamma b
+</span>
+<br>
+AP separates actions with commas, SDG used line breaks.
+<br>
+I like line breaks when possible, but when commands need to be on one line,
+I favor semicolons ; or slashes /.
+</p>
+
+<p>
+Optionally, you may write "pass" in place of an unused sacrifice action, as in
+<br>
+<span class='cmd'>
+sacrifice r3 Alpha /
+attack b1 Beta /
+pass /
+pass
+</span>
+</p>
+
+<p>
+Actions can also be abbreviated by first letter:
+<span class='cmd'>h</span> for homeworld,
+<span class='cmd'>a</span> for attack,
+<span class='cmd'>c</span> for catastrophe, etc.
+</p>
+
+<p>
+A new system is given a name when the system is discovered.
+The name can be any string that doesn't interfere with notation.
+</p>
+<ul>
+    <li> The name must be different from the names of other existing systems.
+    <li> For clarity, the name should not resemble other recording notation,
+    e.g., "catastrophe" is a misleading system name.
+    <li> Many players insist on giving systems the same names as their stars,
+    e.g., "g1" for systems with g1 stars.
+    <br>
+    When reading a game history, I find these names confusing.
+    As an alternative, I suggest using uppercase letters for system names,
+    so g1 is a ship (or newly discovered star piece)
+    and G1 is a system name.
+</ul>
+
+<p>
+When establishing a homeworld, AP does not denote a name for the system.
+I recommend doing so in order to make the record complete.
+</p>
+
+<p>
+When building, AP actually only lists the color (not size) of the built ship, as in
+<span class='cmd'>build &lt;color&gt; &lt;system&gt;</span>.
+I suggest including the size because it helps to readers who replay the game
+by making bank state errors more obvious.
+</p>
+
+<p>
+When trading, AP's notation subtly different from the SDG notation
+<span class='cmd'>trade &lt;ship&gt; &lt;newShip&gt; &lt;system&gt;</span>.
+The choice on AP to record the color (instead of the ship) avoids confusion
+when systems share names with pieces.
+<br>
+For example, SDG's annotation
+<span class='cmd'>trade r1 b1 g1</span>
+(meaning "trade r1 for b1 in the system named 'g1'")
+looks like it might mean
+"trade r1 for g1 in the system named 'b1'."
+<br>
+AP's annotation
+<span class='cmd'>trade r1 g1 b</span>
+is more clear unless there is a system named "b."
+</p>
+
+<p>
+Looney Labs is trying to phase out the term "attack,"
+but it is useful for notation because it does not share a first letter with other actions.
+"Capture" might be abbreviated "c," but this may be confused with "catastrophe."
+</p>
+
+</html>
+
