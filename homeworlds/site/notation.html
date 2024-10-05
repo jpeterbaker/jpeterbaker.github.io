@@ -27,19 +27,29 @@ Actions
 
 <ul>
     <li> <span class='cmd'>homeworld &lt;star1&gt; &lt;star2&gt; &lt;ship&gt; &lt;systemName&gt;</span>
-    <li> <span class='cmd'>build &lt;ship&gt; &lt;system&gt;</span>
-    <li> <span class='cmd'>trade &lt;ship&gt; &lt;system&gt; &lt;newColor&gt;</span>
-    <li> <span class='cmd'>discover &lt;ship&gt; &lt;oldSystem&gt; &lt;newStar&gt; &lt;newName&gt;</span>
-    <li> <span class='cmd'>move &lt;ship&gt; &lt;oldSystem&gt; &lt;newSystemName&gt;</span>
-    <li> <span class='cmd'>attack &lt;ship&gt; &lt;system&gt; &lt;newSystemName&gt;</span>
-    <li> <span class='cmd'>sacrifice &lt;ship&gt; &lt;system&gt;</span>
-    <li> <span class='cmd'>catastrophe &lt;system&gt; &lt;color&gt;</span>
+    <li> <span class='cmd'>build &lt;ship&gt; &lt;systemName&gt;</span>
+    <li> <span class='cmd'>trade &lt;ship&gt; &lt;systemName&gt; &lt;newColor&gt;</span>
+    <li> <span class='cmd'>discover &lt;ship&gt; &lt;oldSystemName&gt; &lt;newStar&gt; &lt;newSystemName&gt;</span>
+    <li> <span class='cmd'>move &lt;ship&gt; &lt;oldSystemName&gt; &lt;newSystemName&gt;</span>
+    <li> <span class='cmd'>attack &lt;ship&gt; &lt;systemName&gt;</span>
+    <li> <span class='cmd'>sacrifice &lt;ship&gt; &lt;systemName&gt;</span>
+    <li> <span class='cmd'>catastrophe &lt;systemName&gt; &lt;color&gt;</span>
     <li> <span class='cmd'>pass</span>
 </ul>
 
 <h2>
 Notes
 </h2>
+
+<p>
+A color is denoted by the lowercase first letter of its name in English,
+such as "<span class='cmd'>y</span>" for yellow.
+</p>
+
+<p>
+A piece (i.e., a ship or star) is denoted by its color's letter
+and its number of pips, such as "<span class='cmd'>g2</span>" for a medium green.
+</p>
 
 <p>
 Multiple turn actions are simply concatenated in the order they are performed,
@@ -70,9 +80,9 @@ pass
 
 <p>
 Actions can also be abbreviated by first letter:
-<span class='cmd'>h</span> for homeworld,
-<span class='cmd'>a</span> for attack,
-<span class='cmd'>c</span> for catastrophe, etc.
+"<span class='cmd'>h</span>" for homeworld,
+"<span class='cmd'>a</span>" for attack,
+"<span class='cmd'>c</span>" for catastrophe, etc.
 </p>
 
 <p>
@@ -81,15 +91,14 @@ The name can be any string that doesn't interfere with notation.
 </p>
 <ul>
     <li> The name must be different from the names of other existing systems.
-    <li> For clarity, the name should not resemble other recording notation,
-    e.g., "catastrophe" is a misleading system name.
-    <li> Many players insist on giving systems the same names as their stars,
-    e.g., "g1" for systems with g1 stars.
+    <li> For clarity, the name should not resemble other recording notation.
+    For example, "catastrophe" is a misleading system name.
+    <li> Many players use piece notations of stars as system names,
+    such as naming a system "g1" if it has a small green star.
     <br>
-    When reading a game history, I find these names confusing.
-    As an alternative, I suggest using uppercase letters for system names,
-    so g1 is a ship (or newly discovered star piece)
-    and G1 is a system name.
+    If you like such system names, I recommend avoiding confusion
+    by using uppercase letters for system names.
+    For example, use "G1" for a system name and "g1" for small green pieces.
 </ul>
 
 <p>
@@ -122,9 +131,12 @@ is more clear unless there is a system named "b."
 </p>
 
 <p>
-Looney Labs is trying to phase out the term "attack,"
-but it is useful for notation because it does not share a first letter with other actions.
-"Capture" might be abbreviated "c," but this may be confused with "catastrophe."
+Looney Labs is trying to phase out the term "attack"
+because it suggests destruction rather than a change of ownership.
+Their preferred term is, "capture."
+However, I still prefer "attack" for notation
+because it does not share a first letter with other actions.
+"Capture" would be abbreviated "c," which may be confused with "catastrophe."
 </p>
 
 </html>
