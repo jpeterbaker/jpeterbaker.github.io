@@ -1,4 +1,4 @@
-var TITLE = "Murer Mystery Bingo";
+var TITLE = "Murder Mystery Bingo";
 var BOARDTOP = "BINGO for Murder Mysteries";
 var FREE = "Free";
 var USEFREE = 1;
@@ -43,7 +43,7 @@ var allsayings = [
     8,"Blackmail",
     8,"Conspiracy",
     8,"Doctor",
-    8,"Expert analysis of evidence or body",
+    8,"Expert analysis of evidence",
     8,"Financial straits",
     8,"Forbidden love",
     8,"Inheritance or insurance",
